@@ -1,0 +1,146 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - layer
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - obstacle
+  - player
+  - ground
+  - enemy
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: ground
+    uniqueID: 3327400627
+    locked: 0
+  - name: shadow
+    uniqueID: 2727682505
+    locked: 0
+  - name: g0
+    uniqueID: 4021496993
+    locked: 0
+  - name: g1
+    uniqueID: 1649517057
+    locked: 0
+  - name: g2
+    uniqueID: 16794733
+    locked: 0
+  - name: g3
+    uniqueID: 3522206057
+    locked: 0
+  - name: g4
+    uniqueID: 1646473823
+    locked: 0
+  - name: g5
+    uniqueID: 10110231
+    locked: 0
+  - name: g6
+    uniqueID: 1546269265
+    locked: 0
+  - name: g7
+    uniqueID: 3387942937
+    locked: 0
+  - name: g8
+    uniqueID: 3084436399
+    locked: 0
+  - name: g9
+    uniqueID: 480315777
+    locked: 0
+  - name: g10
+    uniqueID: 1857111853
+    locked: 0
+  - name: g11
+    uniqueID: 341220691
+    locked: 0
+  - name: g12
+    uniqueID: 100509109
+    locked: 0
+  - name: g13
+    uniqueID: 4110200997
+    locked: 0
+  - name: g14
+    uniqueID: 3406469177
+    locked: 0
+  - name: g15
+    uniqueID: 274435371
+    locked: 0
+  - name: g16
+    uniqueID: 3557129709
+    locked: 0
+  - name: g17
+    uniqueID: 1380885475
+    locked: 0
+  - name: g18
+    uniqueID: 3951686941
+    locked: 0
+  - name: g19
+    uniqueID: 3431402771
+    locked: 0
+  - name: g20
+    uniqueID: 31258435
+    locked: 0
+  - name: g21
+    uniqueID: 3731436051
+    locked: 0
+  - name: g22
+    uniqueID: 2686664745
+    locked: 0
+  - name: g23
+    uniqueID: 2643512367
+    locked: 0
+  - name: g24
+    uniqueID: 2651666795
+    locked: 0
+  - name: g25
+    uniqueID: 873280157
+    locked: 0
+  - name: g26
+    uniqueID: 257007069
+    locked: 0
+  - name: g27
+    uniqueID: 307868951
+    locked: 0
+  - name: g28
+    uniqueID: 1849767817
+    locked: 0
+  - name: g29
+    uniqueID: 2233945183
+    locked: 0
+  - name: g30
+    uniqueID: 1103229727
+    locked: 0
+  - name: ui
+    uniqueID: 134392229
+    locked: 0

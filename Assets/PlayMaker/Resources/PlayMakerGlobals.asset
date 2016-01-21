@@ -1,0 +1,81 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 42938266, guid: e743331561ef77147ae48cda9bcb8209, type: 3}
+  m_Name: PlayMakerGlobals
+  m_EditorClassIdentifier: 
+  variables:
+    floatVariables:
+    - useVariable: 1
+      name: "\u73A9\u5BB6\u6301\u67AA\u884C\u8D70\u901F\u5EA6"
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0.3
+    - useVariable: 1
+      name: "\u9ED8\u8BA4\u73A9\u5BB6\u884C\u8D70\u901F\u5EA6"
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0.6
+    intVariables: []
+    boolVariables:
+    - useVariable: 1
+      name: "\u73A9\u5BB6\u80FD\u884C\u8D70\u4E0D"
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 1
+    stringVariables:
+    - useVariable: 1
+      name: "\u4E0A\u5B50\u5F39\u6309\u952E"
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: r
+    - useVariable: 1
+      name: "\u53D6\u6D88\u6309\u952E"
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: k
+    - useVariable: 1
+      name: "\u6301\u67AA\u6309\u952E"
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: space
+    - useVariable: 1
+      name: "\u653B\u51FB\u786E\u8BA4\u6309\u94AE"
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: j
+    - useVariable: 1
+      name: "\u9053\u5177\u6309\u952E"
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: i
+    vector2Variables: []
+    vector3Variables: []
+    colorVariables: []
+    rectVariables: []
+    quaternionVariables: []
+    gameObjectVariables: []
+    objectVariables: []
+    materialVariables: []
+    textureVariables: []
+    arrayVariables: []
+    enumVariables: []
+    categories:
+    - 
+    variableCategoryIDs: 0000000000000000000000000000000000000000000000000000000000000000
+  events: []
