@@ -11,6 +11,11 @@ public class SortLayerMarker : MonoBehaviour {
 	}
 	public void getSprites(){
 		List<GameObject> list=loopAllChildrenByTag(transform,"layer");
+		SpriteRenderer spr=GetComponent<SpriteRenderer>();
+		if(spr){
+			if(spr.tag==("layer"))
+				list.Add(gameObject);
+		}
 		sortObjects=list.ToArray();
 	}
 
