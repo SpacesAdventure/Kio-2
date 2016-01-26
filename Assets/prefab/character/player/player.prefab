@@ -326,7 +326,7 @@ MonoBehaviour:
         x: 530.84375
         y: 522.6953
         width: 100
-        height: 128
+        height: 144
       isBreakpoint: 0
       isSequence: 0
       hideUnused: 0
@@ -374,7 +374,7 @@ MonoBehaviour:
       - fsmEvent:
           name: switch gun
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: check has gun equip
         linkStyle: 0
         linkConstraint: 0
@@ -384,6 +384,14 @@ MonoBehaviour:
           isSystemEvent: 0
           isGlobal: 0
         toState: check has gun
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      - fsmEvent:
+          name: hand gun
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: switch gun
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
@@ -447,7 +455,7 @@ MonoBehaviour:
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams: []
-        byteData: 7377697463682067756e00016669726500016c65667472696768747570646f776e7374616e64
+        byteData: 68616e642067756e00016669726500016c65667472696768747570646f776e7374616e64
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
@@ -468,8 +476,8 @@ MonoBehaviour:
         - downEvent
         - anyDirection
         - noDirection
-        paramDataPos: 00000000000000000a000000010000000c00000010000000020000000300000012000000160000001b0000001d0000002100000021000000
-        paramByteDataSize: 000000000a000000020000000000000004000000020000000000000000000000040000000500000002000000040000000000000005000000
+        paramDataPos: 000000000000000008000000010000000a0000000e00000002000000030000001000000014000000190000001b0000001f0000001f000000
+        paramByteDataSize: 0000000008000000020000000000000004000000020000000000000000000000040000000500000002000000040000000000000005000000
     - name: down
       description: 
       colorIndex: 0
@@ -1443,8 +1451,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 1067.4688
-        y: 788.46094
+        x: 322.59375
+        y: 726.6328
         width: 100
         height: 48
       isBreakpoint: 0
@@ -1540,8 +1548,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 1241.8203
-        y: 781.7578
+        x: 496.08594
+        y: 733.64844
         width: 114
         height: 32
       isBreakpoint: 0
@@ -1552,7 +1560,7 @@ MonoBehaviour:
           name: FINISHED
           isSystemEvent: 1
           isGlobal: 0
-        toState: check gun
+        toState: check has gun equip
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
@@ -1605,8 +1613,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 1034.5938
-        y: 925.5703
+        x: 523.6094
+        y: 819.125
         width: 107
         height: 32
       isBreakpoint: 0
@@ -1617,7 +1625,7 @@ MonoBehaviour:
           name: FINISHED
           isSystemEvent: 1
           isGlobal: 0
-        toState: check gun
+        toState: check has gun equip
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
@@ -1670,8 +1678,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 487.40625
-        y: 759.34375
+        x: 450.625
+        y: 889.9375
         width: 113
         height: 48
       isBreakpoint: 0
@@ -1744,8 +1752,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 608.14844
-        y: 967.66406
+        x: 566.3828
+        y: 1036.8828
         width: 104
         height: 80
       isBreakpoint: 0
@@ -2057,8 +2065,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 800
-        y: 869
+        x: 799.9922
+        y: 941.5156
         width: 129
         height: 32
       isBreakpoint: 0
@@ -2124,8 +2132,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 792.125
-        y: 919.0625
+        x: 794.3125
+        y: 995.97656
         width: 142
         height: 32
       isBreakpoint: 0
@@ -2191,8 +2199,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 796.125
-        y: 980.0625
+        x: 802.71094
+        y: 1060.2734
         width: 142
         height: 32
       isBreakpoint: 0
@@ -2258,8 +2266,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 807.125
-        y: 1043.0625
+        x: 804.9219
+        y: 1128.7656
         width: 142
         height: 32
       isBreakpoint: 0
@@ -2325,8 +2333,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 1019.22656
-        y: 991.66406
+        x: 1003.83594
+        y: 1079.5703
         width: 100
         height: 32
       isBreakpoint: 0
@@ -2387,7 +2395,7 @@ MonoBehaviour:
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams: []
-        byteData: 0000000000000000010000000000000000016669726520646972656374696f6e000000000000c03f000000000001000000000146494e49534845440001000000000000000001000000000000000001000000000101000000000d00000000080000000000000000803feceb6b3f8180803c0000803f000100
+        byteData: 0000000000000000010000000000000000016669726520646972656374696f6e000000000000c03f00000000000100000000010001000000000000000001000000000000000001000000000100000000000d00000000080000000000000000803feceb6b3f8180803c0000803f000100
         arrayParamSizes: 02000000
         arrayParamTypes:
         - HutongGames.PlayMaker.FsmInt
@@ -2415,15 +2423,15 @@ MonoBehaviour:
         - invertMask
         - debugColor
         - debug
-        paramDataPos: 0000000000000000090000002000000024000000290000002e000000330000003b000000000000003d000000460000004f0000005400000000000000590000005e000000630000006500000076000000
-        paramByteDataSize: 0000000009000000170000000400000005000000050000000500000008000000020000000000000009000000090000000500000005000000000000000500000005000000020000001100000002000000
+        paramDataPos: 0000000000000000090000002000000024000000290000002e000000330000003300000000000000350000003e000000470000004c0000000000000051000000560000005b0000005d0000006e000000
+        paramByteDataSize: 0000000009000000170000000400000005000000050000000500000000000000020000000000000009000000090000000500000005000000000000000500000005000000020000001100000002000000
     - name: wait
       description: 
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 335.09375
-        y: 880.7656
+        x: 244.48438
+        y: 1091.3359
         width: 100
         height: 32
       isBreakpoint: 0
@@ -2504,8 +2512,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 678.91406
-        y: 1147.1016
+        x: 643.7422
+        y: 1226.2109
         width: 140
         height: 48
       isBreakpoint: 0
@@ -2604,14 +2612,16 @@ MonoBehaviour:
       actionData:
         actionNames:
         - HutongGames.PlayMaker.Actions.GetParent
+        - HutongGames.PlayMaker.Actions.SetEventProperties
         - HutongGames.PlayMaker.Actions.SendEvent
         customNames:
         - 
         - 
-        actionEnabled: 0101
-        actionIsOpen: 0101
-        actionStartIndex: 0000000002000000
-        actionHashCodes: d97b72025e69bb04
+        - 
+        actionEnabled: 010101
+        actionIsOpen: 010101
+        actionStartIndex: 000000000200000006000000
+        actionHashCodes: d97b7202afffe3005e69bb04
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 1
@@ -2667,9 +2677,39 @@ MonoBehaviour:
           fsmComponent: {fileID: 0}
         fsmPropertyParams: []
         layoutOptionParams: []
-        fsmStringParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: damage
         fsmObjectParams: []
-        fsmVarParams: []
+        fsmVarParams:
+        - variableName: damage
+          objectType: UnityEngine.Object
+          useVariable: 1
+          type: 1
+          floatValue: 0
+          intValue: 0
+          boolValue: 0
+          stringValue: 
+          vector4Value: {x: 0, y: 0, z: 0, w: 0}
+          objectReference: {fileID: 0}
+          arrayValue:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            type: -1
+            objectTypeName: 
+            floatValues: []
+            intValues: 
+            boolValues: 
+            stringValues: []
+            vector4Values: []
+            objectReferences: []
         fsmArrayParams: []
         fsmEnumParams: []
         fsmFloatParams: []
@@ -2682,27 +2722,33 @@ MonoBehaviour:
         fsmQuaternionParams: []
         stringParams: []
         byteData: 68757274000000000000
-        arrayParamSizes: 
-        arrayParamTypes: []
+        arrayParamSizes: 0100000001000000
+        arrayParamTypes:
+        - HutongGames.PlayMaker.FsmString
+        - HutongGames.PlayMaker.FsmVar
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 14000000130000001f000000170000000f00000001000000
+        paramDataType: 14000000130000000c000000120000000c000000270000001f000000170000000f00000001000000
         paramName:
         - gameObject
         - storeResult
+        - keys
+        - 
+        - datas
+        - 
         - eventTarget
         - sendEvent
         - delay
         - everyFrame
-        paramDataPos: 000000000000000000000000000000000400000009000000
-        paramByteDataSize: 000000000000000000000000040000000500000001000000
+        paramDataPos: 00000000000000000000000000000000010000000000000000000000000000000400000009000000
+        paramByteDataSize: 00000000000000000000000000000000000000000000000000000000040000000500000001000000
     - name: check has gun equip
       description: 
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 515
-        y: 688
+        x: 699.5078
+        y: 767.83594
         width: 153
         height: 48
       isBreakpoint: 0
@@ -2804,10 +2850,10 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 713
-        y: 738
+        x: 939.35156
+        y: 787.4375
         width: 101
-        height: 32
+        height: 48
       isBreakpoint: 0
       isSequence: 0
       hideUnused: 0
@@ -2817,6 +2863,14 @@ MonoBehaviour:
           isSystemEvent: 0
           isGlobal: 0
         toState: pistol
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      - fsmEvent:
+          name: shot gun
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: shot gun
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
@@ -2852,30 +2906,32 @@ MonoBehaviour:
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams: []
-        byteData: 000000000165717569702067756e0000000000706973746f6c00
-        arrayParamSizes: 0100000001000000
+        byteData: 000000000165717569702067756e00000000000100000000706973746f6c73686f742067756e00
+        arrayParamSizes: 0200000002000000
         arrayParamTypes:
         - HutongGames.PlayMaker.FsmInt
         - HutongGames.PlayMaker.FsmEvent
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 100000000c000000100000000c0000001700000001000000
+        paramDataType: 100000000c00000010000000100000000c000000170000001700000001000000
         paramName:
         - intVariable
         - compareTo
         - 
+        - 
         - sendEvent
         - 
+        - 
         - everyFrame
-        paramDataPos: 00000000000000000e000000010000001300000019000000
-        paramByteDataSize: 0e0000000000000005000000000000000600000001000000
+        paramDataPos: 00000000000000000e0000001300000001000000180000001e00000026000000
+        paramByteDataSize: 0e00000000000000050000000500000000000000060000000800000001000000
     - name: pistol
       description: 
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 895
-        y: 711
+        x: 1144.1484
+        y: 761.4453
         width: 100
         height: 48
       isBreakpoint: 0
@@ -2886,7 +2942,7 @@ MonoBehaviour:
           name: FINISHED
           isSystemEvent: 1
           isGlobal: 0
-        toState: switch gun
+        toState: check gun
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
@@ -2991,8 +3047,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 1101
-        y: 672
+        x: 1209.7734
+        y: 700.5547
         width: 129
         height: 32
       isBreakpoint: 0
@@ -3567,6 +3623,234 @@ MonoBehaviour:
         - everyFrame
         paramDataPos: 00000000000000000e0000001300000018000000010000001d00000021000000260000002a000000
         paramByteDataSize: 0e000000000000000500000005000000050000000000000004000000050000000400000001000000
+    - name: shot gun
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 1129.3359
+        y: 835.0547
+        width: 100
+        height: 48
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: check gun
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      - fsmEvent:
+          name: loop
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: set shot gun sprites
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.ArrayGetNext
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: 92de7404
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams:
+        - variableName: 
+          objectType: UnityEngine.Sprite
+          useVariable: 0
+          type: 12
+          floatValue: 0
+          intValue: 0
+          boolValue: 0
+          stringValue: 
+          vector4Value: {x: 0, y: 0, z: 0, w: 0}
+          objectReference: {fileID: 0}
+          arrayValue:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            type: -1
+            objectTypeName: 
+            floatValues: []
+            intValues: 
+            boolValues: 
+            stringValues: []
+            vector4Values: []
+            objectReferences: []
+        fsmArrayParams:
+        - useVariable: 1
+          name: shot gun
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          type: 12
+          objectTypeName: UnityEngine.Sprite
+          floatValues: []
+          intValues: 
+          boolValues: 
+          stringValues: []
+          vector4Values: []
+          objectReferences:
+          - {fileID: 21300000, guid: 5cc82de789a30024ea0c232892bbaf56, type: 3}
+          - {fileID: 21300004, guid: 5cc82de789a30024ea0c232892bbaf56, type: 3}
+          - {fileID: 21300002, guid: 5cc82de789a30024ea0c232892bbaf56, type: 3}
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams: []
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams: []
+        byteData: 000000000000000000006c6f6f7046494e495348454400000000016c6f6f7020696e646578
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 29000000100000001000000017000000170000002700000010000000
+        paramName:
+        - array
+        - startIndex
+        - endIndex
+        - loopEvent
+        - finishedEvent
+        - result
+        - currentIndex
+        paramDataPos: 0000000000000000050000000a0000000e0000000000000016000000
+        paramByteDataSize: 0000000005000000050000000400000008000000000000000f000000
+    - name: set shot gun sprites
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 1128.0234
+        y: 928.0469
+        width: 149
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: shot gun
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.ArrayTransferValue
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: 292f3b01
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams:
+        - useVariable: 1
+          name: shot gun
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          type: 12
+          objectTypeName: UnityEngine.Sprite
+          floatValues: []
+          intValues: 
+          boolValues: 
+          stringValues: []
+          vector4Values: []
+          objectReferences:
+          - {fileID: 21300000, guid: 5cc82de789a30024ea0c232892bbaf56, type: 3}
+          - {fileID: 21300004, guid: 5cc82de789a30024ea0c232892bbaf56, type: 3}
+          - {fileID: 21300002, guid: 5cc82de789a30024ea0c232892bbaf56, type: 3}
+        - useVariable: 1
+          name: gun type
+          tooltip: 
+          showInInspector: 1
+          networkSync: 0
+          type: 12
+          objectTypeName: UnityEngine.Sprite
+          floatValues: []
+          intValues: 
+          boolValues: 
+          stringValues: []
+          vector4Values: []
+          objectReferences: []
+        fsmEnumParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          enumName: HutongGames.PlayMaker.Actions.ArrayTransferValue+ArrayTransferType
+          intValue: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          enumName: HutongGames.PlayMaker.Actions.ArrayTransferValue+ArrayPasteType
+          intValue: 2
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams: []
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams: []
+        byteData: 00000000016c6f6f7020696e646578
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 2900000029000000100000002a0000002a00000017000000
+        paramName:
+        - arraySource
+        - arrayTarget
+        - indexToTransfer
+        - copyType
+        - pasteType
+        - indexOutOfRange
+        paramDataPos: 00000000010000000000000000000000010000000f000000
+        paramByteDataSize: 00000000000000000f000000000000000000000000000000
     events:
     - name: FINISHED
       isSystemEvent: 1
@@ -3581,6 +3865,9 @@ MonoBehaviour:
       isSystemEvent: 0
       isGlobal: 1
     - name: fire
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: hand gun
       isSystemEvent: 0
       isGlobal: 0
     - name: hit something
@@ -3601,12 +3888,15 @@ MonoBehaviour:
     - name: right
       isSystemEvent: 0
       isGlobal: 1
+    - name: shot gun
+      isSystemEvent: 0
+      isGlobal: 0
     - name: stand
       isSystemEvent: 0
       isGlobal: 1
     - name: switch gun
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: up
       isSystemEvent: 0
       isGlobal: 1
@@ -3632,6 +3922,12 @@ MonoBehaviour:
         networkSync: 0
         value: 0
       intVariables:
+      - useVariable: 1
+        name: damage
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 0
       - useVariable: 1
         name: direction
         tooltip: 
@@ -3734,10 +4030,26 @@ MonoBehaviour:
         - {fileID: 21300000, guid: c71e2c1489c837a4b87d16babdb4cfd0, type: 3}
         - {fileID: 21300004, guid: c71e2c1489c837a4b87d16babdb4cfd0, type: 3}
         - {fileID: 21300002, guid: c71e2c1489c837a4b87d16babdb4cfd0, type: 3}
+      - useVariable: 1
+        name: shot gun
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        type: 12
+        objectTypeName: UnityEngine.Sprite
+        floatValues: []
+        intValues: 
+        boolValues: 
+        stringValues: []
+        vector4Values: []
+        objectReferences:
+        - {fileID: 21300000, guid: 5cc82de789a30024ea0c232892bbaf56, type: 3}
+        - {fileID: 21300004, guid: 5cc82de789a30024ea0c232892bbaf56, type: 3}
+        - {fileID: 21300002, guid: 5cc82de789a30024ea0c232892bbaf56, type: 3}
       enumVariables: []
       categories:
       - 
-      variableCategoryIDs: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+      variableCategoryIDs: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
     description: 
     docUrl: 
     showStateLabel: 0
