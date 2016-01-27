@@ -124,10 +124,10 @@ MonoBehaviour:
       intVariables:
       - useVariable: 1
         name: equip gun
-        tooltip: 
+        tooltip: "\u67AA\u7684\u79CD\u7C7B\uFF0C0\u662F\u624B\u67AA\uFF0C1\u662F\u6563\u5F39"
         showInInspector: 0
         networkSync: 0
-        value: 0
+        value: -1
       boolVariables: []
       stringVariables: []
       vector2Variables: []
@@ -151,7 +151,7 @@ MonoBehaviour:
     watermark: 
     password: 
     locked: 0
-    preprocessed: 1
+    preprocessed: 0
     ExposedEvents: []
     RestartOnEnable: 1
     EnableDebugFlow: 0

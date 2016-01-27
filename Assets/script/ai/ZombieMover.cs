@@ -25,13 +25,21 @@ public class ZombieMover : MonoBehaviour {
 			return;
 		}
 		seeker.StartPath(transform.position,player.transform.position,OnPathComplete);
+		if(path==null)
+			return;
 		points=path.vectorPath.ToArray();
-		nextDestination=points[1];
+		if(points.Length<=3){
+			nextDestination= points[points.Length-1];
+		}else{
+			nextDestination=points[1];
+		}
+
 	}
 	public void OnPathComplete (Path p) {
 		path=p;
 	}
 	public Vector3 getClosesPoint(){
+		
 		return nextDestination;
 	}
 	public int getPointsSize(){
