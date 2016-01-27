@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - layer
+  - map point
   layers:
   - Default
   - TransparentFX
@@ -18,9 +19,9 @@ TagManager:
   - player
   - ground
   - enemy
-  - 
-  - 
-  - 
+  - stand
+  - damage area
+  - zombie wall
   - 
   - 
   - 
