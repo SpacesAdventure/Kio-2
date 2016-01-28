@@ -9,6 +9,7 @@ public class ZombieMover : MonoBehaviour {
 	Vector3 nextDestination;
 	Path path;
 	Seeker seeker;
+	bool canSearch=true;
 	// Use this for initialization
 	void Start () {
 		seeker=GetComponent<Seeker>();
@@ -24,19 +25,22 @@ public class ZombieMover : MonoBehaviour {
 			}
 			return;
 		}
-		seeker.StartPath(transform.position,player.transform.position,OnPathComplete);
-		if(path==null)
-			return;
+		if(canSearch){
+			canSearch=false;
+			seeker.StartPath(transform.position,player.transform.position,OnPathComplete);
+		}
+
+
+	}
+	public void OnPathComplete (Path p) {
+		path=p;
 		points=path.vectorPath.ToArray();
 		if(points.Length<=3){
 			nextDestination= points[points.Length-1];
 		}else{
 			nextDestination=points[1];
 		}
-
-	}
-	public void OnPathComplete (Path p) {
-		path=p;
+		canSearch=true;
 	}
 	public Vector3 getClosesPoint(){
 		

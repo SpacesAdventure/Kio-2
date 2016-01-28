@@ -90,7 +90,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 112412}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.808, y: 0, z: 0}
+  m_LocalPosition: {x: 1.162, y: 0.078, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 412410}
@@ -2649,7 +2649,7 @@ MonoBehaviour:
         - 
         actionEnabled: 010101
         actionIsOpen: 010101
-        actionStartIndex: 000000000200000006000000
+        actionStartIndex: 000000000200000008000000
         actionHashCodes: d97b7202afffe3005e69bb04
         unityObjectParams: []
         fsmGameObjectParams:
@@ -2713,9 +2713,39 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: damage
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: direction
         fsmObjectParams: []
         fsmVarParams:
         - variableName: damage
+          objectType: UnityEngine.Object
+          useVariable: 1
+          type: 1
+          floatValue: 0
+          intValue: 0
+          boolValue: 0
+          stringValue: 
+          vector4Value: {x: 0, y: 0, z: 0, w: 0}
+          objectReference: {fileID: 0}
+          arrayValue:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            type: -1
+            objectTypeName: 
+            floatValues: []
+            intValues: 
+            boolValues: 
+            stringValues: []
+            vector4Values: []
+            objectReferences: []
+        - variableName: direction
           objectType: UnityEngine.Object
           useVariable: 1
           type: 1
@@ -2751,26 +2781,28 @@ MonoBehaviour:
         fsmQuaternionParams: []
         stringParams: []
         byteData: 68757274000000000000
-        arrayParamSizes: 0100000001000000
+        arrayParamSizes: 0200000002000000
         arrayParamTypes:
         - HutongGames.PlayMaker.FsmString
         - HutongGames.PlayMaker.FsmVar
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 14000000130000000c000000120000000c000000270000001f000000170000000f00000001000000
+        paramDataType: 14000000130000000c00000012000000120000000c00000027000000270000001f000000170000000f00000001000000
         paramName:
         - gameObject
         - storeResult
         - keys
         - 
+        - 
         - datas
+        - 
         - 
         - eventTarget
         - sendEvent
         - delay
         - everyFrame
-        paramDataPos: 00000000000000000000000000000000010000000000000000000000000000000400000009000000
-        paramByteDataSize: 00000000000000000000000000000000000000000000000000000000040000000500000001000000
+        paramDataPos: 000000000000000000000000000000000100000001000000000000000100000000000000000000000400000009000000
+        paramByteDataSize: 000000000000000000000000000000000000000000000000000000000000000000000000040000000500000001000000
     - name: check has gun equip
       description: 
       colorIndex: 0
