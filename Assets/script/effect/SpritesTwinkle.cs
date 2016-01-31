@@ -8,6 +8,7 @@ public class SpritesTwinkle : MonoBehaviour {
 	const int maxTwinkleCount=5;
 	bool showed=false;
 	public SpriteRenderer[] sprites;
+	int spriteLength=0;
 	void Awake(){
 		getSprites();
 		
@@ -17,7 +18,10 @@ public class SpritesTwinkle : MonoBehaviour {
 	
 	}
 	public void getSprites(){
-		sprites=GetComponentsInChildren<SpriteRenderer>();
+		SpriteRenderer[] ss=GetComponentsInChildren<SpriteRenderer>();
+		if(ss.Length>sprites.Length){
+			sprites=ss;
+		}
 	}
 	void Update(){
 		if(twinkle){
@@ -39,6 +43,7 @@ public class SpritesTwinkle : MonoBehaviour {
 		spr.color=c;
 	}
 	void setTagGroupVisible(bool visible){
+		getSprites();
 		foreach(SpriteRenderer spr in sprites){
 			if(spr.tag==tag){
 				setVisible(spr,visible);

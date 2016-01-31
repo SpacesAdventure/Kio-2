@@ -48,7 +48,7 @@ namespace HutongGames.PlayMaker.Actions
 		// NOTE: very frame rate dependent!
 		public override void OnUpdate()
 		{
-			DoIntOperator();
+//			DoIntOperator();
 		}
 		
 		void DoIntOperator()
