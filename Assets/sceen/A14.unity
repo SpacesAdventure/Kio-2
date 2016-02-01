@@ -356,6 +356,18 @@ Prefab:
       propertyPath: m_RootOrder
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 11419464, guid: 97b5c47fde72c7442ab700be071e85c1, type: 2}
+      propertyPath: fsm.preprocessed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11419464, guid: 97b5c47fde72c7442ab700be071e85c1, type: 2}
+      propertyPath: fsm.activeStateName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 11419464, guid: 97b5c47fde72c7442ab700be071e85c1, type: 2}
+      propertyPath: eventHandlerComponentsAdded
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 97b5c47fde72c7442ab700be071e85c1, type: 2}
   m_IsPrefabParent: 0
@@ -368,7 +380,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 548393842}
   - 61: {fileID: 548393843}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -410,7 +422,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 678052785}
   - 61: {fileID: 678052786}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: GameObject (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -452,7 +464,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 787565947}
   - 61: {fileID: 787565948}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: GameObject (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -598,7 +610,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1070773585}
   - 61: {fileID: 1070773586}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: GameObject (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -640,7 +652,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1133078661}
   - 61: {fileID: 1133078662}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: GameObject (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -719,7 +731,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 12
 --- !u!1 &1355573663
 GameObject:
   m_ObjectHideFlags: 0
@@ -729,7 +741,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1355573665}
   - 212: {fileID: 1355573664}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: A14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
