@@ -62,7 +62,7 @@ public class SortLayerMarker : MonoBehaviour {
 	public void setSortedLayer(string layer){
 		foreach(GameObject go in sortObjects){
 			if(go==null)
-				break;
+				continue;
 			SpriteRenderer spr=go.GetComponent<SpriteRenderer>();
 			if(spr){
 				spr.sortingLayerName=layer;

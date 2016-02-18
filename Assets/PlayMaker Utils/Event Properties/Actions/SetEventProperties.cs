@@ -25,7 +25,7 @@ namespace HutongGames.PlayMaker.Actions
 		{
 			keys = new FsmString[1];
 			datas = new FsmVar[1];
-			
+		
 		}
 
 		public override void OnEnter()

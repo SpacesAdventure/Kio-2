@@ -462,6 +462,7 @@ MonoBehaviour:
         - HutongGames.PlayMaker.Actions.RandomFloat
         - HutongGames.PlayMaker.Actions.AddForce2dPlus
         - HutongGames.PlayMaker.Actions.AddTorque2d
+        - HutongGames.PlayMaker.Actions.SetFsmInt
         - HutongGames.PlayMaker.Actions.SetFsmGameObject
         customNames:
         - 
@@ -470,10 +471,11 @@ MonoBehaviour:
         - 
         - 
         - 
-        actionEnabled: 010101010101
-        actionIsOpen: 010101010101
-        actionStartIndex: 00000000070000000c0000000f000000170000001a000000
-        actionHashCodes: 3e28c603f9bc25032ee017043bb4050132d594025b66cf00
+        - 
+        actionEnabled: 01010101010101
+        actionIsOpen: 01010101010101
+        actionStartIndex: 00000000070000000c0000000f000000170000001a0000001f000000
+        actionHashCodes: 3e28c603f9bc25032ee017043bb4050132d59402081bbf055b66cf00
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 1
@@ -525,6 +527,14 @@ MonoBehaviour:
             showInInspector: 0
             networkSync: 0
             value: {fileID: 0}
+        - ownerOption: 1
+          gameObject:
+            useVariable: 1
+            name: bullet
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -532,6 +542,18 @@ MonoBehaviour:
         fsmPropertyParams: []
         layoutOptionParams: []
         fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: direction
         - useVariable: 0
           name: 
           tooltip: 
@@ -604,6 +626,12 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 0
+        - useVariable: 1
+          name: direction
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: -1
         fsmBoolParams:
         - useVariable: 0
           name: 
@@ -659,12 +687,12 @@ MonoBehaviour:
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams: []
-        byteData: 0001000000000000
+        byteData: 000100000000000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 13000000130000001c0000001c00000013000000110000001000000025000000250000000f0000000f000000010000000f0000000f0000000f0000001400000025000000250000000f0000000f0000001c0000000700000001000000140000000f000000010000001400000012000000120000001300000001000000
+        paramDataType: 13000000130000001c0000001c00000013000000110000001000000025000000250000000f0000000f000000010000000f0000000f0000000f0000001400000025000000250000000f0000000f0000001c0000000700000001000000140000000f0000000100000014000000120000001200000010000000010000001400000012000000120000001300000001000000
         paramName:
         - gameObject
         - spawnPoint
@@ -697,8 +725,13 @@ MonoBehaviour:
         - variableName
         - setValue
         - everyFrame
-        paramDataPos: 00000000010000000000000001000000020000000000000000000000000000000100000000000000010000000000000002000000030000000400000000000000020000000300000005000000060000000200000001000000050000000100000007000000060000000200000000000000010000000300000007000000
-        paramByteDataSize: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000004000000010000000000000000000000010000000000000000000000000000000000000001000000
+        - gameObject
+        - fsmName
+        - variableName
+        - setValue
+        - everyFrame
+        paramDataPos: 000000000100000000000000010000000200000000000000000000000000000001000000000000000100000000000000020000000300000004000000000000000200000003000000050000000600000002000000010000000500000001000000070000000600000002000000000000000100000001000000070000000300000002000000030000000300000008000000
+        paramByteDataSize: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000040000000100000000000000000000000100000000000000000000000000000000000000010000000000000000000000000000000000000001000000
     - name: left
       description: 
       colorIndex: 0
@@ -761,7 +794,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: -0.023
+          value: -0.03
         - useVariable: 1
           name: 
           tooltip: 
@@ -903,7 +936,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 0.023
+          value: 0.03
         - useVariable: 1
           name: 
           tooltip: 
@@ -1123,8 +1156,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 634
-        y: 145
+        x: 665
+        y: 137
         width: 100
         height: 32
       isBreakpoint: 0
@@ -1253,7 +1286,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 0.036
+          value: 0.045
         - useVariable: 1
           name: 
           tooltip: 
@@ -1455,6 +1488,14 @@ Prefab:
       propertyPath: fsm.states.Array.data[4].actionData.fsmOwnerDefaultParams.Array.data[0].gameObject.value
       value: 
       objectReference: {fileID: 133314}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[5].actionData.fsmFloatParams.Array.data[0].value
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[4].actionData.fsmFloatParams.Array.data[0].value
+      value: -0.03
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 152514}
