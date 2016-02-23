@@ -25,8 +25,44 @@ MonoBehaviour:
       showInInspector: 0
       networkSync: 0
       value: 0.6
-    intVariables: []
+    intVariables:
+    - useVariable: 1
+      name: pistol max bullet
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: short gun max bullet
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: "\u6025\u6551\u5305id"
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 1
+    - useVariable: 1
+      name: "\u624B\u67AAid"
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: "\u624B\u67AA\u5B50\u5F39id"
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 2
     boolVariables:
+    - useVariable: 1
+      name: can call menus
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 1
     - useVariable: 1
       name: have menu
       tooltip: 
@@ -41,6 +77,30 @@ MonoBehaviour:
       value: 1
     stringVariables:
     - useVariable: 1
+      name: down key
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: s
+    - useVariable: 1
+      name: left key
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: a
+    - useVariable: 1
+      name: right key
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: d
+    - useVariable: 1
+      name: up key
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: w
+    - useVariable: 1
       name: "\u4E0A\u5B50\u5F39\u6309\u952E"
       tooltip: 
       showInInspector: 0
@@ -52,6 +112,12 @@ MonoBehaviour:
       showInInspector: 0
       networkSync: 0
       value: k
+    - useVariable: 1
+      name: "\u6253\u5F00\u83DC\u5355\u6309\u94AE"
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: i
     - useVariable: 1
       name: "\u6301\u67AA\u6309\u952E"
       tooltip: 
@@ -101,7 +167,7 @@ MonoBehaviour:
     enumVariables: []
     categories:
     - 
-    variableCategoryIDs: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    variableCategoryIDs: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   events:
   - down
   - left
@@ -118,3 +184,8 @@ MonoBehaviour:
   - set typer
   - type done
   - move on
+  - interact return
+  - pick
+  - pick item
+  - change room
+  - leave item
