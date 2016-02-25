@@ -10400,13 +10400,15 @@ MonoBehaviour:
         actionNames:
         - HutongGames.PlayMaker.Actions.SetGameObject
         - HutongGames.PlayMaker.Actions.Trigger2dEvent
+        - HutongGames.PlayMaker.Actions.Trigger2dEvent
         customNames:
         - 
         - 
-        actionEnabled: 0101
-        actionIsOpen: 0101
-        actionStartIndex: 0000000003000000
-        actionHashCodes: 4d51cf04a0670702
+        - 
+        actionEnabled: 010101
+        actionIsOpen: 010101
+        actionStartIndex: 000000000300000007000000
+        actionHashCodes: 4d51cf04a0670702a0670702
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 1
@@ -10417,6 +10419,12 @@ MonoBehaviour:
           value: {fileID: 0}
         - useVariable: 0
           name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {fileID: 0}
+        - useVariable: 1
+          name: player interact item
           tooltip: 
           showInInspector: 0
           networkSync: 0
@@ -10441,6 +10449,12 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: interact
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: interact
         fsmObjectParams: []
         fsmVarParams: []
         fsmArrayParams: []
@@ -10455,12 +10469,13 @@ MonoBehaviour:
         fsmQuaternionParams: []
         stringParams:
         - check pass
-        byteData: 0000000000
+        - check pass
+        byteData: 000000000001000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 13000000130000000100000007000000120000001700000013000000
+        paramDataType: 1300000013000000010000000700000012000000170000001300000007000000120000001700000013000000
         paramName:
         - variable
         - gameObject
@@ -10469,8 +10484,12 @@ MonoBehaviour:
         - collideTag
         - sendEvent
         - storeCollider
-        paramDataPos: 00000000010000000000000001000000000000000000000002000000
-        paramByteDataSize: 00000000000000000100000004000000000000000000000000000000
+        - trigger
+        - collideTag
+        - sendEvent
+        - storeCollider
+        paramDataPos: 0000000001000000000000000100000000000000000000000200000005000000010000000100000003000000
+        paramByteDataSize: 0000000000000000010000000400000000000000000000000000000004000000000000000000000000000000
     - name: touching something
       description: 
       colorIndex: 0
@@ -10553,7 +10572,7 @@ MonoBehaviour:
     - fsmEvent:
         name: leave item
         isSystemEvent: 0
-        isGlobal: 0
+        isGlobal: 1
       toState: listener
       linkStyle: 0
       linkConstraint: 0

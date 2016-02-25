@@ -27,7 +27,25 @@ MonoBehaviour:
       value: 0.6
     intVariables:
     - useVariable: 1
+      name: menu selected id
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: pistol bullet
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
       name: pistol max bullet
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: short gun bullet
       tooltip: 
       showInInspector: 0
       networkSync: 0
@@ -149,6 +167,18 @@ MonoBehaviour:
       networkSync: 0
       value: {fileID: 0}
     - useVariable: 1
+      name: main menu
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: {fileID: 0}
+    - useVariable: 1
+      name: menu selected item
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: {fileID: 0}
+    - useVariable: 1
       name: player
       tooltip: 
       showInInspector: 0
@@ -167,7 +197,7 @@ MonoBehaviour:
     enumVariables: []
     categories:
     - 
-    variableCategoryIDs: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    variableCategoryIDs: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   events:
   - down
   - left
@@ -189,3 +219,8 @@ MonoBehaviour:
   - pick item
   - change room
   - leave item
+  - rearrange
+  - return
+  - use
+  - combine
+  - remove item

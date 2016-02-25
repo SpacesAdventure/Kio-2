@@ -11,6 +11,7 @@ GameObject:
   - 114: {fileID: 11408422}
   - 114: {fileID: 11429116}
   - 114: {fileID: 11451094}
+  - 114: {fileID: 11436064}
   m_Layer: 0
   m_Name: game profile
   m_TagString: Untagged
@@ -53,7 +54,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 50
-        y: 260
+        y: 372
         width: 100
         height: 32
       isBreakpoint: 0
@@ -149,10 +150,10 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 341
-        y: 306
+        x: 280
+        y: 401
         width: 105
-        height: 48
+        height: 64
       isBreakpoint: 0
       isSequence: 0
       hideUnused: 0
@@ -170,6 +171,14 @@ MonoBehaviour:
           isSystemEvent: 0
           isGlobal: 1
         toState: handle change room
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      - fsmEvent:
+          name: remove item
+          isSystemEvent: 0
+          isGlobal: 1
+        toState: remove item
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
@@ -217,35 +226,27 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 490
-        y: 151
+        x: 439
+        y: 133
         width: 128
-        height: 64
+        height: 48
       isBreakpoint: 0
       isSequence: 0
       hideUnused: 0
       transitions:
       - fsmEvent:
-          name: pick pistol
-          isSystemEvent: 0
+          name: FINISHED
+          isSystemEvent: 1
           isGlobal: 0
-        toState: pick pistol
+        toState: listener
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
       - fsmEvent:
-          name: pick hp pack
+          name: check pass
           isSystemEvent: 0
           isGlobal: 0
-        toState: pick hp pack
-        linkStyle: 0
-        linkConstraint: 0
-        colorIndex: 0
-      - fsmEvent:
-          name: pick ammo
-          isSystemEvent: 0
-          isGlobal: 0
-        toState: pick pistol ammo
+        toState: pick item
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
@@ -253,13 +254,17 @@ MonoBehaviour:
         actionNames:
         - HutongGames.PlayMaker.Actions.GetEventProperties
         - HutongGames.PlayMaker.Actions.IntSwitch
+        - HutongGames.PlayMaker.Actions.ArrayLength
+        - HutongGames.PlayMaker.Actions.IntCompare
         customNames:
         - 
         - 
-        actionEnabled: 0101
-        actionIsOpen: 0101
-        actionStartIndex: 0000000006000000
-        actionHashCodes: afffe300092dca00
+        - 
+        - 
+        actionEnabled: 01000101
+        actionIsOpen: 01010101
+        actionStartIndex: 00000000060000001000000013000000
+        actionHashCodes: afffe300092dca00fb25880109faa102
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams: []
@@ -332,7 +337,20 @@ MonoBehaviour:
             stringValues: []
             vector4Values: []
             objectReferences: []
-        fsmArrayParams: []
+        fsmArrayParams:
+        - useVariable: 1
+          name: inventory id
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          type: 1
+          objectTypeName: UnityEngine.Object
+          floatValues: []
+          intValues: 
+          boolValues: 
+          stringValues: []
+          vector4Values: []
+          objectReferences: []
         fsmEnumParams: []
         fsmFloatParams: []
         fsmIntParams:
@@ -360,6 +378,24 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 2
+        - useVariable: 1
+          name: array length
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 1
+          name: array length
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 8
         fsmBoolParams: []
         fsmVector2Params: []
         fsmVector3Params: []
@@ -370,7 +406,10 @@ MonoBehaviour:
         - pick pistol
         - pick hp pack
         - pick ammo
-        byteData: 00
+        - 
+        - check pass
+        - 
+        byteData: 000000
         arrayParamSizes: 02000000020000000300000003000000
         arrayParamTypes:
         - HutongGames.PlayMaker.FsmString
@@ -379,7 +418,7 @@ MonoBehaviour:
         - HutongGames.PlayMaker.FsmEvent
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 0c00000012000000120000000c0000002700000027000000100000000c0000001000000010000000100000000c00000017000000170000001700000001000000
+        paramDataType: 0c00000012000000120000000c0000002700000027000000100000000c0000001000000010000000100000000c00000017000000170000001700000001000000290000001000000001000000100000001000000017000000170000001700000001000000
         paramName:
         - keys
         - 
@@ -397,15 +436,24 @@ MonoBehaviour:
         - 
         - 
         - everyFrame
-        paramDataPos: 00000000000000000100000001000000000000000100000000000000020000000100000002000000030000000300000000000000010000000200000000000000
-        paramByteDataSize: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000
+        - array
+        - length
+        - everyFrame
+        - integer1
+        - integer2
+        - equal
+        - lessThan
+        - greaterThan
+        - everyFrame
+        paramDataPos: 00000000000000000100000001000000000000000100000000000000020000000100000002000000030000000300000000000000010000000200000000000000000000000400000001000000050000000600000003000000040000000500000002000000
+        paramByteDataSize: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000001000000000000000000000000000000000000000000000001000000
     - name: pick pistol
       description: 
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 700
-        y: 102.94531
+        x: 790
+        y: 172.94531
         width: 100
         height: 32
       isBreakpoint: 0
@@ -465,7 +513,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 516
-        y: 419
+        y: 531
         width: 153
         height: 32
       isBreakpoint: 0
@@ -650,7 +698,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 769
-        y: 350
+        y: 462
         width: 100
         height: 32
       isBreakpoint: 0
@@ -760,8 +808,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 696
-        y: 178
+        x: 784
+        y: 254
         width: 102
         height: 32
       isBreakpoint: 0
@@ -820,8 +868,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 735
-        y: 247
+        x: 787
+        y: 322
         width: 131
         height: 32
       isBreakpoint: 0
@@ -875,6 +923,292 @@ MonoBehaviour:
         paramName: []
         paramDataPos: 
         paramByteDataSize: 
+    - name: pick item
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 692
+        y: 115
+        width: 100
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: listener
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.ArrayAdd
+        - HutongGames.PlayMaker.Actions.ArrayAdd
+        - HutongGames.PlayMaker.Actions.SetIntValue
+        - HutongGames.PlayMaker.Actions.SetIntValue
+        customNames:
+        - 
+        - 
+        - 
+        - 
+        actionEnabled: 01010101
+        actionIsOpen: 01010101
+        actionStartIndex: 00000000020000000400000007000000
+        actionHashCodes: 978a9b03978a9b03603dd905603dd905
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams:
+        - variableName: pick item id
+          objectType: UnityEngine.Object
+          useVariable: 1
+          type: 1
+          floatValue: 0
+          intValue: 0
+          boolValue: 0
+          stringValue: 
+          vector4Value: {x: 0, y: 0, z: 0, w: 0}
+          objectReference: {fileID: 0}
+          arrayValue:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            type: -1
+            objectTypeName: 
+            floatValues: []
+            intValues: 
+            boolValues: 
+            stringValues: []
+            vector4Values: []
+            objectReferences: []
+        - variableName: pick item amount
+          objectType: UnityEngine.Object
+          useVariable: 1
+          type: 1
+          floatValue: 0
+          intValue: 0
+          boolValue: 0
+          stringValue: 
+          vector4Value: {x: 0, y: 0, z: 0, w: 0}
+          objectReference: {fileID: 0}
+          arrayValue:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            type: -1
+            objectTypeName: 
+            floatValues: []
+            intValues: 
+            boolValues: 
+            stringValues: []
+            vector4Values: []
+            objectReferences: []
+        fsmArrayParams:
+        - useVariable: 1
+          name: inventory id
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          type: 1
+          objectTypeName: UnityEngine.Object
+          floatValues: []
+          intValues: 
+          boolValues: 
+          stringValues: []
+          vector4Values: []
+          objectReferences: []
+        - useVariable: 1
+          name: inventory amount
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          type: 1
+          objectTypeName: UnityEngine.Object
+          floatValues: []
+          intValues: 
+          boolValues: 
+          stringValues: []
+          vector4Values: []
+          objectReferences: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams:
+        - useVariable: 1
+          name: pick item id
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: -1
+        - useVariable: 1
+          name: pick item amount
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: -1
+        fsmBoolParams: []
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams: []
+        byteData: 0000
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 29000000270000002900000027000000100000001000000001000000100000001000000001000000
+        paramName:
+        - array
+        - value
+        - array
+        - value
+        - intVariable
+        - intValue
+        - everyFrame
+        - intVariable
+        - intValue
+        - everyFrame
+        paramDataPos: 00000000000000000100000001000000000000000100000000000000020000000300000001000000
+        paramByteDataSize: 00000000000000000000000000000000000000000000000001000000000000000000000001000000
+    - name: remove item
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 263.97656
+        y: 144
+        width: 103
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: listener
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.ArrayDeleteAt
+        - HutongGames.PlayMaker.Actions.ArrayDeleteAt
+        customNames:
+        - 
+        - 
+        actionEnabled: 0101
+        actionIsOpen: 0101
+        actionStartIndex: 0000000003000000
+        actionHashCodes: a790bd03a790bd03
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams:
+        - useVariable: 1
+          name: inventory id
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          type: 1
+          objectTypeName: UnityEngine.Object
+          floatValues: []
+          intValues: 
+          boolValues: 
+          stringValues: []
+          vector4Values: []
+          objectReferences: []
+        - useVariable: 1
+          name: inventory amount
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          type: 1
+          objectTypeName: UnityEngine.Object
+          floatValues: []
+          intValues: 
+          boolValues: 
+          stringValues: []
+          vector4Values: []
+          objectReferences: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams:
+        - useVariable: 1
+          name: menu selected id
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 1
+          name: menu selected id
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        fsmBoolParams: []
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams:
+        - 
+        - 
+        byteData: 
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 290000001000000017000000290000001000000017000000
+        paramName:
+        - array
+        - index
+        - indexOutOfRangeEvent
+        - array
+        - index
+        - indexOutOfRangeEvent
+        paramDataPos: 000000000000000000000000010000000100000001000000
+        paramByteDataSize: 000000000000000000000000000000000000000000000000
     events:
     - name: FINISHED
       isSystemEvent: 1
@@ -886,6 +1220,9 @@ MonoBehaviour:
       isSystemEvent: 0
       isGlobal: 1
     - name: check pass
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: loop
       isSystemEvent: 0
       isGlobal: 0
     - name: pick ammo
@@ -900,10 +1237,19 @@ MonoBehaviour:
     - name: pick pistol
       isSystemEvent: 0
       isGlobal: 0
+    - name: remove item
+      isSystemEvent: 0
+      isGlobal: 1
     globalTransitions: []
     variables:
       floatVariables: []
       intVariables:
+      - useVariable: 1
+        name: array length
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 0
       - useVariable: 1
         name: equip gun
         tooltip: "\u67AA\u7684\u79CD\u7C7B\uFF0C0\u662F\u624B\u67AA\uFF0C1\u662F\u6563\u5F39"
@@ -924,6 +1270,12 @@ MonoBehaviour:
         value: 0
       - useVariable: 1
         name: in change value
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 0
+      - useVariable: 1
+        name: loop int
         tooltip: 
         showInInspector: 0
         networkSync: 0
@@ -1001,10 +1353,36 @@ MonoBehaviour:
         stringValues: []
         vector4Values: []
         objectReferences: []
+      - useVariable: 1
+        name: inventory amount
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        type: 1
+        objectTypeName: UnityEngine.Object
+        floatValues: []
+        intValues: 
+        boolValues: 
+        stringValues: []
+        vector4Values: []
+        objectReferences: []
+      - useVariable: 1
+        name: inventory id
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        type: 1
+        objectTypeName: UnityEngine.Object
+        floatValues: []
+        intValues: 
+        boolValues: 
+        stringValues: []
+        vector4Values: []
+        objectReferences: []
       enumVariables: []
       categories:
       - 
-      variableCategoryIDs: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+      variableCategoryIDs: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
     description: 
     docUrl: 
     showStateLabel: 0
@@ -1042,13 +1420,128 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inViewObjects: []
---- !u!114 &11451094
+--- !u!114 &11436064
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 175920}
   m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1384774831, guid: de72a6d2da64d114d95e3c5a01cfaec5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fsm:
+    dataVersion: 2
+    usedInTemplate: {fileID: 0}
+    name: item picker
+    startState: State 1
+    states:
+    - name: State 1
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 50
+        y: 100
+        width: 100
+        height: 16
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions: []
+      actionData:
+        actionNames: []
+        customNames: []
+        actionEnabled: 
+        actionIsOpen: 
+        actionStartIndex: 
+        actionHashCodes: 
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams: []
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams: []
+        byteData: 
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 
+        paramName: []
+        paramDataPos: 
+        paramByteDataSize: 
+    events: []
+    globalTransitions: []
+    variables:
+      floatVariables: []
+      intVariables: []
+      boolVariables: []
+      stringVariables: []
+      vector2Variables: []
+      vector3Variables: []
+      colorVariables: []
+      rectVariables: []
+      quaternionVariables: []
+      gameObjectVariables: []
+      objectVariables: []
+      materialVariables: []
+      textureVariables: []
+      arrayVariables: []
+      enumVariables: []
+      categories:
+      - 
+      variableCategoryIDs: 
+    description: 
+    docUrl: 
+    showStateLabel: 1
+    maxLoopCount: 0
+    watermark: 
+    password: 
+    locked: 0
+    preprocessed: 0
+    ExposedEvents: []
+    RestartOnEnable: 1
+    EnableDebugFlow: 0
+    EnableBreakpoints: 1
+    activeStateName: 
+    mouseEvents: 0
+    handleTriggerEnter: 0
+    handleTriggerExit: 0
+    handleTriggerStay: 0
+    handleCollisionEnter: 0
+    handleCollisionExit: 0
+    handleCollisionStay: 0
+    handleOnGUI: 0
+    handleFixedUpdate: 0
+    handleApplicationEvents: 0
+  fsmTemplate: {fileID: 0}
+  eventHandlerComponentsAdded: 0
+--- !u!114 &11451094
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 175920}
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 1384774831, guid: de72a6d2da64d114d95e3c5a01cfaec5, type: 3}
   m_Name: 
@@ -1272,11 +1765,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 0}
       propertyPath: fsm.events.Array.size
-      value: 2
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.size
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[0].transitions.Array.size
@@ -1288,7 +1781,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[2].transitions.Array.size
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[4].transitions.Array.size
@@ -1299,12 +1792,36 @@ Prefab:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[8].transitions.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[9].transitions.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[1].actionData.byteData.Array.size
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[2].actionData.byteData.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[1].actionData.paramName.Array.size
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[2].actionData.paramName.Array.size
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[8].actionData.paramName.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[9].actionData.paramName.Array.size
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[1].actionData.actionNames.Array.size
@@ -1313,6 +1830,30 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[1].actionData.customNames.Array.size
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[2].actionData.actionNames.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[2].actionData.customNames.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[8].actionData.actionNames.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[8].actionData.customNames.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[9].actionData.actionNames.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[9].actionData.customNames.Array.size
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[1].actionData.actionIsOpen.Array.size
@@ -1327,6 +1868,58 @@ Prefab:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[2].actionData.actionIsOpen.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[2].actionData.fsmVarParams.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[2].actionData.fsmIntParams.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[2].actionData.stringParams.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[2].actionData.paramDataPos.Array.size
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[8].actionData.actionIsOpen.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[8].actionData.fsmVarParams.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[8].actionData.paramDataPos.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[9].actionData.actionIsOpen.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[9].actionData.fsmVarParams.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[9].actionData.paramDataPos.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[9].actionData.fsmIntParams.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[9].actionData.stringParams.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[1].actionData.actionEnabled.Array.size
       value: 0
       objectReference: {fileID: 0}
@@ -1339,11 +1932,71 @@ Prefab:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[2].actionData.actionEnabled.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[2].actionData.paramDataType.Array.size
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[8].actionData.actionEnabled.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[8].actionData.paramDataType.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[9].actionData.actionEnabled.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[9].actionData.paramDataType.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[2].actionData.fsmArrayParams.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[8].actionData.fsmArrayParams.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[9].actionData.fsmArrayParams.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[1].actionData.actionHashCodes.Array.size
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[1].actionData.fsmStringParams.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[2].actionData.actionHashCodes.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[8].actionData.actionHashCodes.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[9].actionData.actionHashCodes.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[9].actionData.fsmStringParams.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[9].actionData.arrayParamSizes.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[9].actionData.arrayParamTypes.Array.size
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 0}
@@ -1355,12 +2008,48 @@ Prefab:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 0}
+      propertyPath: fsm.variables.arrayVariables.Array.data[1].intValues.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[2].actionData.actionStartIndex.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.variables.arrayVariables.Array.data[2].intValues.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[8].actionData.actionStartIndex.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[9].actionData.actionStartIndex.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[1].actionData.paramByteDataSize.Array.size
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[2].actionData.paramByteDataSize.Array.size
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[8].actionData.paramByteDataSize.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[9].actionData.paramByteDataSize.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[5].actionData.fsmArrayParams.Array.data[0].intValues.Array.size
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[2].actionData.fsmArrayParams.Array.data[0].intValues.Array.size
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.variables.intVariables.Array.data[0].value
@@ -1404,7 +2093,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.variables.arrayVariables.Array.data[0].type
@@ -1436,15 +2125,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[0].position.y
-      value: 260
+      value: 372
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[1].position.x
-      value: 341
+      value: 280
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[1].position.y
-      value: 306
+      value: 401
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[0].transitions.Array.data[0].toState
@@ -1644,27 +2333,27 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[2].position.height
-      value: 64
+      value: 48
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[2].position.x
-      value: 490
+      value: 439
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[2].position.y
-      value: 151
+      value: 133
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[2].transitions.Array.data[0].toState
-      value: State 1
+      value: listener
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[3].position.x
-      value: 700
+      value: 790
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[3].position.y
-      value: 102.94531
+      value: 172.94531
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[4].position.x
@@ -1672,7 +2361,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[4].position.y
-      value: 419
+      value: 531
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[4].actionData.fsmStringParams.Array.data[0].value
@@ -1784,7 +2473,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[5].position.y
-      value: 350
+      value: 462
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[5].transitions.Array.data[0].toState
@@ -1828,15 +2517,527 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[6].position.x
-      value: 696
+      value: 784
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[6].position.y
-      value: 178
+      value: 254
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[2].transitions.Array.data[2].toState
       value: State 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[2].actionData.actionEnabled.Array.data[1]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.variables.arrayVariables.Array.data[1].type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.variables.arrayVariables.Array.data[1].name
+      value: inventory id
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[7].position.x
+      value: 787
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[7].position.y
+      value: 322
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.variables.arrayVariables.Array.data[2].intValues.Array.data[0]
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.variables.arrayVariables.Array.data[2].intValues.Array.data[1]
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.variables.arrayVariables.Array.data[2].intValues.Array.data[2]
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.variables.arrayVariables.Array.data[2].intValues.Array.data[3]
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.variables.arrayVariables.Array.data[2].intValues.Array.data[4]
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.variables.arrayVariables.Array.data[2].intValues.Array.data[5]
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[2].actionData.actionNames.Array.data[2]
+      value: HutongGames.PlayMaker.Actions.ArrayGetNext
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[2].actionData.actionEnabled.Array.data[2]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[2].actionData.actionIsOpen.Array.data[2]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[2].actionData.actionStartIndex.Array.data[2]
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[2].actionData.actionHashCodes.Array.data[2]
+      value: 74768018
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[2].actionData.fsmVarParams.Array.data[2].type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[2].actionData.fsmVarParams.Array.data[2].arrayValue.type
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[2].actionData.fsmArrayParams.Array.data[0].type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[2].actionData.paramDataType.Array.data[16]
+      value: 41
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[2].actionData.paramDataType.Array.data[17]
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[2].actionData.paramDataType.Array.data[18]
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[2].actionData.paramDataType.Array.data[19]
+      value: 23
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[2].actionData.paramDataType.Array.data[20]
+      value: 23
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[2].actionData.paramDataType.Array.data[21]
+      value: 39
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[2].actionData.paramDataType.Array.data[22]
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[2].actionData.paramName.Array.data[16]
+      value: array
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[2].actionData.paramName.Array.data[17]
+      value: startIndex
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[2].actionData.paramName.Array.data[18]
+      value: endIndex
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[2].actionData.paramName.Array.data[19]
+      value: loopEvent
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[2].actionData.paramName.Array.data[20]
+      value: finishedEvent
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[2].actionData.paramName.Array.data[21]
+      value: result
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[2].actionData.paramName.Array.data[22]
+      value: currentIndex
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[2].actionData.paramDataPos.Array.data[17]
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[2].actionData.paramDataPos.Array.data[18]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[2].actionData.paramDataPos.Array.data[19]
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[2].actionData.paramDataPos.Array.data[20]
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[2].actionData.paramDataPos.Array.data[21]
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[2].actionData.paramDataPos.Array.data[22]
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[2].actionData.fsmVarParams.Array.data[2].objectType
+      value: UnityEngine.Object
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[2].actionData.fsmVarParams.Array.data[2].useVariable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[2].actionData.fsmArrayParams.Array.data[0].useVariable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[2].actionData.fsmArrayParams.Array.data[0].objectTypeName
+      value: UnityEngine.Object
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[2].actionData.fsmArrayParams.Array.data[0].name
+      value: inventory id
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[2].actionData.fsmArrayParams.Array.data[0].intValues.Array.data[0]
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[2].actionData.fsmArrayParams.Array.data[0].intValues.Array.data[1]
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[2].actionData.fsmArrayParams.Array.data[0].intValues.Array.data[2]
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[2].actionData.fsmArrayParams.Array.data[0].intValues.Array.data[3]
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[2].actionData.fsmArrayParams.Array.data[0].intValues.Array.data[4]
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[2].actionData.fsmArrayParams.Array.data[0].intValues.Array.data[5]
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[2].actionData.paramByteDataSize.Array.data[19]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[2].actionData.fsmIntParams.Array.data[6].useVariable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[2].actionData.stringParams.Array.data[3]
+      value: loop
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.events.Array.data[4].name
+      value: loop
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.events.Array.data[5].name
+      value: pick ammo
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.events.Array.data[6].name
+      value: pick hp pack
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.events.Array.data[6].isGlobal
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.events.Array.data[7].name
+      value: pick item
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.events.Array.data[7].isGlobal
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[2].actionData.stringParams.Array.data[4]
+      value: check pass
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[2].actionData.fsmIntParams.Array.data[4].useVariable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[2].actionData.fsmIntParams.Array.data[4].name
+      value: array length
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[2].actionData.fsmIntParams.Array.data[5].useVariable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[2].actionData.fsmIntParams.Array.data[5].name
+      value: array length
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[2].actionData.fsmIntParams.Array.data[6].value
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[2].transitions.Array.data[4].toState
+      value: State 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[2].transitions.Array.data[3].fsmEvent.name
+      value: check pass
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[2].transitions.Array.data[3].fsmEvent.isSystemEvent
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[2].transitions.Array.data[3].toState
+      value: State 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[2].transitions.Array.data[4].fsmEvent.name
+      value: check pass
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[2].transitions.Array.data[4].fsmEvent.isSystemEvent
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[2].transitions.Array.data[5].fsmEvent.name
+      value: check pass
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[2].transitions.Array.data[0].fsmEvent.name
+      value: FINISHED
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[2].transitions.Array.data[1].fsmEvent.name
+      value: check pass
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[2].transitions.Array.data[2].fsmEvent.name
+      value: check pass
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[2].transitions.Array.data[2].fsmEvent.isSystemEvent
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[2].transitions.Array.data[1].fsmEvent.isSystemEvent
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[2].transitions.Array.data[0].fsmEvent.isSystemEvent
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[8].actionData.fsmArrayParams.Array.data[0].objectTypeName
+      value: UnityEngine.Object
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[8].actionData.fsmVarParams.Array.data[0].objectType
+      value: UnityEngine.Object
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[8].actionData.fsmArrayParams.Array.data[0].useVariable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[8].actionData.fsmVarParams.Array.data[0].type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[8].actionData.fsmArrayParams.Array.data[0].name
+      value: inventory id
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[8].actionData.fsmArrayParams.Array.data[0].type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[8].actionData.fsmVarParams.Array.data[0].useVariable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[8].actionData.fsmVarParams.Array.data[0].variableName
+      value: pick item id
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[8].actionData.fsmVarParams.Array.data[1].type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[8].actionData.fsmArrayParams.Array.data[1].name
+      value: inventory amount
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[8].actionData.fsmArrayParams.Array.data[1].type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[8].actionData.fsmVarParams.Array.data[1].useVariable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[8].actionData.fsmVarParams.Array.data[1].variableName
+      value: pick item amount
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[8].actionData.fsmIntParams.Array.data[0].useVariable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[8].actionData.fsmIntParams.Array.data[0].name
+      value: pick item id
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[8].actionData.fsmIntParams.Array.data[1].value
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[8].actionData.fsmIntParams.Array.data[2].name
+      value: pick item amount
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[8].actionData.fsmIntParams.Array.data[3].value
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[8].position.height
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[8].position.x
+      value: 692
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[8].position.y
+      value: 115
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[8].transitions.Array.data[0].toState
+      value: listener
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[9].actionData.actionNames.Array.data[0]
+      value: HutongGames.PlayMaker.Actions.GetEventProperties
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[9].actionData.actionEnabled.Array.data[0]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[9].actionData.actionIsOpen.Array.data[0]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[9].actionData.actionHashCodes.Array.data[0]
+      value: 14942127
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[9].actionData.fsmVarParams.Array.data[0].type
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[9].actionData.fsmVarParams.Array.data[0].arrayValue.type
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[9].actionData.arrayParamSizes.Array.data[0]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[9].actionData.arrayParamSizes.Array.data[1]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[9].actionData.arrayParamTypes.Array.data[0]
+      value: HutongGames.PlayMaker.FsmString
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[9].actionData.arrayParamTypes.Array.data[1]
+      value: HutongGames.PlayMaker.FsmVar
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[9].actionData.paramDataType.Array.data[0]
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[9].actionData.paramDataType.Array.data[1]
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[9].actionData.paramDataType.Array.data[2]
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[9].actionData.paramDataType.Array.data[3]
+      value: 39
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[9].actionData.paramName.Array.data[0]
+      value: keys
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[9].actionData.paramName.Array.data[2]
+      value: datas
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[9].actionData.paramDataPos.Array.data[2]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[9].actionData.fsmArrayParams.Array.data[0].useVariable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[9].actionData.fsmArrayParams.Array.data[0].name
+      value: inventory id
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[9].actionData.fsmArrayParams.Array.data[0].type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[9].actionData.fsmArrayParams.Array.data[0].objectTypeName
+      value: UnityEngine.Object
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[9].actionData.fsmIntParams.Array.data[0].useVariable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[9].actionData.fsmIntParams.Array.data[0].name
+      value: menu selected id
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[9].actionData.fsmArrayParams.Array.data[1].name
+      value: inventory amount
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[9].position.height
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[9].position.x
+      value: 263.97656
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[9].position.y
+      value: 144
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[9].transitions.Array.data[0].toState
+      value: listener
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
