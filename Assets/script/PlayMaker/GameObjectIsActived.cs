@@ -51,6 +51,14 @@ namespace HutongGames.PlayMaker.Actions
 
 		void DoIsGameObjectNull()
 		{
+			if(gameObject.Value==null){
+				Fsm.Event(isNotActived);
+				if (storeResult != null)
+				{
+					storeResult.Value = false;
+				}
+				return;
+			}
 			var goIsNull = gameObject.Value.activeInHierarchy;
 
 			if (storeResult != null)

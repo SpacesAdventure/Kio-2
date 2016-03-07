@@ -33,30 +33,6 @@ MonoBehaviour:
       networkSync: 0
       value: 0
     - useVariable: 1
-      name: pistol bullet
-      tooltip: 
-      showInInspector: 0
-      networkSync: 0
-      value: 0
-    - useVariable: 1
-      name: pistol max bullet
-      tooltip: 
-      showInInspector: 0
-      networkSync: 0
-      value: 0
-    - useVariable: 1
-      name: short gun bullet
-      tooltip: 
-      showInInspector: 0
-      networkSync: 0
-      value: 0
-    - useVariable: 1
-      name: short gun max bullet
-      tooltip: 
-      showInInspector: 0
-      networkSync: 0
-      value: 0
-    - useVariable: 1
       name: "\u6025\u6551\u5305id"
       tooltip: 
       showInInspector: 0
@@ -74,6 +50,18 @@ MonoBehaviour:
       showInInspector: 0
       networkSync: 0
       value: 2
+    - useVariable: 1
+      name: "\u6563\u5F39\u67AAid"
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 4
+    - useVariable: 1
+      name: "\u6563\u5F39\u67AA\u5B50\u5F39id"
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 3
     boolVariables:
     - useVariable: 1
       name: can call menus
@@ -88,11 +76,17 @@ MonoBehaviour:
       networkSync: 0
       value: 0
     - useVariable: 1
-      name: "\u73A9\u5BB6\u80FD\u884C\u8D70\u4E0D"
+      name: "\u73A9\u5BB6\u80FD\u6361\u7269\u54C1\u4E0D"
       tooltip: 
       showInInspector: 0
       networkSync: 0
       value: 1
+    - useVariable: 1
+      name: "\u73A9\u5BB6\u80FD\u884C\u8D70\u4E0D"
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
     stringVariables:
     - useVariable: 1
       name: down key
@@ -118,6 +112,12 @@ MonoBehaviour:
       showInInspector: 0
       networkSync: 0
       value: w
+    - useVariable: 1
+      name: "\u4E00\u822C\u7EC4\u5408\u9519\u8BEF"
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: "     \u6CA1\u6709\u53CD\u5E94"
     - useVariable: 1
       name: "\u4E0A\u5B50\u5F39\u6309\u952E"
       tooltip: 
@@ -149,6 +149,24 @@ MonoBehaviour:
       networkSync: 0
       value: j
     - useVariable: 1
+      name: "\u7EC4\u5408\u914D\u65B9\u9519\u8BEF\u65F6\u63D0\u793A"
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 
+    - useVariable: 1
+      name: "\u81EA\u5DF1\u7EC4\u5408\u81EA\u5DF1\u65F6\u9519\u8BEF\u63D0\u793A"
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: "  \u4E0D\u80FD\u548C\u81EA\u5DF1\u5408\u4F53"
+    - useVariable: 1
+      name: "\u88C5\u586B\u6EE1\u7684\u65F6\u5019"
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: "    \u5B50\u5F39\u5DF2\u7ECF\u6EE1\u4E86"
+    - useVariable: 1
       name: "\u9053\u5177\u6309\u952E"
       tooltip: 
       showInInspector: 0
@@ -161,7 +179,25 @@ MonoBehaviour:
     quaternionVariables: []
     gameObjectVariables:
     - useVariable: 1
+      name: black mask
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: {fileID: 0}
+    - useVariable: 1
+      name: first combine object
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: {fileID: 0}
+    - useVariable: 1
       name: game profile
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: {fileID: 0}
+    - useVariable: 1
+      name: main dialog
       tooltip: 
       showInInspector: 0
       networkSync: 0
@@ -173,7 +209,19 @@ MonoBehaviour:
       networkSync: 0
       value: {fileID: 0}
     - useVariable: 1
+      name: menu container
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: {fileID: 0}
+    - useVariable: 1
       name: menu selected item
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: {fileID: 0}
+    - useVariable: 1
+      name: object picker
       tooltip: 
       showInInspector: 0
       networkSync: 0
@@ -190,6 +238,12 @@ MonoBehaviour:
       showInInspector: 0
       networkSync: 0
       value: {fileID: 0}
+    - useVariable: 1
+      name: second combine object
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: {fileID: 0}
     objectVariables: []
     materialVariables: []
     textureVariables: []
@@ -197,7 +251,7 @@ MonoBehaviour:
     enumVariables: []
     categories:
     - 
-    variableCategoryIDs: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    variableCategoryIDs: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   events:
   - down
   - left
@@ -224,3 +278,12 @@ MonoBehaviour:
   - use
   - combine
   - remove item
+  - equip
+  - find equipment
+  - change mark
+  - check fail
+  - check pass
+  - reload
+  - quit
+  - change amount
+  - search
