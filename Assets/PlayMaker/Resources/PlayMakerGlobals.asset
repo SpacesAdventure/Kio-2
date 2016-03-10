@@ -14,6 +14,12 @@ MonoBehaviour:
   variables:
     floatVariables:
     - useVariable: 1
+      name: "\u4E00\u822C\u73A9\u5BB6\u884C\u8D70\u901F\u5EA6"
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0.6
+    - useVariable: 1
       name: "\u73A9\u5BB6\u6301\u67AA\u884C\u8D70\u901F\u5EA6"
       tooltip: 
       showInInspector: 0
@@ -32,6 +38,12 @@ MonoBehaviour:
       showInInspector: 0
       networkSync: 0
       value: 0
+    - useVariable: 1
+      name: "\u4E8C\u53F7\u94A5\u5319id"
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 5
     - useVariable: 1
       name: "\u6025\u6551\u5305id"
       tooltip: 
@@ -62,6 +74,18 @@ MonoBehaviour:
       showInInspector: 0
       networkSync: 0
       value: 3
+    - useVariable: 1
+      name: "\u94A5\u5319\u7F29\u5C0F\u67AAid"
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 6
+    - useVariable: 1
+      name: "\u94C1\u94A5\u5319a03 id"
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 7
     boolVariables:
     - useVariable: 1
       name: can call menus
@@ -117,7 +141,7 @@ MonoBehaviour:
       tooltip: 
       showInInspector: 0
       networkSync: 0
-      value: "     \u6CA1\u6709\u53CD\u5E94"
+      value: "\u6CA1\u6709\u53CD\u5E94"
     - useVariable: 1
       name: "\u4E0A\u5B50\u5F39\u6309\u952E"
       tooltip: 
@@ -159,13 +183,13 @@ MonoBehaviour:
       tooltip: 
       showInInspector: 0
       networkSync: 0
-      value: "  \u4E0D\u80FD\u548C\u81EA\u5DF1\u5408\u4F53"
+      value: "\u4E0D\u80FD\u548C\u81EA\u5DF1\u5408\u4F53"
     - useVariable: 1
       name: "\u88C5\u586B\u6EE1\u7684\u65F6\u5019"
       tooltip: 
       showInInspector: 0
       networkSync: 0
-      value: "    \u5B50\u5F39\u5DF2\u7ECF\u6EE1\u4E86"
+      value: "\u5B50\u5F39\u5DF2\u7ECF\u6EE1\u4E86"
     - useVariable: 1
       name: "\u9053\u5177\u6309\u952E"
       tooltip: 
@@ -239,6 +263,12 @@ MonoBehaviour:
       networkSync: 0
       value: {fileID: 0}
     - useVariable: 1
+      name: room
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: {fileID: 0}
+    - useVariable: 1
       name: second combine object
       tooltip: 
       showInInspector: 0
@@ -247,11 +277,32 @@ MonoBehaviour:
     objectVariables: []
     materialVariables: []
     textureVariables: []
-    arrayVariables: []
+    arrayVariables:
+    - useVariable: 1
+      name: item prefab
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      type: 3
+      objectTypeName: UnityEngine.Object
+      floatValues: []
+      intValues: 
+      boolValues: 
+      stringValues: []
+      vector4Values: []
+      objectReferences:
+      - {fileID: 175940, guid: c76b9658cb1f37c41be77eb8bf1965c3, type: 2}
+      - {fileID: 136746, guid: 87a84651077d8d247891f1149be0ab42, type: 2}
+      - {fileID: 195616, guid: af196370d0da3bb47a6fc8b2c365bd1b, type: 2}
+      - {fileID: 195616, guid: 68c5d5a0c47aa3e46a3d11b0a5b5e248, type: 2}
+      - {fileID: 175940, guid: eedfe961b8bfa874dacab89691f230f2, type: 2}
+      - {fileID: 136746, guid: c77d2ab7cc1ca9940a940f1744c17bf9, type: 2}
+      - {fileID: 136746, guid: 35f8b0fe96cad2a4bb735d27e9db0500, type: 2}
+      - {fileID: 136746, guid: 7a59ffe6be37c81498775a1aea5abc3c, type: 2}
     enumVariables: []
     categories:
     - 
-    variableCategoryIDs: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    variableCategoryIDs: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   events:
   - down
   - left
@@ -287,3 +338,8 @@ MonoBehaviour:
   - quit
   - change amount
   - search
+  - hold
+  - unknown use
+  - walk
+  - surprise
+  - hint

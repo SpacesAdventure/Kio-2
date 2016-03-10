@@ -469,9 +469,9 @@ MonoBehaviour:
             stringValues: []
             vector4Values: []
             objectReferences: []
-        - variableName: 
+        - variableName: hint
           objectType: UnityEngine.Object
-          useVariable: 0
+          useVariable: 1
           type: 4
           floatValue: 0
           intValue: 0
@@ -1134,7 +1134,13 @@ MonoBehaviour:
         networkSync: 0
         value: 0
       boolVariables: []
-      stringVariables: []
+      stringVariables:
+      - useVariable: 1
+        name: hint
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: "\u6709\u4E00\u628A\u624B\u67AA\uFF0C\u662F\u5426\u62FE\u53D6\uFF1F"
       vector2Variables: []
       vector3Variables: []
       colorVariables: []
@@ -1160,7 +1166,7 @@ MonoBehaviour:
       enumVariables: []
       categories:
       - 
-      variableCategoryIDs: 00000000000000000000000000000000000000000000000000000000
+      variableCategoryIDs: 0000000000000000000000000000000000000000000000000000000000000000
     description: 
     docUrl: 
     showStateLabel: 0
@@ -1282,6 +1288,18 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[5].transitions.Array.data[1].toState
       value: listener
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.variables.stringVariables.Array.data[0].value
+      value: "\u6709\u4E00\u628A\u624B\u67AA\uFF0C\u662F\u5426\u62FE\u53D6\uFF1F"
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[2].actionData.fsmVarParams.Array.data[1].useVariable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[2].actionData.fsmVarParams.Array.data[1].variableName
+      value: hint
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

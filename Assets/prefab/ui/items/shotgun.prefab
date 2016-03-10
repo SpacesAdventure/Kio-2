@@ -2532,7 +2532,7 @@ MonoBehaviour:
         x: 417
         y: 234
         width: 105
-        height: 48
+        height: 64
       isBreakpoint: 0
       isSequence: 0
       hideUnused: 0
@@ -2550,6 +2550,14 @@ MonoBehaviour:
           isSystemEvent: 0
           isGlobal: 1
         toState: change mark
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      - fsmEvent:
+          name: use
+          isSystemEvent: 0
+          isGlobal: 1
+        toState: check use or not
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
@@ -2876,8 +2884,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 559
-        y: 377
+        x: 754
+        y: 382
         width: 105
         height: 48
       isBreakpoint: 0
@@ -3170,6 +3178,247 @@ MonoBehaviour:
         - sendEvent
         paramDataPos: 0000000000000000010000000100000000000000010000000000000000000000000000000000000001000000
         paramByteDataSize: 0000000000000000000000000000000000000000000000000000000000000000000000000100000000000000
+    - name: check use or not
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 498.5
+        y: 323
+        width: 128
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: unknown use
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.GetEventProperties
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: afffe300
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: caller
+        fsmObjectParams: []
+        fsmVarParams:
+        - variableName: caller
+          objectType: UnityEngine.Object
+          useVariable: 1
+          type: 3
+          floatValue: 0
+          intValue: 0
+          boolValue: 0
+          stringValue: 
+          vector4Value: {x: 0, y: 0, z: 0, w: 0}
+          objectReference: {fileID: 0}
+          arrayValue:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            type: -1
+            objectTypeName: 
+            floatValues: []
+            intValues: 
+            boolValues: 
+            stringValues: []
+            vector4Values: []
+            objectReferences: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams: []
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams: []
+        byteData: 
+        arrayParamSizes: 0100000001000000
+        arrayParamTypes:
+        - HutongGames.PlayMaker.FsmString
+        - HutongGames.PlayMaker.FsmVar
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 0c000000120000000c00000027000000
+        paramName:
+        - keys
+        - 
+        - datas
+        - 
+        paramDataPos: 00000000000000000100000000000000
+        paramByteDataSize: 00000000000000000000000000000000
+    - name: unknown use
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 527.5
+        y: 433
+        width: 107
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: listener
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.SetEventProperties
+        - HutongGames.PlayMaker.Actions.SendEvent
+        customNames:
+        - 
+        - 
+        actionEnabled: 0101
+        actionIsOpen: 0101
+        actionStartIndex: 0000000004000000
+        actionHashCodes: afffe3005e69bb04
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams:
+        - target: 1
+          excludeSelf:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          gameObject:
+            ownerOption: 1
+            gameObject:
+              useVariable: 1
+              name: caller
+              tooltip: 
+              showInInspector: 0
+              networkSync: 0
+              value: {fileID: 0}
+          fsmName:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 
+          sendToChildren:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          fsmComponent: {fileID: 0}
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: hint
+        fsmObjectParams: []
+        fsmVarParams:
+        - variableName: "\u4E00\u822C\u7EC4\u5408\u9519\u8BEF"
+          objectType: UnityEngine.Object
+          useVariable: 1
+          type: 4
+          floatValue: 0
+          intValue: 0
+          boolValue: 0
+          stringValue: "\u6CA1\u6709\u53CD\u5E94"
+          vector4Value: {x: 0, y: 0, z: 0, w: 0}
+          objectReference: {fileID: 0}
+          arrayValue:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            type: -1
+            objectTypeName: 
+            floatValues: []
+            intValues: 
+            boolValues: 
+            stringValues: []
+            vector4Values: []
+            objectReferences: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        fsmIntParams: []
+        fsmBoolParams: []
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams:
+        - unknown use
+        byteData: 00
+        arrayParamSizes: 0100000001000000
+        arrayParamTypes:
+        - HutongGames.PlayMaker.FsmString
+        - HutongGames.PlayMaker.FsmVar
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 0c000000120000000c000000270000001f000000170000000f00000001000000
+        paramName:
+        - keys
+        - 
+        - datas
+        - 
+        - eventTarget
+        - sendEvent
+        - delay
+        - everyFrame
+        paramDataPos: 0000000000000000010000000000000000000000000000000000000000000000
+        paramByteDataSize: 0000000000000000000000000000000000000000000000000000000001000000
     events:
     - name: FINISHED
       isSystemEvent: 1
@@ -3189,15 +3438,10 @@ MonoBehaviour:
     - name: remove item
       isSystemEvent: 0
       isGlobal: 1
+    - name: use
+      isSystemEvent: 0
+      isGlobal: 1
     globalTransitions:
-    - fsmEvent:
-        name: remove item
-        isSystemEvent: 0
-        isGlobal: 1
-      toState: remove self
-      linkStyle: 0
-      linkConstraint: 0
-      colorIndex: 0
     - fsmEvent:
         name: change amount
         isSystemEvent: 0
@@ -3266,6 +3510,12 @@ MonoBehaviour:
         networkSync: 0
         value: {fileID: 142180}
       - useVariable: 1
+        name: caller
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: {fileID: 0}
+      - useVariable: 1
         name: equip label
         tooltip: 
         showInInspector: 0
@@ -3285,7 +3535,7 @@ MonoBehaviour:
       enumVariables: []
       categories:
       - 
-      variableCategoryIDs: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
+      variableCategoryIDs: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
     description: 
     docUrl: 
     showStateLabel: 1
@@ -3867,23 +4117,23 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[0].position.y
-      value: 104
+      value: 168
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[1].position.x
-      value: 251
+      value: 255
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[1].position.y
-      value: 146
+      value: 111
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[2].position.x
-      value: 448
+      value: 417
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[2].position.y
-      value: 132
+      value: 234
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.variables.stringVariables.Array.data[1].value
@@ -3956,11 +4206,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[3].position.x
-      value: 703
+      value: 602
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[3].position.y
-      value: 229
+      value: 148
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[3].transitions.Array.data[0].toState
@@ -4228,11 +4478,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[4].position.x
-      value: 893
+      value: 751
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[4].position.y
-      value: 297
+      value: 236
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[4].transitions.Array.data[0].toState
@@ -4240,11 +4490,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[5].position.x
-      value: 703
+      value: 788.5
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[5].position.y
-      value: 374
+      value: 316
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[5].name
@@ -4512,11 +4762,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[6].position.x
-      value: 1175
+      value: 754
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[6].position.y
-      value: 239
+      value: 382
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[6].transitions.Array.data[0].toState
@@ -4532,11 +4782,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[7].position.x
-      value: 1189
+      value: 320.9375
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[7].position.y
-      value: 344
+      value: 386
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[7].transitions.Array.data[0].toState
@@ -5316,19 +5566,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[8].position.x
-      value: 949
+      value: 498.5
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[8].position.y
-      value: 434
+      value: 323
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[9].position.x
-      value: 1380
+      value: 527.5
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[9].position.y
-      value: 320
+      value: 433
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[10].position.x
@@ -5602,6 +5852,18 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[12].actionData.fsmVarParams.Array.data[2].boolValue
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[8].actionData.fsmVarParams.Array.data[0].objectType
+      value: UnityEngine.Object
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[9].transitions.Array.data[0].toState
+      value: listener
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[8].actionData.fsmVarParams.Array.data[0].variableName
+      value: caller
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
