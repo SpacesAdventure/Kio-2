@@ -23,6 +23,9 @@ namespace HutongGames.PlayMaker
         {
 #if UNITY_EDITOR
 
+            // Unity 5.3.2 disallows scene dirty calls when playing
+            if (Application.isPlaying) return;
+
             if (fsm == null || fsm.OwnerObject == null) return;
 
             //Debug.Log("SetDirty: " + FsmUtility.GetFullFsmLabel(fsm));

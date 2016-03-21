@@ -100,6 +100,12 @@ MonoBehaviour:
       networkSync: 0
       value: 0
     - useVariable: 1
+      name: load the scene
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
       name: "\u73A9\u5BB6\u80FD\u6361\u7269\u54C1\u4E0D"
       tooltip: 
       showInInspector: 0
@@ -112,6 +118,18 @@ MonoBehaviour:
       networkSync: 0
       value: 0
     stringVariables:
+    - useVariable: 1
+      name: .dat
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: .dat
+    - useVariable: 1
+      name: base save data name
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: savedata
     - useVariable: 1
       name: down key
       tooltip: 
@@ -148,6 +166,12 @@ MonoBehaviour:
       showInInspector: 0
       networkSync: 0
       value: r
+    - useVariable: 1
+      name: "\u4ED3\u5E93\u6EE1\u4E86\u7684\u63D0\u793A"
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: "\u4ED3\u5E93\u5DF2\u7ECF\u6EE1\u4E86"
     - useVariable: 1
       name: "\u53D6\u6D88\u6309\u952E"
       tooltip: 
@@ -191,6 +215,12 @@ MonoBehaviour:
       networkSync: 0
       value: "\u5B50\u5F39\u5DF2\u7ECF\u6EE1\u4E86"
     - useVariable: 1
+      name: "\u8EAB\u4E0A\u88C5\u6EE1\u4E86"
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: "\u7269\u54C1\u680F\u6EE1\u4E86"
+    - useVariable: 1
       name: "\u9053\u5177\u6309\u952E"
       tooltip: 
       showInInspector: 0
@@ -227,7 +257,19 @@ MonoBehaviour:
       networkSync: 0
       value: {fileID: 0}
     - useVariable: 1
+      name: main locker
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: {fileID: 0}
+    - useVariable: 1
       name: main menu
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: {fileID: 0}
+    - useVariable: 1
+      name: main saver
       tooltip: 
       showInInspector: 0
       networkSync: 0
@@ -302,7 +344,7 @@ MonoBehaviour:
     enumVariables: []
     categories:
     - 
-    variableCategoryIDs: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    variableCategoryIDs: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   events:
   - down
   - left
@@ -343,3 +385,7 @@ MonoBehaviour:
   - walk
   - surprise
   - hint
+  - save
+  - load
+  - put in
+  - take out

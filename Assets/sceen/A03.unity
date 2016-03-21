@@ -6724,6 +6724,18 @@ MonoBehaviour:
       boolVariables: []
       stringVariables:
       - useVariable: 1
+        name: id
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: A03
+      - useVariable: 1
+        name: name
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 
+      - useVariable: 1
         name: script1
         tooltip: 
         showInInspector: 0
@@ -6804,7 +6816,7 @@ MonoBehaviour:
       enumVariables: []
       categories:
       - 
-      variableCategoryIDs: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+      variableCategoryIDs: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
     description: 
     docUrl: 
     showStateLabel: 0

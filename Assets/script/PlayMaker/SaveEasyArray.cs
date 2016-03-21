@@ -7,24 +7,41 @@ namespace HutongGames.PlayMaker.Actions
 	class EasySaveArrayTools{
 		public static void SaveArray(FsmArray array,string filename,ES2Settings setting){
 			VariableType t= array.ElementType;
+			object[] os;
 			switch(t){
 			case VariableType.Bool:{
-					bool[] bs=array.boolValues;
+					os=array.Values;
+					bool[] bs=new bool[os.Length];
+					for(int i=0;i<bs.Length;i++){
+						bs[i]=(bool)os[i];
+					}
 					ES2.Save(bs, filename, setting);
 					break;
 				}
 			case VariableType.Int:{
-					int[] ins=array.intValues;
+					os=array.Values;
+					int[] ins=new int[os.Length];
+					for(int i=0;i<ins.Length;i++){
+						ins[i]=(int)os[i];
+					}
 					ES2.Save(ins, filename, setting);
 					break;
 				}
 			case VariableType.Float:{
-					float[] fs=array.floatValues;
+					os=array.Values;
+					float[] fs=new float[os.Length];
+					for(int i=0;i<fs.Length;i++){
+						fs[i]=(float)os[i];
+					}
 					ES2.Save(fs, filename, setting);
 					break;
 				}
 			case VariableType.String:{
-					string[] ss=array.stringValues;
+					os=array.Values;
+					string[] ss=new string[os.Length];
+					for(int i=0;i<ss.Length;i++){
+						ss[i]=(string)os[i];
+					}
 					ES2.Save(ss, filename, setting);
 					break;
 				}

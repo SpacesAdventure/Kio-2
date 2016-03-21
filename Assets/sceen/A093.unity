@@ -452,92 +452,6 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
---- !u!1001 &688538258
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 22469940, guid: faf7958d66321a64fbad36423e732dbc, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22469940, guid: faf7958d66321a64fbad36423e732dbc, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22469940, guid: faf7958d66321a64fbad36423e732dbc, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22469940, guid: faf7958d66321a64fbad36423e732dbc, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22469940, guid: faf7958d66321a64fbad36423e732dbc, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22469940, guid: faf7958d66321a64fbad36423e732dbc, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22469940, guid: faf7958d66321a64fbad36423e732dbc, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 22469940, guid: faf7958d66321a64fbad36423e732dbc, type: 2}
-      propertyPath: m_RootOrder
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 22469940, guid: faf7958d66321a64fbad36423e732dbc, type: 2}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22469940, guid: faf7958d66321a64fbad36423e732dbc, type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22469940, guid: faf7958d66321a64fbad36423e732dbc, type: 2}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22469940, guid: faf7958d66321a64fbad36423e732dbc, type: 2}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22469940, guid: faf7958d66321a64fbad36423e732dbc, type: 2}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22469940, guid: faf7958d66321a64fbad36423e732dbc, type: 2}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22469940, guid: faf7958d66321a64fbad36423e732dbc, type: 2}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22469940, guid: faf7958d66321a64fbad36423e732dbc, type: 2}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22469940, guid: faf7958d66321a64fbad36423e732dbc, type: 2}
-      propertyPath: m_Pivot.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22469940, guid: faf7958d66321a64fbad36423e732dbc, type: 2}
-      propertyPath: m_Pivot.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 135024, guid: faf7958d66321a64fbad36423e732dbc, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: faf7958d66321a64fbad36423e732dbc, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &711840353
 GameObject:
   m_ObjectHideFlags: 0
@@ -1264,15 +1178,23 @@ MonoBehaviour:
         colorIndex: 0
       actionData:
         actionNames:
+        - HutongGames.PlayMaker.Actions.GetOwner
         - HutongGames.PlayMaker.Actions.NextFrameEvent
         customNames:
         - 
-        actionEnabled: 01
-        actionIsOpen: 01
-        actionStartIndex: 00000000
-        actionHashCodes: 88611604
+        - 
+        actionEnabled: 0101
+        actionIsOpen: 0101
+        actionStartIndex: 0000000001000000
+        actionHashCodes: 5c00450588611604
         unityObjectParams: []
-        fsmGameObjectParams: []
+        fsmGameObjectParams:
+        - useVariable: 1
+          name: room
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {fileID: 0}
         fsmOwnerDefaultParams: []
         animationCurveParams: []
         functionCallParams: []
@@ -1300,11 +1222,12 @@ MonoBehaviour:
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 17000000
+        paramDataType: 1300000017000000
         paramName:
+        - storeGameObject
         - sendEvent
-        paramDataPos: 00000000
-        paramByteDataSize: 00000000
+        paramDataPos: 0000000000000000
+        paramByteDataSize: 0000000000000000
     - name: set player direction
       description: 
       colorIndex: 0
@@ -2210,7 +2133,19 @@ MonoBehaviour:
         networkSync: 0
         value: 0
       boolVariables: []
-      stringVariables: []
+      stringVariables:
+      - useVariable: 1
+        name: id
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: A093
+      - useVariable: 1
+        name: name
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 
       vector2Variables: []
       vector3Variables: []
       colorVariables: []
@@ -2255,7 +2190,7 @@ MonoBehaviour:
       enumVariables: []
       categories:
       - 
-      variableCategoryIDs: 00000000000000000000000000000000000000000000000000000000
+      variableCategoryIDs: 000000000000000000000000000000000000000000000000000000000000000000000000
     description: 
     docUrl: 
     showStateLabel: 1

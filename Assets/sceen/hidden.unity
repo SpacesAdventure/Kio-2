@@ -651,18 +651,26 @@ MonoBehaviour:
       actionData:
         actionNames:
         - HutongGames.PlayMaker.Actions.GetOwner
+        - HutongGames.PlayMaker.Actions.GetOwner
         - HutongGames.PlayMaker.Actions.NextFrameEvent
         customNames:
         - 
         - 
-        actionEnabled: 0101
-        actionIsOpen: 0101
-        actionStartIndex: 0000000001000000
-        actionHashCodes: 5c00450588611604
+        - 
+        actionEnabled: 010101
+        actionIsOpen: 010101
+        actionStartIndex: 000000000100000002000000
+        actionHashCodes: 5c0045055c00450588611604
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 1
           name: self
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {fileID: 0}
+        - useVariable: 1
+          name: room
           tooltip: 
           showInInspector: 0
           networkSync: 0
@@ -694,12 +702,13 @@ MonoBehaviour:
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 1300000017000000
+        paramDataType: 130000001300000017000000
         paramName:
         - storeGameObject
+        - storeGameObject
         - sendEvent
-        paramDataPos: 0000000000000000
-        paramByteDataSize: 0000000000000000
+        paramDataPos: 000000000100000000000000
+        paramByteDataSize: 000000000000000000000000
     - name: State 2
       description: 
       colorIndex: 0
@@ -2572,7 +2581,7 @@ MonoBehaviour:
       isGlobal: 0
     - name: check pass
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: move on
       isSystemEvent: 0
       isGlobal: 1
@@ -4732,7 +4741,7 @@ MonoBehaviour:
       isGlobal: 0
     - name: check pass
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: interact
       isSystemEvent: 0
       isGlobal: 1

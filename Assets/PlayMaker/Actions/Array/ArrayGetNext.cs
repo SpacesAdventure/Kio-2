@@ -53,7 +53,6 @@ namespace HutongGames.PlayMaker.Actions
 		
 		public override void OnEnter()
 		{
-			
 			if (nextItemIndex == 0)
 			{
 				if (startIndex.Value>0)

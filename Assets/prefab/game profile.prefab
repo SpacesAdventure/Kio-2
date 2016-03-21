@@ -51,8 +51,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 546
-        y: 820
+        x: 59.445312
+        y: 482.75
         width: 100
         height: 32
       isBreakpoint: 0
@@ -63,7 +63,7 @@ MonoBehaviour:
           name: FINISHED
           isSystemEvent: 1
           isGlobal: 0
-        toState: listener
+        toState: create start time
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
@@ -113,7 +113,7 @@ MonoBehaviour:
         - useVariable: 1
           name: hp
           tooltip: 
-          showInInspector: 0
+          showInInspector: 1
           networkSync: 0
           value: 0
         - useVariable: 1
@@ -148,10 +148,10 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 776
+        x: 808
         y: 849
         width: 120
-        height: 112
+        height: 176
       isBreakpoint: 0
       isSequence: 0
       hideUnused: 0
@@ -201,6 +201,38 @@ MonoBehaviour:
           isSystemEvent: 0
           isGlobal: 1
         toState: get search item
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      - fsmEvent:
+          name: save
+          isSystemEvent: 0
+          isGlobal: 1
+        toState: get save properties
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      - fsmEvent:
+          name: load
+          isSystemEvent: 0
+          isGlobal: 1
+        toState: get load propertiy
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      - fsmEvent:
+          name: put in
+          isSystemEvent: 0
+          isGlobal: 1
+        toState: put the item in
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      - fsmEvent:
+          name: take out
+          isSystemEvent: 0
+          isGlobal: 1
+        toState: take the item out
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
@@ -265,7 +297,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 740
+        x: 772
         y: 468
         width: 128
         height: 32
@@ -436,7 +468,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 1286
+        x: 1318
         y: 620.9453
         width: 100
         height: 32
@@ -496,7 +528,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 1012
+        x: 1044
         y: 979
         width: 153
         height: 48
@@ -698,7 +730,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 1265
+        x: 1297
         y: 910
         width: 100
         height: 32
@@ -809,7 +841,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 1280
+        x: 1312
         y: 702
         width: 102
         height: 32
@@ -869,7 +901,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 1283
+        x: 1315
         y: 770
         width: 131
         height: 32
@@ -929,7 +961,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 1254
+        x: 1286
         y: 555
         width: 130
         height: 32
@@ -1029,7 +1061,7 @@ MonoBehaviour:
           type: 1
           objectTypeName: UnityEngine.Object
           floatValues: []
-          intValues: 
+          intValues: 0100000000000000020000000400000001000000030000000500000006000000
           boolValues: 
           stringValues: []
           vector4Values: []
@@ -1042,7 +1074,7 @@ MonoBehaviour:
           type: 1
           objectTypeName: UnityEngine.Object
           floatValues: []
-          intValues: 
+          intValues: 0000000000000000000000000000000000000000000000000000000000000000
           boolValues: 
           stringValues: []
           vector4Values: []
@@ -1105,7 +1137,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 499.96875
+        x: 531.96875
         y: 675
         width: 103
         height: 48
@@ -1227,7 +1259,7 @@ MonoBehaviour:
           type: 1
           objectTypeName: UnityEngine.Object
           floatValues: []
-          intValues: 
+          intValues: 0100000000000000020000000400000001000000030000000500000006000000
           boolValues: 
           stringValues: []
           vector4Values: []
@@ -1240,7 +1272,7 @@ MonoBehaviour:
           type: 1
           objectTypeName: UnityEngine.Object
           floatValues: []
-          intValues: 
+          intValues: 0000000000000000000000000000000000000000000000000000000000000000
           boolValues: 
           stringValues: []
           vector4Values: []
@@ -1311,7 +1343,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 739.375
+        x: 771.375
         y: 587
         width: 100
         height: 32
@@ -1416,7 +1448,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 629.7031
+        x: 661.7031
         y: 1069.8281
         width: 113
         height: 32
@@ -1522,7 +1554,7 @@ MonoBehaviour:
           tooltip: "\u67AA\u7684\u79CD\u7C7B\uFF0C0\u662F\u624B\u67AA\uFF0C1\u662F\u6563\u5F39"
           showInInspector: 1
           networkSync: 0
-          value: -1
+          value: 0
         fsmBoolParams: []
         fsmVector2Params: []
         fsmVector3Params: []
@@ -1554,7 +1586,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 950.125
+        x: 982.125
         y: 1063.9844
         width: 100
         height: 48
@@ -1636,7 +1668,7 @@ MonoBehaviour:
           tooltip: "\u67AA\u7684\u79CD\u7C7B\uFF0C0\u662F\u624B\u67AA\uFF0C1\u662F\u6563\u5F39"
           showInInspector: 1
           networkSync: 0
-          value: -1
+          value: 0
         - useVariable: 1
           name: will equip id
           tooltip: 
@@ -1678,7 +1710,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 794.4531
+        x: 826.4531
         y: 1100.5469
         width: 100
         height: 32
@@ -1724,7 +1756,7 @@ MonoBehaviour:
           tooltip: "\u67AA\u7684\u79CD\u7C7B\uFF0C0\u662F\u624B\u67AA\uFF0C1\u662F\u6563\u5F39"
           showInInspector: 1
           networkSync: 0
-          value: -1
+          value: 0
         - useVariable: 0
           name: 
           tooltip: 
@@ -1755,7 +1787,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 807.85156
+        x: 839.85156
         y: 1189.2109
         width: 100
         height: 32
@@ -1803,7 +1835,7 @@ MonoBehaviour:
           tooltip: "\u67AA\u7684\u79CD\u7C7B\uFF0C0\u662F\u624B\u67AA\uFF0C1\u662F\u6563\u5F39"
           showInInspector: 1
           networkSync: 0
-          value: -1
+          value: 0
         - useVariable: 1
           name: will equip id
           tooltip: 
@@ -1849,7 +1881,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 680.9531
+        x: 712.9531
         y: 256.41406
         width: 120
         height: 48
@@ -1931,7 +1963,7 @@ MonoBehaviour:
           type: 1
           objectTypeName: UnityEngine.Object
           floatValues: []
-          intValues: 
+          intValues: 0000000000000000000000000000000000000000000000000000000000000000
           boolValues: 
           stringValues: []
           vector4Values: []
@@ -2008,7 +2040,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 917.28125
+        x: 949.28125
         y: 476.70312
         width: 112
         height: 48
@@ -2108,7 +2140,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 1168
+        x: 1200
         y: 417.9922
         width: 100
         height: 48
@@ -2164,7 +2196,7 @@ MonoBehaviour:
           type: 1
           objectTypeName: UnityEngine.Object
           floatValues: []
-          intValues: 
+          intValues: 0100000000000000020000000400000001000000030000000500000006000000
           boolValues: 
           stringValues: []
           vector4Values: []
@@ -2223,7 +2255,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 945.66406
+        x: 977.66406
         y: 109.59375
         width: 105
         height: 48
@@ -2327,7 +2359,7 @@ MonoBehaviour:
           type: 1
           objectTypeName: UnityEngine.Object
           floatValues: []
-          intValues: 
+          intValues: 0100000000000000020000000400000001000000030000000500000006000000
           boolValues: 
           stringValues: []
           vector4Values: []
@@ -2340,7 +2372,7 @@ MonoBehaviour:
           type: 1
           objectTypeName: UnityEngine.Object
           floatValues: []
-          intValues: 
+          intValues: 0100000000000000020000000400000001000000030000000500000006000000
           boolValues: 
           stringValues: []
           vector4Values: []
@@ -2430,7 +2462,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 1194.2969
+        x: 1226.2969
         y: 118.203125
         width: 121
         height: 48
@@ -2521,7 +2553,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 489.04688
+        x: 521.0469
         y: 489.14844
         width: 166
         height: 32
@@ -2683,7 +2715,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 1367.0156
+        x: 1399.0156
         y: 241.61719
         width: 132
         height: 32
@@ -2755,7 +2787,7 @@ MonoBehaviour:
           type: 1
           objectTypeName: UnityEngine.Object
           floatValues: []
-          intValues: 
+          intValues: 0000000000000000000000000000000000000000000000000000000000000000
           boolValues: 
           stringValues: []
           vector4Values: []
@@ -2811,7 +2843,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 883
+        x: 915
         y: 267
         width: 126
         height: 32
@@ -2888,7 +2920,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 596.0781
+        x: 628.0781
         y: 955.5625
         width: 122
         height: 32
@@ -3018,7 +3050,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 314.0703
+        x: 346.0703
         y: 750.8828
         width: 100
         height: 48
@@ -3096,7 +3128,7 @@ MonoBehaviour:
           type: 1
           objectTypeName: UnityEngine.Object
           floatValues: []
-          intValues: 
+          intValues: 0100000000000000020000000400000001000000030000000500000006000000
           boolValues: 
           stringValues: []
           vector4Values: []
@@ -3159,7 +3191,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 173.04688
+        x: 205.04688
         y: 668.8828
         width: 100
         height: 48
@@ -3250,7 +3282,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 83.97656
+        x: 115.97656
         y: 865
         width: 100
         height: 32
@@ -3382,7 +3414,7 @@ MonoBehaviour:
           type: 1
           objectTypeName: UnityEngine.Object
           floatValues: []
-          intValues: 
+          intValues: 0000000000000000000000000000000000000000000000000000000000000000
           boolValues: 
           stringValues: []
           vector4Values: []
@@ -3431,7 +3463,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 689
+        x: 721
         y: 354
         width: 100
         height: 32
@@ -3511,7 +3543,7 @@ MonoBehaviour:
           type: 1
           objectTypeName: UnityEngine.Object
           floatValues: []
-          intValues: 
+          intValues: 0100000000000000020000000400000001000000030000000500000006000000
           boolValues: 
           stringValues: []
           vector4Values: []
@@ -3524,7 +3556,7 @@ MonoBehaviour:
           type: 1
           objectTypeName: UnityEngine.Object
           floatValues: []
-          intValues: 
+          intValues: 0000000000000000000000000000000000000000000000000000000000000000
           boolValues: 
           stringValues: []
           vector4Values: []
@@ -3579,7 +3611,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 224
+        x: 256
         y: 1014
         width: 151
         height: 32
@@ -3684,7 +3716,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 63.460938
+        x: 95.46094
         y: 960.8672
         width: 107
         height: 32
@@ -3814,7 +3846,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 517.46875
+        x: 549.46875
         y: 917.8672
         width: 139
         height: 32
@@ -3891,7 +3923,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 699
+        x: 731
         y: 414
         width: 128
         height: 48
@@ -3973,7 +4005,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 1313
+        x: 1345
         y: 983
         width: 100
         height: 32
@@ -4079,6 +4111,1613 @@ MonoBehaviour:
         - indexOutOfRange
         paramDataPos: 0000000000000000000000000000000000000000
         paramByteDataSize: 0000000000000000000000000100000000000000
+    - name: get save properties
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 388.1953
+        y: 1405.7656
+        width: 148
+        height: 48
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: check pass
+          isSystemEvent: 0
+          isGlobal: 1
+        toState: add time span
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: set pass time
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.GetEventProperties
+        - HutongGames.PlayMaker.Actions.GetSystemDateTime
+        - HutongGames.PlayMaker.Actions.GetSystemDateTime
+        - HutongGames.PlayMaker.Actions.GetTimeSpan
+        - HutongGames.PlayMaker.Actions.GetStringLength
+        - HutongGames.PlayMaker.Actions.IntCompare
+        customNames:
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        actionEnabled: 010101010101
+        actionIsOpen: 010101010101
+        actionStartIndex: 0000000004000000070000000a0000000f00000012000000
+        actionHashCodes: afffe300c030f103c030f103788f1c0379de810009faa102
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: file
+        - useVariable: 1
+          name: date
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: yyyy/MM/dd
+        - useVariable: 1
+          name: current time
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: MM/dd/yyyy HH:mm:ss
+        - useVariable: 1
+          name: start time
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
+        - useVariable: 1
+          name: current time
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
+        - useVariable: 1
+          name: time span
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: HH:mm
+        - useVariable: 1
+          name: pass time
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
+        fsmObjectParams: []
+        fsmVarParams:
+        - variableName: file
+          objectType: UnityEngine.Object
+          useVariable: 1
+          type: 4
+          floatValue: 0
+          intValue: 0
+          boolValue: 0
+          stringValue: 
+          vector4Value: {x: 0, y: 0, z: 0, w: 0}
+          objectReference: {fileID: 0}
+          arrayValue:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            type: -1
+            objectTypeName: 
+            floatValues: []
+            intValues: 
+            boolValues: 
+            stringValues: []
+            vector4Values: []
+            objectReferences: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams:
+        - useVariable: 1
+          name: array length
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 1
+          name: array length
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        fsmBoolParams: []
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams:
+        - 
+        - 
+        - check pass
+        byteData: 0000000000
+        arrayParamSizes: 0100000001000000
+        arrayParamTypes:
+        - HutongGames.PlayMaker.FsmString
+        - HutongGames.PlayMaker.FsmVar
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 0c000000120000000c000000270000001200000012000000010000001200000012000000010000001200000012000000120000001200000001000000120000001000000001000000100000001000000017000000170000001700000001000000
+        paramName:
+        - keys
+        - 
+        - datas
+        - 
+        - storeString
+        - format
+        - everyFrame
+        - storeString
+        - format
+        - everyFrame
+        - startTime
+        - currentTime
+        - timeSpan
+        - format
+        - everyFrame
+        - stringVariable
+        - storeResult
+        - everyFrame
+        - integer1
+        - integer2
+        - equal
+        - lessThan
+        - greaterThan
+        - everyFrame
+        paramDataPos: 000000000000000001000000000000000100000002000000000000000300000004000000010000000500000006000000070000000800000002000000090000000000000003000000010000000200000000000000010000000200000004000000
+        paramByteDataSize: 000000000000000000000000000000000000000000000000010000000000000000000000010000000000000000000000000000000000000001000000000000000000000001000000000000000000000000000000000000000000000001000000
+    - name: create start time
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 263.8203
+        y: 449.91406
+        width: 130
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: listener
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.GetSystemDateTime
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: c030f103
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams:
+        - useVariable: 1
+          name: start time
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: MM/dd/yyyy HH:mm:ss
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams: []
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams: []
+        byteData: 00
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 120000001200000001000000
+        paramName:
+        - storeString
+        - format
+        - everyFrame
+        paramDataPos: 000000000100000000000000
+        paramByteDataSize: 000000000000000001000000
+    - name: add time span
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 653
+        y: 1398
+        width: 112
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: get room info
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.TimeSpanAdd
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: 788f1c03
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams:
+        - useVariable: 1
+          name: time span
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
+        - useVariable: 1
+          name: pass time
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
+        - useVariable: 1
+          name: pass time
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: HH:mm
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams: []
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams: []
+        byteData: 00
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 1200000012000000120000001200000001000000
+        paramName:
+        - timeSpan1
+        - timeSpan2
+        - timeSpan
+        - format
+        - everyFrame
+        paramDataPos: 0000000001000000020000000300000000000000
+        paramByteDataSize: 0000000000000000000000000000000001000000
+    - name: set pass time
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 641
+        y: 1453
+        width: 107
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: get room info
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.SetStringValue
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: c030f103
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams:
+        - useVariable: 1
+          name: pass time
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
+        - useVariable: 1
+          name: time span
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams: []
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams: []
+        byteData: 00
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 120000001200000001000000
+        paramName:
+        - stringVariable
+        - stringValue
+        - everyFrame
+        paramDataPos: 000000000100000000000000
+        paramByteDataSize: 000000000000000001000000
+    - name: get room info
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 854
+        y: 1436
+        width: 108
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: save file
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.GetFsmString
+        - HutongGames.PlayMaker.Actions.GetFsmString
+        customNames:
+        - 
+        - 
+        actionEnabled: 0101
+        actionIsOpen: 0101
+        actionStartIndex: 0000000005000000
+        actionHashCodes: 52221a0252221a02
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams:
+        - ownerOption: 1
+          gameObject:
+            useVariable: 1
+            name: room
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        - ownerOption: 1
+          gameObject:
+            useVariable: 1
+            name: room
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: FSM
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: id
+        - useVariable: 1
+          name: save room id
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: FSM
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: name
+        - useVariable: 1
+          name: save room name
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams: []
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams: []
+        byteData: 0000
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 14000000120000001200000012000000010000001400000012000000120000001200000001000000
+        paramName:
+        - gameObject
+        - fsmName
+        - variableName
+        - storeValue
+        - everyFrame
+        - gameObject
+        - fsmName
+        - variableName
+        - storeValue
+        - everyFrame
+        paramDataPos: 00000000000000000100000002000000000000000100000003000000040000000500000001000000
+        paramByteDataSize: 00000000000000000000000000000000010000000000000000000000000000000000000001000000
+    - name: save file
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 1026
+        y: 1391
+        width: 100
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: create start time
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.SaveAllPlus
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: 0d033301
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams:
+        - useVariable: 1
+          name: file
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: f2WYP35djvxP2pdR
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 1
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams:
+        - 
+        byteData: 
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 12000000110000001200000011000000110000001700000011000000
+        paramName:
+        - filename
+        - encrypt
+        - encryptionPassword
+        - saveFsmVariables
+        - saveGlobalVariables
+        - ifError
+        - usePlayerPrefs
+        paramDataPos: 00000000000000000100000001000000020000000000000003000000
+        paramByteDataSize: 00000000000000000000000000000000000000000000000000000000
+    - name: get load propertiy
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 457.6797
+        y: 1138.1875
+        width: 138
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: load room
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.GetEventProperties
+        - HutongGames.PlayMaker.Actions.LoadAllPlus
+        customNames:
+        - 
+        - 
+        actionEnabled: 0101
+        actionIsOpen: 0101
+        actionStartIndex: 0000000004000000
+        actionHashCodes: afffe3000d033301
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: file
+        - useVariable: 1
+          name: file
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 59503335646a76785032706452706452
+        fsmObjectParams: []
+        fsmVarParams:
+        - variableName: file
+          objectType: UnityEngine.Object
+          useVariable: 1
+          type: 4
+          floatValue: 0
+          intValue: 0
+          boolValue: 0
+          stringValue: 
+          vector4Value: {x: 0, y: 0, z: 0, w: 0}
+          objectReference: {fileID: 0}
+          arrayValue:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            type: -1
+            objectTypeName: 
+            floatValues: []
+            intValues: 
+            boolValues: 
+            stringValues: []
+            vector4Values: []
+            objectReferences: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 1
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams:
+        - 
+        byteData: 
+        arrayParamSizes: 0100000001000000
+        arrayParamTypes:
+        - HutongGames.PlayMaker.FsmString
+        - HutongGames.PlayMaker.FsmVar
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 0c000000120000000c0000002700000012000000110000001200000011000000110000001700000011000000
+        paramName:
+        - keys
+        - 
+        - datas
+        - 
+        - filename
+        - encrypt
+        - encryptionPassword
+        - loadFsmVariables
+        - loadGlobalVariables
+        - ifError
+        - usePlayerPrefs
+        paramDataPos: 0000000000000000010000000000000001000000000000000200000001000000020000000000000003000000
+        paramByteDataSize: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    - name: load room
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 639
+        y: 1231
+        width: 100
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: create start time
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.LoadLevel
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: 7dd6b201
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams:
+        - useVariable: 1
+          name: save room id
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams:
+        - 
+        byteData: 0000
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 1200000001000000010000001700000011000000
+        paramName:
+        - levelName
+        - additive
+        - async
+        - loadedEvent
+        - dontDestroyOnLoad
+        paramDataPos: 0000000000000000010000000000000000000000
+        paramByteDataSize: 0000000001000000010000000000000000000000
+    - name: put the item in
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 1178.2969
+        y: 1268.1484
+        width: 115
+        height: 48
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: listener
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      - fsmEvent:
+          name: check pass
+          isSystemEvent: 0
+          isGlobal: 1
+        toState: unequip
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.GetEventProperties
+        - HutongGames.PlayMaker.Actions.ArrayGet
+        - HutongGames.PlayMaker.Actions.ArrayGet
+        - HutongGames.PlayMaker.Actions.ArrayDeleteAt
+        - HutongGames.PlayMaker.Actions.ArrayDeleteAt
+        - HutongGames.PlayMaker.Actions.ArrayAdd
+        - HutongGames.PlayMaker.Actions.ArrayAdd
+        - HutongGames.PlayMaker.Actions.IntCompare
+        customNames:
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        actionEnabled: 0101010101010101
+        actionIsOpen: 0101010101010101
+        actionStartIndex: 0000000004000000090000000e00000011000000140000001600000018000000
+        actionHashCodes: afffe3006ba593016ba59301a790bd03a790bd03978a9b03978a9b0309faa102
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: id
+        fsmObjectParams: []
+        fsmVarParams:
+        - variableName: in change index
+          objectType: UnityEngine.Object
+          useVariable: 1
+          type: 1
+          floatValue: 0
+          intValue: 0
+          boolValue: 0
+          stringValue: 
+          vector4Value: {x: 0, y: 0, z: 0, w: 0}
+          objectReference: {fileID: 0}
+          arrayValue:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            type: -1
+            objectTypeName: 
+            floatValues: []
+            intValues: 
+            boolValues: 
+            stringValues: []
+            vector4Values: []
+            objectReferences: []
+        - variableName: will modify id
+          objectType: UnityEngine.Object
+          useVariable: 1
+          type: 1
+          floatValue: 0
+          intValue: 0
+          boolValue: 0
+          stringValue: 
+          vector4Value: {x: 0, y: 0, z: 0, w: 0}
+          objectReference: {fileID: 0}
+          arrayValue:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            type: -1
+            objectTypeName: 
+            floatValues: []
+            intValues: 
+            boolValues: 
+            stringValues: []
+            vector4Values: []
+            objectReferences: []
+        - variableName: will modify amount
+          objectType: UnityEngine.Object
+          useVariable: 1
+          type: 1
+          floatValue: 0
+          intValue: 0
+          boolValue: 0
+          stringValue: 
+          vector4Value: {x: 0, y: 0, z: 0, w: 0}
+          objectReference: {fileID: 0}
+          arrayValue:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            type: -1
+            objectTypeName: 
+            floatValues: []
+            intValues: 
+            boolValues: 
+            stringValues: []
+            vector4Values: []
+            objectReferences: []
+        - variableName: will modify id
+          objectType: UnityEngine.Object
+          useVariable: 1
+          type: 1
+          floatValue: 0
+          intValue: 0
+          boolValue: 0
+          stringValue: 
+          vector4Value: {x: 0, y: 0, z: 0, w: 0}
+          objectReference: {fileID: 0}
+          arrayValue:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            type: -1
+            objectTypeName: 
+            floatValues: []
+            intValues: 
+            boolValues: 
+            stringValues: []
+            vector4Values: []
+            objectReferences: []
+        - variableName: will modify amount
+          objectType: UnityEngine.Object
+          useVariable: 1
+          type: 1
+          floatValue: 0
+          intValue: 0
+          boolValue: 0
+          stringValue: 
+          vector4Value: {x: 0, y: 0, z: 0, w: 0}
+          objectReference: {fileID: 0}
+          arrayValue:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            type: -1
+            objectTypeName: 
+            floatValues: []
+            intValues: 
+            boolValues: 
+            stringValues: []
+            vector4Values: []
+            objectReferences: []
+        fsmArrayParams:
+        - useVariable: 1
+          name: inventory id
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          type: 1
+          objectTypeName: UnityEngine.Object
+          floatValues: []
+          intValues: 0100000000000000020000000400000001000000030000000500000006000000
+          boolValues: 
+          stringValues: []
+          vector4Values: []
+          objectReferences: []
+        - useVariable: 1
+          name: inventory amount
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          type: 1
+          objectTypeName: UnityEngine.Object
+          floatValues: []
+          intValues: 0000000000000000000000000000000000000000000000000000000000000000
+          boolValues: 
+          stringValues: []
+          vector4Values: []
+          objectReferences: []
+        - useVariable: 1
+          name: inventory id
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          type: 1
+          objectTypeName: UnityEngine.Object
+          floatValues: []
+          intValues: 0100000000000000020000000400000001000000030000000500000006000000
+          boolValues: 
+          stringValues: []
+          vector4Values: []
+          objectReferences: []
+        - useVariable: 1
+          name: inventory amount
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          type: 1
+          objectTypeName: UnityEngine.Object
+          floatValues: []
+          intValues: 0000000000000000000000000000000000000000000000000000000000000000
+          boolValues: 
+          stringValues: []
+          vector4Values: []
+          objectReferences: []
+        - useVariable: 1
+          name: locker id
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          type: 1
+          objectTypeName: UnityEngine.Object
+          floatValues: []
+          intValues: 0100000001000000
+          boolValues: 
+          stringValues: []
+          vector4Values: []
+          objectReferences: []
+        - useVariable: 1
+          name: locker amount
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          type: 1
+          objectTypeName: UnityEngine.Object
+          floatValues: []
+          intValues: 0100000001000000
+          boolValues: 
+          stringValues: []
+          vector4Values: []
+          objectReferences: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams:
+        - useVariable: 1
+          name: in change index
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 1
+          name: in change index
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 1
+          name: in change index
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 1
+          name: in change index
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 1
+          name: will modify id
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 1
+          name: equip gun
+          tooltip: "\u67AA\u7684\u79CD\u7C7B\uFF0C0\u662F\u624B\u67AA\uFF0C1\u662F\u6563\u5F39"
+          showInInspector: 1
+          networkSync: 0
+          value: 0
+        fsmBoolParams: []
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams:
+        - 
+        - 
+        - 
+        - 
+        - check pass
+        - 
+        - 
+        byteData: 000000
+        arrayParamSizes: 0100000001000000
+        arrayParamTypes:
+        - HutongGames.PlayMaker.FsmString
+        - HutongGames.PlayMaker.FsmVar
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 0c000000120000000c000000270000002900000010000000270000000100000017000000290000001000000027000000010000001700000029000000100000001700000029000000100000001700000029000000270000002900000027000000100000001000000017000000170000001700000001000000
+        paramName:
+        - keys
+        - 
+        - datas
+        - 
+        - array
+        - index
+        - storeValue
+        - everyFrame
+        - indexOutOfRange
+        - array
+        - index
+        - storeValue
+        - everyFrame
+        - indexOutOfRange
+        - array
+        - index
+        - indexOutOfRangeEvent
+        - array
+        - index
+        - indexOutOfRangeEvent
+        - array
+        - value
+        - array
+        - value
+        - integer1
+        - integer2
+        - equal
+        - lessThan
+        - greaterThan
+        - everyFrame
+        paramDataPos: 000000000000000001000000000000000000000000000000010000000000000000000000010000000100000002000000010000000100000002000000020000000200000003000000030000000300000004000000030000000500000004000000040000000500000004000000050000000600000002000000
+        paramByteDataSize: 000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000
+    - name: take the item out
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 1222
+        y: 1184.5
+        width: 132
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: listener
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.GetEventProperties
+        - HutongGames.PlayMaker.Actions.ArrayGet
+        - HutongGames.PlayMaker.Actions.ArrayGet
+        - HutongGames.PlayMaker.Actions.ArrayDeleteAt
+        - HutongGames.PlayMaker.Actions.ArrayDeleteAt
+        - HutongGames.PlayMaker.Actions.ArrayAdd
+        - HutongGames.PlayMaker.Actions.ArrayAdd
+        customNames:
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        actionEnabled: 01010101010101
+        actionIsOpen: 01010101010101
+        actionStartIndex: 0000000004000000090000000e000000110000001400000016000000
+        actionHashCodes: afffe3006ba593016ba59301a790bd03a790bd03978a9b03978a9b03
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: id
+        fsmObjectParams: []
+        fsmVarParams:
+        - variableName: in change index
+          objectType: UnityEngine.Object
+          useVariable: 1
+          type: 1
+          floatValue: 0
+          intValue: 0
+          boolValue: 0
+          stringValue: 
+          vector4Value: {x: 0, y: 0, z: 0, w: 0}
+          objectReference: {fileID: 0}
+          arrayValue:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            type: -1
+            objectTypeName: 
+            floatValues: []
+            intValues: 
+            boolValues: 
+            stringValues: []
+            vector4Values: []
+            objectReferences: []
+        - variableName: will modify id
+          objectType: UnityEngine.Object
+          useVariable: 1
+          type: 1
+          floatValue: 0
+          intValue: 0
+          boolValue: 0
+          stringValue: 
+          vector4Value: {x: 0, y: 0, z: 0, w: 0}
+          objectReference: {fileID: 0}
+          arrayValue:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            type: -1
+            objectTypeName: 
+            floatValues: []
+            intValues: 
+            boolValues: 
+            stringValues: []
+            vector4Values: []
+            objectReferences: []
+        - variableName: will modify amount
+          objectType: UnityEngine.Object
+          useVariable: 1
+          type: 1
+          floatValue: 0
+          intValue: 0
+          boolValue: 0
+          stringValue: 
+          vector4Value: {x: 0, y: 0, z: 0, w: 0}
+          objectReference: {fileID: 0}
+          arrayValue:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            type: -1
+            objectTypeName: 
+            floatValues: []
+            intValues: 
+            boolValues: 
+            stringValues: []
+            vector4Values: []
+            objectReferences: []
+        - variableName: will modify id
+          objectType: UnityEngine.Object
+          useVariable: 1
+          type: 1
+          floatValue: 0
+          intValue: 0
+          boolValue: 0
+          stringValue: 
+          vector4Value: {x: 0, y: 0, z: 0, w: 0}
+          objectReference: {fileID: 0}
+          arrayValue:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            type: -1
+            objectTypeName: 
+            floatValues: []
+            intValues: 
+            boolValues: 
+            stringValues: []
+            vector4Values: []
+            objectReferences: []
+        - variableName: will modify amount
+          objectType: UnityEngine.Object
+          useVariable: 1
+          type: 1
+          floatValue: 0
+          intValue: 0
+          boolValue: 0
+          stringValue: 
+          vector4Value: {x: 0, y: 0, z: 0, w: 0}
+          objectReference: {fileID: 0}
+          arrayValue:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            type: -1
+            objectTypeName: 
+            floatValues: []
+            intValues: 
+            boolValues: 
+            stringValues: []
+            vector4Values: []
+            objectReferences: []
+        fsmArrayParams:
+        - useVariable: 1
+          name: locker id
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          type: 1
+          objectTypeName: UnityEngine.Object
+          floatValues: []
+          intValues: 0100000001000000
+          boolValues: 
+          stringValues: []
+          vector4Values: []
+          objectReferences: []
+        - useVariable: 1
+          name: locker amount
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          type: 1
+          objectTypeName: UnityEngine.Object
+          floatValues: []
+          intValues: 0100000001000000
+          boolValues: 
+          stringValues: []
+          vector4Values: []
+          objectReferences: []
+        - useVariable: 1
+          name: locker id
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          type: 1
+          objectTypeName: UnityEngine.Object
+          floatValues: []
+          intValues: 0100000001000000
+          boolValues: 
+          stringValues: []
+          vector4Values: []
+          objectReferences: []
+        - useVariable: 1
+          name: locker amount
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          type: 1
+          objectTypeName: UnityEngine.Object
+          floatValues: []
+          intValues: 0100000001000000
+          boolValues: 
+          stringValues: []
+          vector4Values: []
+          objectReferences: []
+        - useVariable: 1
+          name: inventory id
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          type: 1
+          objectTypeName: UnityEngine.Object
+          floatValues: []
+          intValues: 0100000000000000020000000400000001000000030000000500000006000000
+          boolValues: 
+          stringValues: []
+          vector4Values: []
+          objectReferences: []
+        - useVariable: 1
+          name: inventory amount
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          type: 1
+          objectTypeName: UnityEngine.Object
+          floatValues: []
+          intValues: 0000000000000000000000000000000000000000000000000000000000000000
+          boolValues: 
+          stringValues: []
+          vector4Values: []
+          objectReferences: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams:
+        - useVariable: 1
+          name: in change index
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 1
+          name: in change index
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 1
+          name: in change index
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 1
+          name: in change index
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        fsmBoolParams: []
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams:
+        - 
+        - 
+        - 
+        - 
+        byteData: 0000
+        arrayParamSizes: 0100000001000000
+        arrayParamTypes:
+        - HutongGames.PlayMaker.FsmString
+        - HutongGames.PlayMaker.FsmVar
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 0c000000120000000c000000270000002900000010000000270000000100000017000000290000001000000027000000010000001700000029000000100000001700000029000000100000001700000029000000270000002900000027000000
+        paramName:
+        - keys
+        - 
+        - datas
+        - 
+        - array
+        - index
+        - storeValue
+        - everyFrame
+        - indexOutOfRange
+        - array
+        - index
+        - storeValue
+        - everyFrame
+        - indexOutOfRange
+        - array
+        - index
+        - indexOutOfRangeEvent
+        - array
+        - index
+        - indexOutOfRangeEvent
+        - array
+        - value
+        - array
+        - value
+        paramDataPos: 000000000000000001000000000000000000000000000000010000000000000000000000010000000100000002000000010000000100000002000000020000000200000003000000030000000300000004000000030000000500000004000000
+        paramByteDataSize: 000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
     events:
     - name: FINISHED
       isSystemEvent: 1
@@ -4104,6 +5743,9 @@ MonoBehaviour:
     - name: equip
       isSystemEvent: 0
       isGlobal: 1
+    - name: load
+      isSystemEvent: 0
+      isGlobal: 1
     - name: loop
       isSystemEvent: 0
       isGlobal: 0
@@ -4122,13 +5764,22 @@ MonoBehaviour:
     - name: pick pistol
       isSystemEvent: 0
       isGlobal: 0
+    - name: put in
+      isSystemEvent: 0
+      isGlobal: 1
     - name: rearrange
       isSystemEvent: 0
       isGlobal: 1
     - name: remove item
       isSystemEvent: 0
       isGlobal: 1
+    - name: save
+      isSystemEvent: 0
+      isGlobal: 1
     - name: search
+      isSystemEvent: 0
+      isGlobal: 1
+    - name: take out
       isSystemEvent: 0
       isGlobal: 1
     globalTransitions: []
@@ -4142,11 +5793,23 @@ MonoBehaviour:
         networkSync: 0
         value: 0
       - useVariable: 1
+        name: deads
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 0
+      - useVariable: 1
         name: equip gun
         tooltip: "\u67AA\u7684\u79CD\u7C7B\uFF0C0\u662F\u624B\u67AA\uFF0C1\u662F\u6563\u5F39"
         showInInspector: 1
         networkSync: 0
-        value: -1
+        value: 0
+      - useVariable: 1
+        name: founds
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 0
       - useVariable: 1
         name: hp
         tooltip: 
@@ -4161,6 +5824,12 @@ MonoBehaviour:
         value: 0
       - useVariable: 1
         name: in change value
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 0
+      - useVariable: 1
+        name: kills
         tooltip: 
         showInInspector: 0
         networkSync: 0
@@ -4208,13 +5877,31 @@ MonoBehaviour:
         networkSync: 0
         value: 0
       - useVariable: 1
+        name: saves
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 0
+      - useVariable: 1
         name: shotgun ammo
         tooltip: 
         showInInspector: 1
         networkSync: 0
         value: 0
       - useVariable: 1
+        name: use hps
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 0
+      - useVariable: 1
         name: will equip id
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 0
+      - useVariable: 1
+        name: will modify amount
         tooltip: 
         showInInspector: 0
         networkSync: 0
@@ -4226,6 +5913,12 @@ MonoBehaviour:
         networkSync: 0
         value: 0
       boolVariables:
+      - useVariable: 1
+        name: first touch pants
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 1
       - useVariable: 1
         name: rearrange menu
         tooltip: 
@@ -4240,7 +5933,55 @@ MonoBehaviour:
         value: 0
       stringVariables:
       - useVariable: 1
+        name: current time
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 
+      - useVariable: 1
+        name: date
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 
+      - useVariable: 1
+        name: file
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 
+      - useVariable: 1
         name: in change room
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 
+      - useVariable: 1
+        name: pass time
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 
+      - useVariable: 1
+        name: save room id
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 
+      - useVariable: 1
+        name: save room name
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 
+      - useVariable: 1
+        name: start time
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 
+      - useVariable: 1
+        name: time span
         tooltip: 
         showInInspector: 0
         networkSync: 0
@@ -4295,7 +6036,7 @@ MonoBehaviour:
         type: 1
         objectTypeName: UnityEngine.Object
         floatValues: []
-        intValues: 
+        intValues: 0000000000000000000000000000000000000000000000000000000000000000
         boolValues: 
         stringValues: []
         vector4Values: []
@@ -4308,7 +6049,33 @@ MonoBehaviour:
         type: 1
         objectTypeName: UnityEngine.Object
         floatValues: []
-        intValues: 
+        intValues: 0100000000000000020000000400000001000000030000000500000006000000
+        boolValues: 
+        stringValues: []
+        vector4Values: []
+        objectReferences: []
+      - useVariable: 1
+        name: locker amount
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        type: 1
+        objectTypeName: UnityEngine.Object
+        floatValues: []
+        intValues: 0100000001000000
+        boolValues: 
+        stringValues: []
+        vector4Values: []
+        objectReferences: []
+      - useVariable: 1
+        name: locker id
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        type: 1
+        objectTypeName: UnityEngine.Object
+        floatValues: []
+        intValues: 0100000001000000
         boolValues: 
         stringValues: []
         vector4Values: []
@@ -4316,7 +6083,7 @@ MonoBehaviour:
       enumVariables: []
       categories:
       - 
-      variableCategoryIDs: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+      variableCategoryIDs: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
     description: 
     docUrl: 
     showStateLabel: 0
@@ -4324,7 +6091,7 @@ MonoBehaviour:
     watermark: 
     password: 
     locked: 0
-    preprocessed: 1
+    preprocessed: 0
     ExposedEvents: []
     RestartOnEnable: 1
     EnableDebugFlow: 0
@@ -4367,7 +6134,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.size
-      value: 33
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.variables.intVariables.Array.size
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.variables.arrayVariables.Array.size
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[0].transitions.Array.size
@@ -4375,7 +6150,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[1].transitions.Array.size
-      value: 1
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[2].transitions.Array.size
@@ -4478,11 +6253,35 @@ Prefab:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].transitions.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[36].transitions.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[35].transitions.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[37].transitions.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[38].transitions.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[1].actionData.byteData.Array.size
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[2].actionData.byteData.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[0].actionData.byteData.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 0}
@@ -4514,6 +6313,18 @@ Prefab:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[0].actionData.paramName.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.byteData.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[37].actionData.byteData.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[15].actionData.paramName.Array.size
       value: 5
       objectReference: {fileID: 0}
@@ -4528,6 +6339,14 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[24].actionData.paramName.Array.size
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.paramName.Array.size
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[37].actionData.paramName.Array.size
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[1].actionData.actionNames.Array.size
@@ -4560,6 +6379,14 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[9].actionData.customNames.Array.size
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[0].actionData.actionNames.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[0].actionData.customNames.Array.size
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[1].actionData.actionIsOpen.Array.size
@@ -4648,6 +6475,38 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[27].actionData.customNames.Array.size
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[0].actionData.actionIsOpen.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[0].actionData.fsmIntParams.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[0].actionData.paramDataPos.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[0].actionData.stringParams.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.actionNames.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.customNames.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[37].actionData.actionNames.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[37].actionData.customNames.Array.size
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[1].actionData.actionEnabled.Array.size
@@ -4742,6 +6601,34 @@ Prefab:
       value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[0].actionData.actionEnabled.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[0].actionData.paramDataType.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.actionIsOpen.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.paramDataPos.Array.size
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.fsmVarParams.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[37].actionData.actionIsOpen.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[37].actionData.paramDataPos.Array.size
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[2].actionData.fsmArrayParams.Array.size
       value: 0
       objectReference: {fileID: 0}
@@ -4790,6 +6677,22 @@ Prefab:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.actionEnabled.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.paramDataType.Array.size
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[37].actionData.actionEnabled.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[37].actionData.paramDataType.Array.size
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[1].actionData.actionHashCodes.Array.size
       value: 0
       objectReference: {fileID: 0}
@@ -4834,6 +6737,14 @@ Prefab:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[0].actionData.actionHashCodes.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[0].actionData.fsmStringParams.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
       propertyPath: fsm.variables.arrayVariables.Array.data[0].intValues.Array.size
       value: 3
       objectReference: {fileID: 0}
@@ -4851,7 +6762,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.variables.arrayVariables.Array.data[2].intValues.Array.size
-      value: 0
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[8].actionData.actionStartIndex.Array.size
@@ -4886,6 +6797,38 @@ Prefab:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[0].actionData.actionStartIndex.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.actionHashCodes.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.fsmStringParams.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[37].actionData.actionHashCodes.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[37].actionData.fsmStringParams.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.variables.arrayVariables.Array.data[3].intValues.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.variables.arrayVariables.Array.data[5].intValues.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.variables.arrayVariables.Array.data[4].intValues.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[1].actionData.paramByteDataSize.Array.size
       value: 0
       objectReference: {fileID: 0}
@@ -4914,6 +6857,18 @@ Prefab:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[0].actionData.paramByteDataSize.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.actionStartIndex.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[37].actionData.actionStartIndex.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[15].actionData.paramByteDataSize.Array.size
       value: 5
       objectReference: {fileID: 0}
@@ -4930,12 +6885,24 @@ Prefab:
       value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.paramByteDataSize.Array.size
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[37].actionData.paramByteDataSize.Array.size
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[26].actionData.fsmEventTargetParams.Array.size
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[15].actionData.fsmOwnerDefaultParams.Array.size
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[37].actionData.fsmOwnerDefaultParams.Array.size
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[5].actionData.fsmArrayParams.Array.data[0].intValues.Array.size
@@ -4955,7 +6922,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.preprocessed
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.variables.intVariables.Array.data[1].value
@@ -5019,15 +6986,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[0].position.x
-      value: 546
+      value: 59.445312
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[0].position.y
-      value: 820
+      value: 482.75
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[1].position.x
-      value: 776
+      value: 808
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[1].position.y
@@ -5035,7 +7002,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[0].transitions.Array.data[0].toState
-      value: State 1
+      value: create start time
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[1].actionData.fsmBoolParams.Array.data[0].useVariable
@@ -5063,7 +7030,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[1].position.height
-      value: 32
+      value: 144
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[1].transitions.Array.data[0].toState
@@ -5235,7 +7202,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[2].position.x
-      value: 740
+      value: 772
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[2].position.y
@@ -5247,7 +7214,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[3].position.x
-      value: 1286
+      value: 1318
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[3].position.y
@@ -5255,7 +7222,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[4].position.x
-      value: 1012
+      value: 1044
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[4].position.y
@@ -5367,7 +7334,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[5].position.x
-      value: 1265
+      value: 1297
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[5].position.y
@@ -5415,7 +7382,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[6].position.x
-      value: 1280
+      value: 1312
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[6].position.y
@@ -5439,7 +7406,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[7].position.x
-      value: 1283
+      value: 1315
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[7].position.y
@@ -5815,7 +7782,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[8].position.x
-      value: 1254
+      value: 1286
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[8].position.y
@@ -5927,7 +7894,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[9].position.x
-      value: 499.96875
+      value: 531.96875
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[9].position.y
@@ -5939,7 +7906,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[10].position.x
-      value: 739.375
+      value: 771.375
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[10].position.y
@@ -6031,7 +7998,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[11].position.x
-      value: 629.7031
+      value: 661.7031
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[11].position.y
@@ -6127,7 +8094,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[12].position.x
-      value: 950.125
+      value: 982.125
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[12].position.y
@@ -6167,7 +8134,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[13].position.x
-      value: 794.4531
+      value: 826.4531
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[13].position.y
@@ -6199,7 +8166,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[14].position.x
-      value: 807.85156
+      value: 839.85156
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[14].position.y
@@ -6243,15 +8210,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.variables.intVariables.Array.data[11].name
-      value: pistol ammo
+      value: max shotgun ammo
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.variables.intVariables.Array.data[12].name
-      value: shotgun ammo
+      value: pick item amount
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.variables.intVariables.Array.data[8].name
-      value: max shotgun ammo
+      value: loop int
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.variables.intVariables.Array.data[7].name
@@ -6347,7 +8314,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.variables.intVariables.Array.data[14].name
-      value: will modify id
+      value: pistol ammo
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[15].actionData.fsmStringParams.Array.data[0].value
@@ -6427,7 +8394,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[15].position.x
-      value: 680.9531
+      value: 712.9531
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[15].position.y
@@ -6567,7 +8534,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[16].position.x
-      value: 917.28125
+      value: 949.28125
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[16].position.y
@@ -6639,7 +8606,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[17].position.x
-      value: 1168
+      value: 1200
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[17].position.y
@@ -6763,7 +8730,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[18].position.x
-      value: 945.66406
+      value: 977.66406
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[18].position.y
@@ -6783,7 +8750,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[19].position.x
-      value: 1194.2969
+      value: 1226.2969
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[19].position.y
@@ -6947,7 +8914,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[20].position.x
-      value: 489.04688
+      value: 521.0469
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[20].position.y
@@ -7019,7 +8986,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[21].position.x
-      value: 1367.0156
+      value: 1399.0156
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[21].position.y
@@ -7151,7 +9118,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[22].position.x
-      value: 883
+      value: 915
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[22].position.y
@@ -7159,7 +9126,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[23].position.x
-      value: 596.0781
+      value: 628.0781
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[23].position.y
@@ -7175,7 +9142,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[24].position.x
-      value: 314.0703
+      value: 346.0703
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[24].position.y
@@ -7195,7 +9162,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[25].position.x
-      value: 173.04688
+      value: 205.04688
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[25].position.y
@@ -7387,7 +9354,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[26].position.x
-      value: 83.97656
+      value: 115.97656
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[26].position.y
@@ -7475,7 +9442,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[27].position.x
-      value: 689
+      value: 721
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[27].position.y
@@ -7547,7 +9514,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[28].position.x
-      value: 224
+      value: 256
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[28].position.y
@@ -7623,7 +9590,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[29].position.x
-      value: 63.460938
+      value: 95.46094
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[29].position.y
@@ -7751,7 +9718,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[30].position.x
-      value: 517.46875
+      value: 549.46875
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[30].position.y
@@ -7847,7 +9814,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[31].position.x
-      value: 699
+      value: 731
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[31].position.y
@@ -7915,7 +9882,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[32].position.x
-      value: 1313
+      value: 1345
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[32].position.y
@@ -7927,10 +9894,994 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.variables.intVariables.Array.data[11].value
-      value: 0
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.variables.intVariables.Array.data[2].showInInspector
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.variables.boolVariables.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[1].transitions.Array.data[6].toState
+      value: State 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].position.x
+      value: 388.1953
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].position.y
+      value: 1405.7656
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[0].actionData.fsmStringParams.Array.data[0].useVariable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[0].actionData.fsmStringParams.Array.data[0].name
+      value: start time
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[0].actionData.fsmIntParams.Array.data[2].useVariable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[0].actionData.fsmIntParams.Array.data[2].name
+      value: array length
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[0].actionData.fsmIntParams.Array.data[3].useVariable
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[0].actionData.fsmIntParams.Array.data[3].name
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[0].actionData.stringParams.Array.data[0]
+      value: check pass
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[0].actionData.stringParams.Array.data[1]
+      value: check pass
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[0].transitions.Array.data[1].toState
+      value: create start time
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[34].actionData.fsmStringParams.Array.data[0].useVariable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[34].actionData.fsmStringParams.Array.data[0].name
+      value: start time
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[0].actionData.actionNames.Array.data[3]
+      value: HutongGames.PlayMaker.Actions.IntCompare
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[0].actionData.actionNames.Array.data[4]
+      value: HutongGames.PlayMaker.Actions.IntCompare
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[0].actionData.actionEnabled.Array.data[4]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[0].actionData.actionIsOpen.Array.data[4]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[0].actionData.actionStartIndex.Array.data[4]
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[0].actionData.actionHashCodes.Array.data[3]
+      value: 44169737
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[0].actionData.actionHashCodes.Array.data[4]
+      value: 44169737
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[0].actionData.paramDataType.Array.data[5]
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[0].actionData.paramDataType.Array.data[7]
+      value: 23
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[0].actionData.paramDataType.Array.data[8]
+      value: 23
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[0].actionData.paramDataType.Array.data[9]
+      value: 23
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[0].actionData.paramDataType.Array.data[10]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[0].actionData.paramDataType.Array.data[11]
+      value: 23
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[0].actionData.paramDataType.Array.data[12]
+      value: 23
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[0].actionData.paramDataType.Array.data[13]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[0].actionData.paramName.Array.data[5]
+      value: integer1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[0].actionData.paramName.Array.data[6]
+      value: integer2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[0].actionData.paramName.Array.data[7]
+      value: equal
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[0].actionData.paramName.Array.data[8]
+      value: lessThan
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[0].actionData.paramName.Array.data[9]
+      value: greaterThan
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[0].actionData.paramName.Array.data[10]
+      value: everyFrame
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[0].actionData.paramName.Array.data[11]
+      value: lessThan
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[0].actionData.paramName.Array.data[12]
+      value: greaterThan
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[0].actionData.paramName.Array.data[13]
+      value: everyFrame
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[0].actionData.paramDataPos.Array.data[5]
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[0].actionData.paramDataPos.Array.data[6]
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[0].actionData.paramDataPos.Array.data[7]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[0].actionData.paramDataPos.Array.data[8]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[0].actionData.paramDataPos.Array.data[9]
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[0].actionData.paramDataPos.Array.data[10]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[0].actionData.paramDataPos.Array.data[11]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[0].actionData.paramDataPos.Array.data[12]
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[0].actionData.paramDataPos.Array.data[13]
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[0].actionData.paramByteDataSize.Array.data[7]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[0].actionData.paramByteDataSize.Array.data[10]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[0].actionData.paramByteDataSize.Array.data[13]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[0].actionData.actionEnabled.Array.data[3]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[0].actionData.actionIsOpen.Array.data[3]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[0].actionData.actionStartIndex.Array.data[3]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[0].actionData.paramDataType.Array.data[6]
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[34].position.x
+      value: 263.8203
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[34].position.y
+      value: 449.91406
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[0].transitions.Array.data[1].fsmEvent.name
+      value: check pass
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[0].transitions.Array.data[1].fsmEvent.isGlobal
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[34].actionData.fsmStringParams.Array.data[1].value
+      value: MM/dd/yyyy HH:mm:ss
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.fsmStringParams.Array.data[0].value
+      value: file
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.fsmVarParams.Array.data[0].objectType
+      value: UnityEngine.Object
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.fsmVarParams.Array.data[0].useVariable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.fsmVarParams.Array.data[0].type
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.fsmStringParams.Array.data[2].useVariable
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.fsmStringParams.Array.data[3].value
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.fsmStringParams.Array.data[4].useVariable
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.fsmStringParams.Array.data[4].name
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.fsmIntParams.Array.data[0].useVariable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.fsmIntParams.Array.data[0].name
+      value: array length
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.actionNames.Array.data[2]
+      value: HutongGames.PlayMaker.Actions.GetSystemDateTime
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.actionHashCodes.Array.data[2]
+      value: 66138304
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.paramDataType.Array.data[10]
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.paramName.Array.data[9]
+      value: everyFrame
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.paramName.Array.data[10]
+      value: startTime
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.paramDataPos.Array.data[10]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.fsmStringParams.Array.data[5].value
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.actionStartIndex.Array.data[1]
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.actionStartIndex.Array.data[2]
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.actionStartIndex.Array.data[3]
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.fsmStringParams.Array.data[1].useVariable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.fsmStringParams.Array.data[1].name
+      value: date
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.fsmStringParams.Array.data[2].name
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.fsmStringParams.Array.data[2].value
+      value: yyyy/MM/dd
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.fsmStringParams.Array.data[3].useVariable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.fsmStringParams.Array.data[3].name
+      value: current time
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.fsmStringParams.Array.data[4].value
+      value: MM/dd/yyyy HH:mm:ss
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.fsmStringParams.Array.data[5].useVariable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.fsmStringParams.Array.data[5].name
+      value: start time
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.fsmStringParams.Array.data[6].useVariable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.fsmStringParams.Array.data[6].name
+      value: current time
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.fsmVarParams.Array.data[1].objectType
+      value: UnityEngine.Object
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.fsmVarParams.Array.data[1].useVariable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.fsmVarParams.Array.data[1].type
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.fsmVarParams.Array.data[1].arrayValue.type
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.arrayParamSizes.Array.data[0]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.arrayParamSizes.Array.data[1]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.paramDataType.Array.data[2]
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.paramDataType.Array.data[3]
+      value: 39
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.paramDataType.Array.data[4]
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.paramDataType.Array.data[5]
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.paramDataType.Array.data[6]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.paramDataType.Array.data[8]
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.paramDataType.Array.data[9]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.paramDataType.Array.data[11]
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.paramDataType.Array.data[12]
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.paramDataType.Array.data[13]
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.paramDataType.Array.data[14]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.paramName.Array.data[2]
+      value: datas
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.paramName.Array.data[3]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.paramName.Array.data[4]
+      value: storeString
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.paramName.Array.data[5]
+      value: format
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.paramName.Array.data[6]
+      value: everyFrame
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.paramName.Array.data[7]
+      value: storeString
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.paramName.Array.data[8]
+      value: format
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.paramName.Array.data[11]
+      value: currentTime
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.paramName.Array.data[12]
+      value: timeSpan
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.paramName.Array.data[13]
+      value: format
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.paramName.Array.data[14]
+      value: everyFrame
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.paramDataPos.Array.data[3]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.paramDataPos.Array.data[4]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.paramDataPos.Array.data[5]
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.paramDataPos.Array.data[6]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.paramDataPos.Array.data[8]
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.paramDataPos.Array.data[9]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.paramDataPos.Array.data[11]
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.paramDataPos.Array.data[12]
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.paramDataPos.Array.data[14]
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.paramByteDataSize.Array.data[6]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.paramByteDataSize.Array.data[8]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.paramByteDataSize.Array.data[9]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.paramByteDataSize.Array.data[11]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.paramByteDataSize.Array.data[12]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.paramByteDataSize.Array.data[14]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.actionNames.Array.data[0]
+      value: HutongGames.PlayMaker.Actions.GetEventProperties
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.actionNames.Array.data[1]
+      value: HutongGames.PlayMaker.Actions.GetSystemDateTime
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.actionNames.Array.data[3]
+      value: HutongGames.PlayMaker.Actions.GetTimeSpan
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.actionNames.Array.data[4]
+      value: HutongGames.PlayMaker.Actions.GetStringLength
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.actionStartIndex.Array.data[4]
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.actionHashCodes.Array.data[0]
+      value: 14942127
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.actionHashCodes.Array.data[1]
+      value: 66138304
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.actionHashCodes.Array.data[3]
+      value: 52203384
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.actionHashCodes.Array.data[4]
+      value: 8511097
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.fsmStringParams.Array.data[6].value
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.fsmStringParams.Array.data[7].useVariable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.fsmStringParams.Array.data[7].name
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.fsmStringParams.Array.data[8].useVariable
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.fsmStringParams.Array.data[8].value
+      value: HH:mm
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.fsmStringParams.Array.data[9].useVariable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.fsmStringParams.Array.data[9].name
+      value: pass time
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.fsmStringParams.Array.data[9].value
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.paramDataType.Array.data[0]
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.paramDataType.Array.data[7]
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.paramDataType.Array.data[16]
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.paramName.Array.data[0]
+      value: keys
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.paramName.Array.data[1]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.paramName.Array.data[15]
+      value: stringVariable
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.paramName.Array.data[16]
+      value: storeResult
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.paramDataPos.Array.data[1]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.paramDataPos.Array.data[2]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.paramDataPos.Array.data[7]
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.paramDataPos.Array.data[13]
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.paramDataPos.Array.data[15]
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.paramDataPos.Array.data[16]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.paramByteDataSize.Array.data[4]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.fsmIntParams.Array.data[1].useVariable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.fsmIntParams.Array.data[1].name
+      value: array length
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].actionData.stringParams.Array.data[2]
+      value: check pass
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].position.height
+      value: 48
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].transitions.Array.data[0].toState
+      value: State 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[35].actionData.fsmStringParams.Array.data[0].useVariable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[35].actionData.fsmStringParams.Array.data[2].useVariable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[35].actionData.fsmStringParams.Array.data[0].name
+      value: time span
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[35].actionData.fsmStringParams.Array.data[1].useVariable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[35].actionData.fsmStringParams.Array.data[1].name
+      value: pass time
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[35].actionData.fsmStringParams.Array.data[2].name
+      value: pass time
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[35].position.x
+      value: 653
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[35].position.y
+      value: 1398
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].transitions.Array.data[1].toState
+      value: State 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[36].actionData.fsmStringParams.Array.data[0].useVariable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[36].actionData.fsmStringParams.Array.data[0].name
+      value: pass time
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[36].actionData.fsmStringParams.Array.data[1].useVariable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[36].actionData.fsmStringParams.Array.data[1].name
+      value: time span
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[36].position.height
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[35].position.height
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[36].position.x
+      value: 641
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[36].position.y
+      value: 1453
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[35].transitions.Array.data[0].toState
+      value: State 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[37].position.x
+      value: 854
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[37].position.y
+      value: 1436
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[36].transitions.Array.data[0].toState
+      value: get room info
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[37].actionData.fsmOwnerDefaultParams.Array.data[0].ownerOption
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[37].actionData.fsmStringParams.Array.data[2].useVariable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[37].actionData.fsmOwnerDefaultParams.Array.data[0].gameObject.useVariable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[37].actionData.fsmOwnerDefaultParams.Array.data[0].gameObject.name
+      value: room
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[37].actionData.fsmStringParams.Array.data[0].value
+      value: FSM
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[37].actionData.fsmStringParams.Array.data[1].value
+      value: id
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[37].actionData.fsmStringParams.Array.data[2].name
+      value: save room id
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[37].actionData.fsmStringParams.Array.data[4].value
+      value: name
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[37].actionData.fsmStringParams.Array.data[5].name
+      value: save room name
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[37].position.height
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[37].transitions.Array.data[0].toState
+      value: State 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[38].actionData.fsmBoolParams.Array.data[2].value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[38].actionData.fsmBoolParams.Array.data[3].value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[38].actionData.fsmStringParams.Array.data[0].useVariable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[38].actionData.fsmStringParams.Array.data[0].name
+      value: file
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[38].actionData.fsmStringParams.Array.data[0].value
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[38].position.height
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[38].position.x
+      value: 1026
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[38].position.y
+      value: 1391
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[38].transitions.Array.data[0].toState
+      value: listener
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[37].actionData.fsmOwnerDefaultParams.Array.data[0].gameObject.value
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[37].actionData.fsmOwnerDefaultParams.Array.data[1].gameObject.value
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[33].isBreakpoint
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[1].transitions.Array.data[7].toState
+      value: State 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.variables.arrayVariables.Array.data[4].type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.variables.intVariables.Array.data[9].name
+      value: max hp
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.variables.intVariables.Array.data[9].value
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.variables.intVariables.Array.data[10].name
+      value: max pistol ammo
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.variables.intVariables.Array.data[10].value
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.variables.intVariables.Array.data[12].value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.variables.intVariables.Array.data[13].name
+      value: pick item id
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.variables.intVariables.Array.data[14].showInInspector
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.variables.intVariables.Array.data[15].name
+      value: saves
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.variables.intVariables.Array.data[15].showInInspector
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.variables.intVariables.Array.data[16].name
+      value: shotgun ammo
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.variables.intVariables.Array.data[16].showInInspector
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.variables.intVariables.Array.data[17].name
+      value: use hps
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.variables.intVariables.Array.data[17].showInInspector
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.variables.intVariables.Array.data[18].name
+      value: will equip id
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.variables.intVariables.Array.data[19].name
+      value: will modify id
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.variables.intVariables.Array.data[20].useVariable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.variables.intVariables.Array.data[20].name
+      value: will modify id
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.variables.arrayVariables.Array.data[5].type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.variables.arrayVariables.Array.data[3].intValues.Array.data[0]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.variables.arrayVariables.Array.data[3].intValues.Array.data[2]
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.variables.arrayVariables.Array.data[3].intValues.Array.data[3]
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.variables.intVariables.Array.data[2].value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.variables.arrayVariables.Array.data[3].intValues.Array.data[6]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.variables.arrayVariables.Array.data[3].intValues.Array.data[7]
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.variables.arrayVariables.Array.data[3].intValues.Array.data[4]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.variables.arrayVariables.Array.data[3].intValues.Array.data[5]
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.variables.arrayVariables.Array.data[5].intValues.Array.data[0]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.variables.arrayVariables.Array.data[5].intValues.Array.data[1]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.variables.arrayVariables.Array.data[4].intValues.Array.data[0]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.variables.arrayVariables.Array.data[4].intValues.Array.data[1]
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []

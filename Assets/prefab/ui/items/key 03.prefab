@@ -2064,8 +2064,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 22490970}
   m_RootOrder: 0
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: 15.1, y: -24.5}
   m_SizeDelta: {x: 12, y: 10.7}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -3552,6 +3552,22 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: fsm.events.Array.data[7].name
       value: remove item
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_AnchorMin.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
