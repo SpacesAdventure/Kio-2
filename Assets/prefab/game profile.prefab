@@ -531,7 +531,7 @@ MonoBehaviour:
         x: 1044
         y: 979
         width: 153
-        height: 48
+        height: 64
       isBreakpoint: 0
       isSequence: 0
       hideUnused: 0
@@ -549,6 +549,14 @@ MonoBehaviour:
           isSystemEvent: 0
           isGlobal: 0
         toState: a15
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      - fsmEvent:
+          name: d03
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: d03
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
@@ -609,6 +617,12 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: a15
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: a03
         fsmObjectParams: []
         fsmVarParams:
         - variableName: in change room
@@ -696,8 +710,9 @@ MonoBehaviour:
         stringParams:
         - a093
         - a15
+        - d03
         byteData: 00
-        arrayParamSizes: 03000000030000000200000002000000
+        arrayParamSizes: 03000000030000000300000003000000
         arrayParamTypes:
         - HutongGames.PlayMaker.FsmString
         - HutongGames.PlayMaker.FsmVar
@@ -705,7 +720,7 @@ MonoBehaviour:
         - HutongGames.PlayMaker.FsmEvent
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 0c0000001200000012000000120000000c000000270000002700000027000000120000000c00000012000000120000000c000000170000001700000001000000
+        paramDataType: 0c0000001200000012000000120000000c000000270000002700000027000000120000000c0000001200000012000000120000000c00000017000000170000001700000001000000
         paramName:
         - keys
         - 
@@ -719,12 +734,14 @@ MonoBehaviour:
         - compareTo
         - 
         - 
+        - 
         - sendEvent
         - 
         - 
+        - 
         - everyFrame
-        paramDataPos: 00000000000000000100000002000000010000000000000001000000020000000300000002000000040000000500000003000000000000000100000000000000
-        paramByteDataSize: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000
+        paramDataPos: 000000000000000001000000020000000100000000000000010000000200000003000000020000000400000005000000060000000300000000000000010000000200000000000000
+        paramByteDataSize: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000
     - name: a093
       description: 
       colorIndex: 0
@@ -1061,7 +1078,7 @@ MonoBehaviour:
           type: 1
           objectTypeName: UnityEngine.Object
           floatValues: []
-          intValues: 0100000000000000020000000400000001000000030000000500000006000000
+          intValues: 
           boolValues: 
           stringValues: []
           vector4Values: []
@@ -1074,7 +1091,7 @@ MonoBehaviour:
           type: 1
           objectTypeName: UnityEngine.Object
           floatValues: []
-          intValues: 0000000000000000000000000000000000000000000000000000000000000000
+          intValues: 
           boolValues: 
           stringValues: []
           vector4Values: []
@@ -1259,7 +1276,7 @@ MonoBehaviour:
           type: 1
           objectTypeName: UnityEngine.Object
           floatValues: []
-          intValues: 0100000000000000020000000400000001000000030000000500000006000000
+          intValues: 
           boolValues: 
           stringValues: []
           vector4Values: []
@@ -1272,7 +1289,7 @@ MonoBehaviour:
           type: 1
           objectTypeName: UnityEngine.Object
           floatValues: []
-          intValues: 0000000000000000000000000000000000000000000000000000000000000000
+          intValues: 
           boolValues: 
           stringValues: []
           vector4Values: []
@@ -1554,7 +1571,7 @@ MonoBehaviour:
           tooltip: "\u67AA\u7684\u79CD\u7C7B\uFF0C0\u662F\u624B\u67AA\uFF0C1\u662F\u6563\u5F39"
           showInInspector: 1
           networkSync: 0
-          value: 0
+          value: -1
         fsmBoolParams: []
         fsmVector2Params: []
         fsmVector3Params: []
@@ -1668,7 +1685,7 @@ MonoBehaviour:
           tooltip: "\u67AA\u7684\u79CD\u7C7B\uFF0C0\u662F\u624B\u67AA\uFF0C1\u662F\u6563\u5F39"
           showInInspector: 1
           networkSync: 0
-          value: 0
+          value: -1
         - useVariable: 1
           name: will equip id
           tooltip: 
@@ -1756,7 +1773,7 @@ MonoBehaviour:
           tooltip: "\u67AA\u7684\u79CD\u7C7B\uFF0C0\u662F\u624B\u67AA\uFF0C1\u662F\u6563\u5F39"
           showInInspector: 1
           networkSync: 0
-          value: 0
+          value: -1
         - useVariable: 0
           name: 
           tooltip: 
@@ -1835,7 +1852,7 @@ MonoBehaviour:
           tooltip: "\u67AA\u7684\u79CD\u7C7B\uFF0C0\u662F\u624B\u67AA\uFF0C1\u662F\u6563\u5F39"
           showInInspector: 1
           networkSync: 0
-          value: 0
+          value: -1
         - useVariable: 1
           name: will equip id
           tooltip: 
@@ -1963,7 +1980,7 @@ MonoBehaviour:
           type: 1
           objectTypeName: UnityEngine.Object
           floatValues: []
-          intValues: 0000000000000000000000000000000000000000000000000000000000000000
+          intValues: 
           boolValues: 
           stringValues: []
           vector4Values: []
@@ -2196,7 +2213,7 @@ MonoBehaviour:
           type: 1
           objectTypeName: UnityEngine.Object
           floatValues: []
-          intValues: 0100000000000000020000000400000001000000030000000500000006000000
+          intValues: 
           boolValues: 
           stringValues: []
           vector4Values: []
@@ -2359,7 +2376,7 @@ MonoBehaviour:
           type: 1
           objectTypeName: UnityEngine.Object
           floatValues: []
-          intValues: 0100000000000000020000000400000001000000030000000500000006000000
+          intValues: 
           boolValues: 
           stringValues: []
           vector4Values: []
@@ -2372,7 +2389,7 @@ MonoBehaviour:
           type: 1
           objectTypeName: UnityEngine.Object
           floatValues: []
-          intValues: 0100000000000000020000000400000001000000030000000500000006000000
+          intValues: 
           boolValues: 
           stringValues: []
           vector4Values: []
@@ -2787,7 +2804,7 @@ MonoBehaviour:
           type: 1
           objectTypeName: UnityEngine.Object
           floatValues: []
-          intValues: 0000000000000000000000000000000000000000000000000000000000000000
+          intValues: 
           boolValues: 
           stringValues: []
           vector4Values: []
@@ -3128,7 +3145,7 @@ MonoBehaviour:
           type: 1
           objectTypeName: UnityEngine.Object
           floatValues: []
-          intValues: 0100000000000000020000000400000001000000030000000500000006000000
+          intValues: 
           boolValues: 
           stringValues: []
           vector4Values: []
@@ -3414,7 +3431,7 @@ MonoBehaviour:
           type: 1
           objectTypeName: UnityEngine.Object
           floatValues: []
-          intValues: 0000000000000000000000000000000000000000000000000000000000000000
+          intValues: 
           boolValues: 
           stringValues: []
           vector4Values: []
@@ -3543,7 +3560,7 @@ MonoBehaviour:
           type: 1
           objectTypeName: UnityEngine.Object
           floatValues: []
-          intValues: 0100000000000000020000000400000001000000030000000500000006000000
+          intValues: 
           boolValues: 
           stringValues: []
           vector4Values: []
@@ -3556,7 +3573,7 @@ MonoBehaviour:
           type: 1
           objectTypeName: UnityEngine.Object
           floatValues: []
-          intValues: 0000000000000000000000000000000000000000000000000000000000000000
+          intValues: 
           boolValues: 
           stringValues: []
           vector4Values: []
@@ -5222,7 +5239,7 @@ MonoBehaviour:
           type: 1
           objectTypeName: UnityEngine.Object
           floatValues: []
-          intValues: 0100000000000000020000000400000001000000030000000500000006000000
+          intValues: 
           boolValues: 
           stringValues: []
           vector4Values: []
@@ -5235,7 +5252,7 @@ MonoBehaviour:
           type: 1
           objectTypeName: UnityEngine.Object
           floatValues: []
-          intValues: 0000000000000000000000000000000000000000000000000000000000000000
+          intValues: 
           boolValues: 
           stringValues: []
           vector4Values: []
@@ -5248,7 +5265,7 @@ MonoBehaviour:
           type: 1
           objectTypeName: UnityEngine.Object
           floatValues: []
-          intValues: 0100000000000000020000000400000001000000030000000500000006000000
+          intValues: 
           boolValues: 
           stringValues: []
           vector4Values: []
@@ -5261,7 +5278,7 @@ MonoBehaviour:
           type: 1
           objectTypeName: UnityEngine.Object
           floatValues: []
-          intValues: 0000000000000000000000000000000000000000000000000000000000000000
+          intValues: 
           boolValues: 
           stringValues: []
           vector4Values: []
@@ -5274,7 +5291,7 @@ MonoBehaviour:
           type: 1
           objectTypeName: UnityEngine.Object
           floatValues: []
-          intValues: 0100000001000000
+          intValues: 
           boolValues: 
           stringValues: []
           vector4Values: []
@@ -5287,7 +5304,7 @@ MonoBehaviour:
           type: 1
           objectTypeName: UnityEngine.Object
           floatValues: []
-          intValues: 0100000001000000
+          intValues: 
           boolValues: 
           stringValues: []
           vector4Values: []
@@ -5330,7 +5347,7 @@ MonoBehaviour:
           tooltip: "\u67AA\u7684\u79CD\u7C7B\uFF0C0\u662F\u624B\u67AA\uFF0C1\u662F\u6563\u5F39"
           showInInspector: 1
           networkSync: 0
-          value: 0
+          value: -1
         fsmBoolParams: []
         fsmVector2Params: []
         fsmVector3Params: []
@@ -5575,7 +5592,7 @@ MonoBehaviour:
           type: 1
           objectTypeName: UnityEngine.Object
           floatValues: []
-          intValues: 0100000001000000
+          intValues: 
           boolValues: 
           stringValues: []
           vector4Values: []
@@ -5588,7 +5605,7 @@ MonoBehaviour:
           type: 1
           objectTypeName: UnityEngine.Object
           floatValues: []
-          intValues: 0100000001000000
+          intValues: 
           boolValues: 
           stringValues: []
           vector4Values: []
@@ -5601,7 +5618,7 @@ MonoBehaviour:
           type: 1
           objectTypeName: UnityEngine.Object
           floatValues: []
-          intValues: 0100000001000000
+          intValues: 
           boolValues: 
           stringValues: []
           vector4Values: []
@@ -5614,7 +5631,7 @@ MonoBehaviour:
           type: 1
           objectTypeName: UnityEngine.Object
           floatValues: []
-          intValues: 0100000001000000
+          intValues: 
           boolValues: 
           stringValues: []
           vector4Values: []
@@ -5627,7 +5644,7 @@ MonoBehaviour:
           type: 1
           objectTypeName: UnityEngine.Object
           floatValues: []
-          intValues: 0100000000000000020000000400000001000000030000000500000006000000
+          intValues: 
           boolValues: 
           stringValues: []
           vector4Values: []
@@ -5640,7 +5657,7 @@ MonoBehaviour:
           type: 1
           objectTypeName: UnityEngine.Object
           floatValues: []
-          intValues: 0000000000000000000000000000000000000000000000000000000000000000
+          intValues: 
           boolValues: 
           stringValues: []
           vector4Values: []
@@ -5718,6 +5735,117 @@ MonoBehaviour:
         - value
         paramDataPos: 000000000000000001000000000000000000000000000000010000000000000000000000010000000100000002000000010000000100000002000000020000000200000003000000030000000300000004000000030000000500000004000000
         paramByteDataSize: 000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    - name: d03
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 1328
+        y: 1050
+        width: 100
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: listener
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.ArraySet
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: 6ba59301
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams:
+        - variableName: in change value
+          objectType: UnityEngine.Object
+          useVariable: 1
+          type: 1
+          floatValue: 0
+          intValue: 0
+          boolValue: 0
+          stringValue: 
+          vector4Value: {x: 0, y: 0, z: 0, w: 0}
+          objectReference: {fileID: 0}
+          arrayValue:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            type: -1
+            objectTypeName: 
+            floatValues: []
+            intValues: 
+            boolValues: 
+            stringValues: []
+            vector4Values: []
+            objectReferences: []
+        fsmArrayParams:
+        - useVariable: 1
+          name: d03
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          type: 1
+          objectTypeName: UnityEngine.Object
+          floatValues: []
+          intValues: 00000000
+          boolValues: 
+          stringValues: []
+          vector4Values: []
+          objectReferences: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams:
+        - useVariable: 1
+          name: in change index
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        fsmBoolParams: []
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams:
+        - 
+        byteData: 00
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 2900000010000000270000000100000017000000
+        paramName:
+        - array
+        - index
+        - value
+        - everyFrame
+        - indexOutOfRange
+        paramDataPos: 0000000000000000000000000000000000000000
+        paramByteDataSize: 0000000000000000000000000100000000000000
     events:
     - name: FINISHED
       isSystemEvent: 1
@@ -5740,6 +5868,9 @@ MonoBehaviour:
     - name: check pass
       isSystemEvent: 0
       isGlobal: 1
+    - name: d03
+      isSystemEvent: 0
+      isGlobal: 0
     - name: equip
       isSystemEvent: 0
       isGlobal: 1
@@ -5803,7 +5934,7 @@ MonoBehaviour:
         tooltip: "\u67AA\u7684\u79CD\u7C7B\uFF0C0\u662F\u624B\u67AA\uFF0C1\u662F\u6563\u5F39"
         showInInspector: 1
         networkSync: 0
-        value: 0
+        value: -1
       - useVariable: 1
         name: founds
         tooltip: 
@@ -6029,6 +6160,19 @@ MonoBehaviour:
         vector4Values: []
         objectReferences: []
       - useVariable: 1
+        name: d03
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        type: 1
+        objectTypeName: UnityEngine.Object
+        floatValues: []
+        intValues: 01000000
+        boolValues: 
+        stringValues: []
+        vector4Values: []
+        objectReferences: []
+      - useVariable: 1
         name: inventory amount
         tooltip: 
         showInInspector: 0
@@ -6036,7 +6180,7 @@ MonoBehaviour:
         type: 1
         objectTypeName: UnityEngine.Object
         floatValues: []
-        intValues: 0000000000000000000000000000000000000000000000000000000000000000
+        intValues: 
         boolValues: 
         stringValues: []
         vector4Values: []
@@ -6049,7 +6193,7 @@ MonoBehaviour:
         type: 1
         objectTypeName: UnityEngine.Object
         floatValues: []
-        intValues: 0100000000000000020000000400000001000000030000000500000006000000
+        intValues: 
         boolValues: 
         stringValues: []
         vector4Values: []
@@ -6062,7 +6206,7 @@ MonoBehaviour:
         type: 1
         objectTypeName: UnityEngine.Object
         floatValues: []
-        intValues: 0100000001000000
+        intValues: 
         boolValues: 
         stringValues: []
         vector4Values: []
@@ -6075,7 +6219,7 @@ MonoBehaviour:
         type: 1
         objectTypeName: UnityEngine.Object
         floatValues: []
-        intValues: 0100000001000000
+        intValues: 
         boolValues: 
         stringValues: []
         vector4Values: []
@@ -6083,7 +6227,7 @@ MonoBehaviour:
       enumVariables: []
       categories:
       - 
-      variableCategoryIDs: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+      variableCategoryIDs: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
     description: 
     docUrl: 
     showStateLabel: 0
@@ -6762,7 +6906,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.variables.arrayVariables.Array.data[2].intValues.Array.size
-      value: 8
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[8].actionData.actionStartIndex.Array.size
@@ -6818,15 +6962,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.variables.arrayVariables.Array.data[3].intValues.Array.size
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.variables.arrayVariables.Array.data[5].intValues.Array.size
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.variables.arrayVariables.Array.data[4].intValues.Array.size
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[1].actionData.paramByteDataSize.Array.size
@@ -6914,6 +7058,10 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[32].actionData.fsmArrayParams.Array.data[0].intValues.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[43].actionData.fsmArrayParams.Array.data[0].intValues.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 0}
@@ -7178,7 +7326,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.events.Array.data[2].name
-      value: pick item
+      value: a15
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.events.Array.data[2].isGlobal
@@ -7186,11 +7334,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.events.Array.data[3].name
-      value: check fail
+      value: change amount
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.events.Array.data[3].isGlobal
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[2].actionData.stringParams.Array.data[0]
@@ -7414,7 +7562,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.variables.arrayVariables.Array.data[2].intValues.Array.data[0]
-      value: -1
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.variables.arrayVariables.Array.data[2].intValues.Array.data[1]
@@ -7606,15 +7754,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.events.Array.data[4].name
-      value: check pass
+      value: change room
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.events.Array.data[5].name
-      value: equip
+      value: check fail
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.events.Array.data[6].name
-      value: loop
+      value: check pass
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.events.Array.data[6].isGlobal
@@ -7622,11 +7770,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.events.Array.data[7].name
-      value: pick ammo
+      value: d03
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.events.Array.data[7].isGlobal
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[2].actionData.stringParams.Array.data[4]
@@ -10850,7 +10998,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.variables.intVariables.Array.data[2].value
-      value: 0
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.variables.arrayVariables.Array.data[3].intValues.Array.data[6]
@@ -10883,6 +11031,22 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: fsm.variables.arrayVariables.Array.data[4].intValues.Array.data[1]
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.variables.arrayVariables.Array.data[2].type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[4].transitions.Array.data[2].fsmEvent.name
+      value: d03
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.states.Array.data[4].actionData.stringParams.Array.data[2]
+      value: d03
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fsm.events.Array.data[1].name
+      value: a093
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

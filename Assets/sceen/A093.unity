@@ -561,7 +561,7 @@ AudioListener:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 799783162}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!124 &799783164
 Behaviour:
   m_ObjectHideFlags: 0
@@ -2760,54 +2760,6 @@ Prefab:
     - target: {fileID: 412412, guid: 975a13a9d08333d4e826a9afae9d2adb, type: 2}
       propertyPath: m_RootOrder
       value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 11447902, guid: 975a13a9d08333d4e826a9afae9d2adb, type: 2}
-      propertyPath: fsm.states.Array.data[11].actionData.fsmOwnerDefaultParams.Array.data[0].gameObject.name
-      value: hit object
-      objectReference: {fileID: 0}
-    - target: {fileID: 11447902, guid: 975a13a9d08333d4e826a9afae9d2adb, type: 2}
-      propertyPath: fsm.states.Array.data[11].actionData.fsmOwnerDefaultParams.Array.data[0].gameObject.showInInspector
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11447902, guid: 975a13a9d08333d4e826a9afae9d2adb, type: 2}
-      propertyPath: fsm.states.Array.data[11].actionData.fsmOwnerDefaultParams.Array.data[0].gameObject.value
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 11447902, guid: 975a13a9d08333d4e826a9afae9d2adb, type: 2}
-      propertyPath: fsm.states.Array.data[11].actionData.fsmEventTargetParams.Array.data[0].gameObject.gameObject.name
-      value: hit object
-      objectReference: {fileID: 0}
-    - target: {fileID: 11447902, guid: 975a13a9d08333d4e826a9afae9d2adb, type: 2}
-      propertyPath: fsm.states.Array.data[11].actionData.fsmEventTargetParams.Array.data[0].gameObject.gameObject.showInInspector
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11447902, guid: 975a13a9d08333d4e826a9afae9d2adb, type: 2}
-      propertyPath: fsm.states.Array.data[11].actionData.fsmEventTargetParams.Array.data[0].gameObject.gameObject.value
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 11447902, guid: 975a13a9d08333d4e826a9afae9d2adb, type: 2}
-      propertyPath: fsm.states.Array.data[30].actionData.fsmOwnerDefaultParams.Array.data[0].gameObject.name
-      value: hit object
-      objectReference: {fileID: 0}
-    - target: {fileID: 11447902, guid: 975a13a9d08333d4e826a9afae9d2adb, type: 2}
-      propertyPath: fsm.states.Array.data[30].actionData.fsmOwnerDefaultParams.Array.data[0].gameObject.showInInspector
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11447902, guid: 975a13a9d08333d4e826a9afae9d2adb, type: 2}
-      propertyPath: fsm.states.Array.data[30].actionData.fsmOwnerDefaultParams.Array.data[0].gameObject.value
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 11447902, guid: 975a13a9d08333d4e826a9afae9d2adb, type: 2}
-      propertyPath: fsm.states.Array.data[37].actionData.fsmEventTargetParams.Array.data[0].gameObject.gameObject.name
-      value: hit object
-      objectReference: {fileID: 0}
-    - target: {fileID: 11447902, guid: 975a13a9d08333d4e826a9afae9d2adb, type: 2}
-      propertyPath: fsm.states.Array.data[37].actionData.fsmEventTargetParams.Array.data[0].gameObject.gameObject.showInInspector
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11447902, guid: 975a13a9d08333d4e826a9afae9d2adb, type: 2}
-      propertyPath: fsm.states.Array.data[37].actionData.fsmEventTargetParams.Array.data[0].gameObject.gameObject.value
-      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 975a13a9d08333d4e826a9afae9d2adb, type: 2}

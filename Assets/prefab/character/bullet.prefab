@@ -191,7 +191,7 @@ MonoBehaviour:
       - fsmEvent:
           name: check pass
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: State 3
         linkStyle: 0
         linkConstraint: 0
@@ -571,7 +571,7 @@ MonoBehaviour:
       - fsmEvent:
           name: check pass
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: change smoke depth
         linkStyle: 0
         linkConstraint: 0
@@ -943,7 +943,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 151876}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 434cd43c0cf79514c9eaccd879648929, type: 3}
   m_Name: 
@@ -1177,7 +1177,7 @@ ParticleSystem:
         rgba: 4294967295
       maxColor:
         serializedVersion: 2
-        rgba: 3501043117
+        rgba: 2544741805
       minMaxState: 0
     startSize:
       scalar: 0.023
@@ -2475,8 +2475,8 @@ ParticleSystemRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: 930480555
+  m_SortingOrder: 1
   m_RenderMode: 0
   m_SortMode: 0
   m_MinParticleSize: 0
@@ -2603,7 +2603,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[5].actionData.fsmOwnerDefaultParams.Array.data[0].ownerOption
@@ -2747,7 +2747,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: InitialModule.startColor.maxColor.rgba
-      value: 3501043117
+      value: 2544741805
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[2].actionData.actionNames.Array.data[3]
@@ -2847,6 +2847,14 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: fsm.states.Array.data[2].actionData.paramByteDataSize.Array.data[16]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_SortingLayerID
+      value: 930480555
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_SortingOrder
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []

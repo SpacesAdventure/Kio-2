@@ -2809,7 +2809,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 50
-        y: 100
+        y: 164
         width: 100
         height: 32
       isBreakpoint: 0
@@ -2877,8 +2877,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 415
-        y: 101
+        x: 394
+        y: 109
         width: 100
         height: 32
       isBreakpoint: 0
@@ -2972,7 +2972,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 683.9453
-        y: 240.89062
+        y: 304.89062
         width: 100
         height: 32
       isBreakpoint: 0
@@ -3260,7 +3260,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 890.16406
-        y: 329.53906
+        y: 393.53906
         width: 100
         height: 32
       isBreakpoint: 0
@@ -3521,7 +3521,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 1060.1797
-        y: 345.6953
+        y: 409.6953
         width: 100
         height: 32
       isBreakpoint: 0
@@ -3782,7 +3782,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 1294.3672
-        y: 388.95312
+        y: 452.95312
         width: 100
         height: 32
       isBreakpoint: 0
@@ -4043,7 +4043,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 1214.9844
-        y: 146.14844
+        y: 210.14844
         width: 100
         height: 32
       isBreakpoint: 0
@@ -4164,7 +4164,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 589.0469
-        y: 188.22656
+        y: 252.22656
         width: 100
         height: 32
       isBreakpoint: 0
@@ -4224,7 +4224,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 715.71875
-        y: 296.34375
+        y: 360.34375
         width: 100
         height: 32
       isBreakpoint: 0
@@ -4288,7 +4288,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 993.5781
-        y: 262.26562
+        y: 326.26562
         width: 105
         height: 32
       isBreakpoint: 0
@@ -4352,7 +4352,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 989.5781
-        y: 457.26562
+        y: 521.2656
         width: 105
         height: 32
       isBreakpoint: 0
@@ -4416,7 +4416,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 1363.9766
-        y: 303.89844
+        y: 367.89844
         width: 105
         height: 32
       isBreakpoint: 0
@@ -4480,7 +4480,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 1302.9766
-        y: 222.89844
+        y: 286.89844
         width: 100
         height: 32
       isBreakpoint: 0
@@ -4570,7 +4570,7 @@ MonoBehaviour:
           value: image
         fsmObjectParams: []
         fsmVarParams:
-        - variableName: 
+        - variableName: image
           objectType: UnityEngine.Sprite
           useVariable: 1
           type: 12
@@ -4993,7 +4993,7 @@ AudioListener:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1255868145}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!124 &1255868147
 Behaviour:
   m_ObjectHideFlags: 0
