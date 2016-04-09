@@ -41,7 +41,7 @@ Transform:
   m_GameObject: {fileID: 187070}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.3625, y: 1.7331245, z: 1}
+  m_LocalScale: {x: 3.1089265, y: 2.2807016, z: 1.315948}
   m_Children: []
   m_Father: {fileID: 446004}
   m_RootOrder: 0
@@ -427,6 +427,7 @@ MonoBehaviour:
         colorIndex: 0
       actionData:
         actionNames:
+        - HutongGames.PlayMaker.Actions.SendEvent
         - HutongGames.PlayMaker.Actions.GetEventProperties
         - HutongGames.PlayMaker.Actions.SetBoolValue
         - HutongGames.PlayMaker.Actions.SetBoolValue
@@ -440,10 +441,11 @@ MonoBehaviour:
         - 
         - 
         - 
-        actionEnabled: 010101010101
-        actionIsOpen: 010101010101
-        actionStartIndex: 0000000004000000070000000a0000000d00000011000000
-        actionHashCodes: afffe30027fbe10327fbe10327fbe1035fd1e90148c01101
+        - 
+        actionEnabled: 01010101010101
+        actionIsOpen: 01010101010101
+        actionStartIndex: 0000000004000000080000000b0000000e0000001100000015000000
+        actionHashCodes: 5e69bb04afffe30027fbe10327fbe10327fbe1035fd1e90148c01101
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -458,7 +460,39 @@ MonoBehaviour:
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
-        fsmEventTargetParams: []
+        fsmEventTargetParams:
+        - target: 1
+          excludeSelf:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          gameObject:
+            ownerOption: 1
+            gameObject:
+              useVariable: 1
+              name: player
+              tooltip: 
+              showInInspector: 0
+              networkSync: 0
+              value: {fileID: 0}
+          fsmName:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 
+          sendToChildren:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          fsmComponent: {fileID: 0}
         fsmPropertyParams: []
         layoutOptionParams: []
         fsmStringParams:
@@ -497,6 +531,12 @@ MonoBehaviour:
         fsmArrayParams: []
         fsmEnumParams: []
         fsmFloatParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
         - useVariable: 1
           name: fade time
           tooltip: 
@@ -559,16 +599,21 @@ MonoBehaviour:
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams:
+        - stand
         - FINISHED
-        byteData: 0000001500000000
+        byteData: 000000001500000000
         arrayParamSizes: 0100000001000000
         arrayParamTypes:
         - HutongGames.PlayMaker.FsmString
         - HutongGames.PlayMaker.FsmVar
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 0c000000120000000c00000027000000110000001100000001000000110000001100000001000000110000001100000001000000140000000f0000000f000000070000000f0000001700000001000000
+        paramDataType: 1f000000170000000f000000010000000c000000120000000c00000027000000110000001100000001000000110000001100000001000000110000001100000001000000140000000f0000000f000000070000000f0000001700000001000000
         paramName:
+        - eventTarget
+        - sendEvent
+        - delay
+        - everyFrame
         - keys
         - 
         - datas
@@ -589,8 +634,8 @@ MonoBehaviour:
         - time
         - finishEvent
         - realTime
-        paramDataPos: 0000000000000000010000000000000000000000010000000000000002000000030000000100000004000000050000000200000000000000000000000100000003000000020000000000000007000000
-        paramByteDataSize: 0000000000000000000000000000000000000000000000000100000000000000000000000100000000000000000000000100000000000000000000000000000004000000000000000000000001000000
+        paramDataPos: 000000000000000000000000000000000000000000000000010000000000000000000000010000000100000002000000030000000200000004000000050000000300000000000000010000000200000004000000030000000100000008000000
+        paramByteDataSize: 000000000000000000000000010000000000000000000000000000000000000000000000000000000100000000000000000000000100000000000000000000000100000000000000000000000000000004000000000000000000000001000000
     - name: quit and load
       description: 
       colorIndex: 0
@@ -812,6 +857,9 @@ MonoBehaviour:
       isSystemEvent: 0
       isGlobal: 1
     - name: quit
+      isSystemEvent: 0
+      isGlobal: 1
+    - name: stand
       isSystemEvent: 0
       isGlobal: 1
     globalTransitions:
@@ -1104,12 +1152,14 @@ MonoBehaviour:
       actionData:
         actionNames:
         - HutongGames.PlayMaker.Actions.CreateObject
+        - HutongGames.PlayMaker.Actions.NextFrameEvent
         customNames:
         - 
-        actionEnabled: 01
-        actionIsOpen: 01
-        actionStartIndex: 00000000
-        actionHashCodes: 3e28c603
+        - 
+        actionEnabled: 0101
+        actionIsOpen: 0101
+        actionStartIndex: 0000000007000000
+        actionHashCodes: 3e28c60388611604
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 1
@@ -1174,13 +1224,14 @@ MonoBehaviour:
         fsmColorParams: []
         fsmRectParams: []
         fsmQuaternionParams: []
-        stringParams: []
+        stringParams:
+        - FINISHED
         byteData: 
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 13000000130000001c0000001c000000130000001100000010000000
+        paramDataType: 13000000130000001c0000001c00000013000000110000001000000017000000
         paramName:
         - gameObject
         - spawnPoint
@@ -1189,8 +1240,9 @@ MonoBehaviour:
         - storeObject
         - networkInstantiate
         - networkGroup
-        paramDataPos: 00000000010000000000000001000000020000000000000000000000
-        paramByteDataSize: 00000000000000000000000000000000000000000000000000000000
+        - sendEvent
+        paramDataPos: 0000000001000000000000000100000002000000000000000000000000000000
+        paramByteDataSize: 0000000000000000000000000000000000000000000000000000000000000000
     events:
     - name: FINISHED
       isSystemEvent: 1

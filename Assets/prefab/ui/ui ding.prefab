@@ -1888,6 +1888,23 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &177144
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 22496854}
+  - 222: {fileID: 22279774}
+  - 114: {fileID: 11457826}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &178126
 GameObject:
   m_ObjectHideFlags: 1
@@ -1990,7 +2007,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &183894
 GameObject:
   m_ObjectHideFlags: 1
@@ -5772,7 +5789,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.18
-  m_Text: 
+  m_Text: 'Kio
+
+'
 --- !u!114 &11412430
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8211,7 +8230,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: aaa
+  m_Text: adadasfas
 --- !u!114 &11418000
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -14224,7 +14243,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 5c60192f8739c584e97969b1c8e7d42b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9d79b7e02d947ba42a342632ee27cd34, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -24864,6 +24883,33 @@ MonoBehaviour:
     handleApplicationEvents: 0
   fsmTemplate: {fileID: 0}
   eventHandlerComponentsAdded: 0
+--- !u!114 &11457826
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 177144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: b484d91ca5b4bef488a332f5a5ab86e9, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
 --- !u!114 &11458552
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -26000,7 +26046,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 275
-        y: 343
+        y: 359
         width: 100
         height: 48
       isBreakpoint: 0
@@ -26068,7 +26114,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 468.3828
-        y: 363.0078
+        y: 379.0078
         width: 113
         height: 32
       isBreakpoint: 0
@@ -26382,8 +26428,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 1182.1953
-        y: 262.3828
+        x: 829.1953
+        y: 109.36719
         width: 100
         height: 32
       isBreakpoint: 0
@@ -26488,7 +26534,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 564.4453
-        y: 149.50781
+        y: 165.50781
         width: 100
         height: 32
       isBreakpoint: 0
@@ -26506,18 +26552,14 @@ MonoBehaviour:
       actionData:
         actionNames:
         - HutongGames.PlayMaker.Actions.ActivateGameObject
-        - HutongGames.PlayMaker.Actions.SetBoolValue
-        - HutongGames.PlayMaker.Actions.SetBoolValue
         - HutongGames.PlayMaker.Actions.SendEvent
         customNames:
         - 
         - 
-        - 
-        - 
-        actionEnabled: 01000001
-        actionIsOpen: 01010101
-        actionStartIndex: 0000000005000000080000000b000000
-        actionHashCodes: b2cf100027fbe10327fbe1035e69bb04
+        actionEnabled: 0101
+        actionIsOpen: 0101
+        actionStartIndex: 0000000005000000
+        actionHashCodes: b2cf10005e69bb04
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -26593,30 +26635,6 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 0
-        - useVariable: 1
-          name: can call menus
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 1
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 1
-        - useVariable: 1
-          name: have menu
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 0
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 0
         fsmVector2Params: []
         fsmVector3Params: []
         fsmColorParams: []
@@ -26624,37 +26642,31 @@ MonoBehaviour:
         fsmQuaternionParams: []
         stringParams:
         - move on
-        byteData: 0000000000
+        byteData: 000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 14000000110000001100000001000000010000001100000011000000010000001100000011000000010000001f000000170000000f00000001000000
+        paramDataType: 14000000110000001100000001000000010000001f000000170000000f00000001000000
         paramName:
         - gameObject
         - activate
         - recursive
         - resetOnExit
         - everyFrame
-        - boolVariable
-        - boolValue
-        - everyFrame
-        - boolVariable
-        - boolValue
-        - everyFrame
         - eventTarget
         - sendEvent
         - delay
         - everyFrame
-        paramDataPos: 000000000000000001000000000000000100000002000000030000000200000004000000050000000300000000000000000000000000000004000000
-        paramByteDataSize: 000000000000000000000000010000000100000000000000000000000100000000000000000000000100000000000000000000000000000001000000
+        paramDataPos: 000000000000000001000000000000000100000000000000000000000000000002000000
+        paramByteDataSize: 000000000000000000000000010000000100000000000000000000000000000001000000
     - name: get properties 2
       description: 
       colorIndex: 0
       position:
         serializedVersion: 2
         x: 506.5
-        y: 506
+        y: 522
         width: 126
         height: 32
       isBreakpoint: 0
@@ -26900,7 +26912,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 334
-        y: 103.96875
+        y: 119.96875
         width: 100
         height: 32
       isBreakpoint: 0
@@ -27004,7 +27016,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 667
-        y: 301
+        y: 317
         width: 100
         height: 48
       isBreakpoint: 0
@@ -27086,7 +27098,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 65
-        y: 333
+        y: 349
         width: 100
         height: 32
       isBreakpoint: 0
@@ -27179,8 +27191,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 956
-        y: 253
+        x: 942
+        y: 283
         width: 100
         height: 32
       isBreakpoint: 0
@@ -27191,7 +27203,7 @@ MonoBehaviour:
           name: type done
           isSystemEvent: 0
           isGlobal: 1
-        toState: type done
+        toState: check lock 3
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
@@ -27335,7 +27347,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 820
-        y: 389
+        y: 405
         width: 100
         height: 32
       isBreakpoint: 0
@@ -27429,7 +27441,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 729.0547
-        y: 479.72656
+        y: 495.72656
         width: 102
         height: 48
       isBreakpoint: 0
@@ -27511,7 +27523,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 882.0547
-        y: 567.72656
+        y: 583.72656
         width: 120
         height: 32
       isBreakpoint: 0
@@ -27599,6 +27611,160 @@ MonoBehaviour:
         - everyFrame
         paramDataPos: 000000000100000000000000020000000300000001000000
         paramByteDataSize: 000000000000000001000000000000000000000001000000
+    - name: check lock 3
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 1082.5
+        y: 167
+        width: 102
+        height: 48
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: check pass
+          isSystemEvent: 0
+          isGlobal: 1
+        toState: type done
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: wait 2 s
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.BoolTest
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: a4c8bf00
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams:
+        - useVariable: 1
+          name: unlock
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams:
+        - 
+        - check pass
+        byteData: 00
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 11000000170000001700000001000000
+        paramName:
+        - boolVariable
+        - isTrue
+        - isFalse
+        - everyFrame
+        paramDataPos: 00000000000000000100000000000000
+        paramByteDataSize: 00000000000000000000000001000000
+    - name: wait 2 s
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 812
+        y: 213
+        width: 100
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: next
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.Wait
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: 48c01101
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 2
+        fsmIntParams: []
+        fsmBoolParams: []
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams:
+        - 
+        byteData: 00
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 0f0000001700000001000000
+        paramName:
+        - time
+        - finishEvent
+        - realTime
+        paramDataPos: 000000000000000000000000
+        paramByteDataSize: 000000000000000001000000
     events:
     - name: FINISHED
       isSystemEvent: 1
@@ -27701,7 +27867,7 @@ MonoBehaviour:
     watermark: 
     password: 
     locked: 0
-    preprocessed: 1
+    preprocessed: 0
     ExposedEvents: []
     RestartOnEnable: 1
     EnableDebugFlow: 0
@@ -29118,7 +29284,7 @@ MonoBehaviour:
     watermark: 
     password: 
     locked: 0
-    preprocessed: 0
+    preprocessed: 1
     ExposedEvents: []
     RestartOnEnable: 1
     EnableDebugFlow: 0
@@ -33559,9 +33725,9 @@ MonoBehaviour:
         colorIndex: 0
       actionData:
         actionNames:
+        - HutongGames.PlayMaker.Actions.SetBoolValue
+        - HutongGames.PlayMaker.Actions.SetBoolValue
         - HutongGames.PlayMaker.Actions.SendEvent
-        - HutongGames.PlayMaker.Actions.SetBoolValue
-        - HutongGames.PlayMaker.Actions.SetBoolValue
         - HutongGames.PlayMaker.Actions.ActivateGameObject
         - HutongGames.PlayMaker.Actions.ActivateGameObject
         customNames:
@@ -33572,8 +33738,8 @@ MonoBehaviour:
         - 
         actionEnabled: 0101010101
         actionIsOpen: 0101010101
-        actionStartIndex: 0000000004000000070000000a0000000f000000
-        actionHashCodes: 5e69bb0427fbe10327fbe103b2cf1000b2cf1000
+        actionStartIndex: 0000000003000000060000000a0000000f000000
+        actionHashCodes: 27fbe10327fbe1035e69bb04b2cf1000b2cf1000
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -33705,18 +33871,18 @@ MonoBehaviour:
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 1f000000170000000f0000000100000011000000110000000100000011000000110000000100000014000000110000001100000001000000010000001400000011000000110000000100000001000000
+        paramDataType: 1100000011000000010000001100000011000000010000001f000000170000000f0000000100000014000000110000001100000001000000010000001400000011000000110000000100000001000000
         paramName:
+        - boolVariable
+        - boolValue
+        - everyFrame
+        - boolVariable
+        - boolValue
+        - everyFrame
         - eventTarget
         - sendEvent
         - delay
         - everyFrame
-        - boolVariable
-        - boolValue
-        - everyFrame
-        - boolVariable
-        - boolValue
-        - everyFrame
         - gameObject
         - activate
         - recursive
@@ -33727,8 +33893,8 @@ MonoBehaviour:
         - recursive
         - resetOnExit
         - everyFrame
-        paramDataPos: 0000000000000000000000000000000000000000010000000100000002000000030000000200000000000000040000000500000003000000040000000100000006000000070000000500000006000000
-        paramByteDataSize: 0000000000000000000000000100000000000000000000000100000000000000000000000100000000000000000000000000000001000000010000000000000000000000000000000100000001000000
+        paramDataPos: 0000000001000000000000000200000003000000010000000000000000000000000000000200000000000000040000000500000003000000040000000100000006000000070000000500000006000000
+        paramByteDataSize: 0000000000000000010000000000000000000000010000000000000000000000000000000100000000000000000000000000000001000000010000000000000000000000000000000100000001000000
     - name: check can pick
       description: 
       colorIndex: 0
@@ -35077,7 +35243,7 @@ MonoBehaviour:
     watermark: 
     password: 
     locked: 0
-    preprocessed: 1
+    preprocessed: 0
     ExposedEvents: []
     RestartOnEnable: 1
     EnableDebugFlow: 0
@@ -36086,7 +36252,7 @@ MonoBehaviour:
     watermark: 
     password: 
     locked: 0
-    preprocessed: 0
+    preprocessed: 1
     ExposedEvents: []
     RestartOnEnable: 1
     EnableDebugFlow: 0
@@ -51298,7 +51464,7 @@ MonoBehaviour:
     watermark: 
     password: 
     locked: 0
-    preprocessed: 0
+    preprocessed: 1
     ExposedEvents: []
     RestartOnEnable: 1
     EnableDebugFlow: 0
@@ -55401,7 +55567,7 @@ MonoBehaviour:
     watermark: 
     password: 
     locked: 0
-    preprocessed: 0
+    preprocessed: 1
     ExposedEvents: []
     RestartOnEnable: 1
     EnableDebugFlow: 0
@@ -59472,6 +59638,12 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 132950}
+--- !u!222 &22279774
+CanvasRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 177144}
 --- !u!222 &22281090
 CanvasRenderer:
   m_ObjectHideFlags: 1
@@ -59601,6 +59773,7 @@ Canvas:
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
   m_SortingLayerID: 134392229
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -59690,7 +59863,7 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -9.149994}
+  m_AnchoredPosition: {x: 0, y: 1.7}
   m_SizeDelta: {x: 109.8, y: 36.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &22408126
@@ -59941,7 +60114,7 @@ RectTransform:
   m_RootOrder: 1
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 13.5, y: -5.2}
+  m_AnchoredPosition: {x: 13.5, y: 4.3}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &22416490
@@ -59995,7 +60168,7 @@ RectTransform:
   m_RootOrder: 4
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 76.3, y: -4.6}
+  m_AnchoredPosition: {x: 76.3, y: 4.9}
   m_SizeDelta: {x: 73.7, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &22419526
@@ -60012,7 +60185,7 @@ RectTransform:
   m_RootOrder: 1
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -53.9, y: 46.9}
+  m_AnchoredPosition: {x: -53.9, y: 55.4}
   m_SizeDelta: {x: 23.3, y: 28.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &22420358
@@ -60063,7 +60236,7 @@ RectTransform:
   m_RootOrder: 3
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 29.8, y: -20.1}
+  m_AnchoredPosition: {x: 29.8, y: -10.6}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &22421746
@@ -60105,8 +60278,8 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -10.2}
-  m_SizeDelta: {x: 18, y: 30}
+  m_AnchoredPosition: {x: 0, y: -0.4}
+  m_SizeDelta: {x: 54, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &22423310
 RectTransform:
@@ -60122,7 +60295,7 @@ RectTransform:
   m_RootOrder: 1
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 24.5, y: 0.8}
+  m_AnchoredPosition: {x: 24.5, y: 10.8}
   m_SizeDelta: {x: 116.6, y: 13.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &22423776
@@ -60204,7 +60377,7 @@ RectTransform:
   m_RootOrder: 2
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 60.5, y: -5.5}
+  m_AnchoredPosition: {x: 60.5, y: 4}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &22424688
@@ -60238,7 +60411,7 @@ RectTransform:
   m_RootOrder: 5
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 35.6, y: -57}
+  m_AnchoredPosition: {x: 35.6, y: -47}
   m_SizeDelta: {x: 116.6, y: 13.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &22427916
@@ -60340,7 +60513,7 @@ RectTransform:
   m_RootOrder: 4
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 56.9, y: -42.5}
+  m_AnchoredPosition: {x: 56.9, y: -32.5}
   m_SizeDelta: {x: 116.6, y: 13.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &22433330
@@ -60391,7 +60564,7 @@ RectTransform:
   m_RootOrder: 6
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 57.4, y: -71.2}
+  m_AnchoredPosition: {x: 57.4, y: -61.2}
   m_SizeDelta: {x: 116.6, y: 13.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &22437608
@@ -60442,7 +60615,7 @@ RectTransform:
   m_RootOrder: 4
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 76.3, y: -4.6}
+  m_AnchoredPosition: {x: 76.3, y: 4.9}
   m_SizeDelta: {x: 73.7, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &22440914
@@ -60494,7 +60667,7 @@ RectTransform:
   m_RootOrder: 5
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -32, y: 43.8}
+  m_AnchoredPosition: {x: -32, y: 52.3}
   m_SizeDelta: {x: 23.3, y: 15.65}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &22442466
@@ -60552,7 +60725,7 @@ RectTransform:
   m_RootOrder: 5
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 76.30006, y: -33.9}
+  m_AnchoredPosition: {x: 76.30006, y: -24.4}
   m_SizeDelta: {x: 73.7, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &22444032
@@ -60586,7 +60759,7 @@ RectTransform:
   m_RootOrder: 4
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 76.3, y: -4.6}
+  m_AnchoredPosition: {x: 76.3, y: 4.9}
   m_SizeDelta: {x: 73.7, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &22445290
@@ -60607,6 +60780,7 @@ RectTransform:
   - {fileID: 22455550}
   - {fileID: 22416490}
   - {fileID: 22405904}
+  - {fileID: 22496854}
   m_Father: {fileID: 22469940}
   m_RootOrder: 4
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -60645,7 +60819,7 @@ RectTransform:
   m_RootOrder: 5
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 76.30006, y: -33.9}
+  m_AnchoredPosition: {x: 76.30006, y: -24.4}
   m_SizeDelta: {x: 73.7, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &22446980
@@ -60747,7 +60921,7 @@ RectTransform:
   m_RootOrder: 7
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 70.1, y: -71.19998}
+  m_AnchoredPosition: {x: 70.1, y: -61.2}
   m_SizeDelta: {x: 116.6, y: 13.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &22455480
@@ -60764,7 +60938,7 @@ RectTransform:
   m_RootOrder: 2
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 60.5, y: -5.5}
+  m_AnchoredPosition: {x: 60.5, y: 4}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &22455550
@@ -60983,7 +61157,7 @@ RectTransform:
   m_RootOrder: 2
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -53.89997, y: 37.2}
+  m_AnchoredPosition: {x: -53.89997, y: 45.7}
   m_SizeDelta: {x: 23.3, y: 28.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &22468960
@@ -61017,7 +61191,7 @@ RectTransform:
   m_RootOrder: 3
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 29.8, y: -20.1}
+  m_AnchoredPosition: {x: 29.8, y: -10.6}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &22469940
@@ -61056,7 +61230,7 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -9.149994}
+  m_AnchoredPosition: {x: 0, y: 3.3}
   m_SizeDelta: {x: 109.8, y: 36.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &22471500
@@ -61378,7 +61552,7 @@ RectTransform:
   m_RootOrder: 5
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 76.30006, y: -33.9}
+  m_AnchoredPosition: {x: 76.30006, y: -24.4}
   m_SizeDelta: {x: 73.7, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &22481856
@@ -61395,7 +61569,7 @@ RectTransform:
   m_RootOrder: 1
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 13.5, y: -5.2}
+  m_AnchoredPosition: {x: 13.5, y: 4.3}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &22482268
@@ -61429,7 +61603,7 @@ RectTransform:
   m_RootOrder: 3
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 29.8, y: -20.1}
+  m_AnchoredPosition: {x: 29.8, y: -10.6}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &22484492
@@ -61480,7 +61654,7 @@ RectTransform:
   m_RootOrder: 1
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 13.5, y: -5.2}
+  m_AnchoredPosition: {x: 13.5, y: 4.3}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &22485246
@@ -61514,7 +61688,7 @@ RectTransform:
   m_RootOrder: 2
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 24.7, y: -13.6}
+  m_AnchoredPosition: {x: 24.7, y: -3.6}
   m_SizeDelta: {x: 116.6, y: 13.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &22485614
@@ -61633,7 +61807,7 @@ RectTransform:
   m_RootOrder: 1
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 39.8, y: -16.3}
+  m_AnchoredPosition: {x: 39.8, y: 0.1}
   m_SizeDelta: {x: 382.6, y: 99.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &22488140
@@ -61668,7 +61842,7 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -4.9, y: -37.3}
+  m_AnchoredPosition: {x: -4.9, y: -27.3}
   m_SizeDelta: {x: 160, y: 90.45}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &22489086
@@ -61702,7 +61876,7 @@ RectTransform:
   m_RootOrder: 4
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -44.7, y: 43.8}
+  m_AnchoredPosition: {x: -44.7, y: 52.3}
   m_SizeDelta: {x: 23.3, y: 15.65}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &22489588
@@ -61829,7 +62003,7 @@ RectTransform:
   m_RootOrder: 2
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 60.5, y: -5.5}
+  m_AnchoredPosition: {x: 60.5, y: 4}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &22492402
@@ -61964,7 +62138,7 @@ RectTransform:
   m_RootOrder: 3
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 24.7001, y: -28}
+  m_AnchoredPosition: {x: 24.7001, y: -18}
   m_SizeDelta: {x: 116.6, y: 13.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &22495532
@@ -62015,8 +62189,25 @@ RectTransform:
   m_RootOrder: 3
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -49.7, y: 43.8}
+  m_AnchoredPosition: {x: -49.7, y: 52.3}
   m_SizeDelta: {x: 23.3, y: 15.65}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!224 &22496854
+RectTransform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 177144}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 22445290}
+  m_RootOrder: 8
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 93.6, y: -49.8}
+  m_SizeDelta: {x: 40.8, y: 53}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &22498326
 RectTransform:

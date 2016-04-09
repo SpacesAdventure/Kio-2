@@ -598,7 +598,7 @@ MonoBehaviour:
       - fsmEvent:
           name: check pass
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: use tolerance not
         linkStyle: 0
         linkConstraint: 0
@@ -606,7 +606,7 @@ MonoBehaviour:
       - fsmEvent:
           name: check fail
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: use tolerance
         linkStyle: 0
         linkConstraint: 0
@@ -859,7 +859,7 @@ MonoBehaviour:
       - fsmEvent:
           name: check fail
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: move right
         linkStyle: 0
         linkConstraint: 0
@@ -867,7 +867,7 @@ MonoBehaviour:
       - fsmEvent:
           name: check pass
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: move left
         linkStyle: 0
         linkConstraint: 0
@@ -1175,7 +1175,7 @@ MonoBehaviour:
       - fsmEvent:
           name: check fail
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: move up
         linkStyle: 0
         linkConstraint: 0
@@ -1183,7 +1183,7 @@ MonoBehaviour:
       - fsmEvent:
           name: check pass
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: move down
         linkStyle: 0
         linkConstraint: 0
@@ -1491,7 +1491,7 @@ MonoBehaviour:
       - fsmEvent:
           name: check fail
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: move right
         linkStyle: 0
         linkConstraint: 0
@@ -1499,7 +1499,7 @@ MonoBehaviour:
       - fsmEvent:
           name: check pass
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: move left
         linkStyle: 0
         linkConstraint: 0
@@ -1597,7 +1597,7 @@ MonoBehaviour:
       - fsmEvent:
           name: check fail
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: move up
         linkStyle: 0
         linkConstraint: 0
@@ -1605,7 +1605,7 @@ MonoBehaviour:
       - fsmEvent:
           name: check pass
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: move down
         linkStyle: 0
         linkConstraint: 0
@@ -1764,7 +1764,7 @@ MonoBehaviour:
       - fsmEvent:
           name: check fail
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: check use telorance
         linkStyle: 0
         linkConstraint: 0
@@ -1772,7 +1772,7 @@ MonoBehaviour:
       - fsmEvent:
           name: check pass
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: check use telorance 3
         linkStyle: 0
         linkConstraint: 0
@@ -2033,7 +2033,7 @@ MonoBehaviour:
       - fsmEvent:
           name: check pass
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: set telorance
         linkStyle: 0
         linkConstraint: 0
@@ -2041,7 +2041,7 @@ MonoBehaviour:
       - fsmEvent:
           name: check fail
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: check horizontal
         linkStyle: 0
         linkConstraint: 0
@@ -2269,7 +2269,7 @@ MonoBehaviour:
       - fsmEvent:
           name: check pass
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: set telorance 2
         linkStyle: 0
         linkConstraint: 0
@@ -2277,7 +2277,7 @@ MonoBehaviour:
       - fsmEvent:
           name: check fail
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: check virtical
         linkStyle: 0
         linkConstraint: 0
@@ -2428,7 +2428,7 @@ MonoBehaviour:
       - fsmEvent:
           name: check pass
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: set telorance 3
         linkStyle: 0
         linkConstraint: 0
@@ -2436,7 +2436,7 @@ MonoBehaviour:
       - fsmEvent:
           name: check fail
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: check virtical 2
         linkStyle: 0
         linkConstraint: 0
@@ -2587,7 +2587,7 @@ MonoBehaviour:
       - fsmEvent:
           name: check pass
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: set telorance 4
         linkStyle: 0
         linkConstraint: 0
@@ -2595,7 +2595,7 @@ MonoBehaviour:
       - fsmEvent:
           name: check fail
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: check horizontal 2
         linkStyle: 0
         linkConstraint: 0
@@ -4375,7 +4375,7 @@ MonoBehaviour:
       - fsmEvent:
           name: check pass
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: action listener
         linkStyle: 0
         linkConstraint: 0
@@ -4383,7 +4383,7 @@ MonoBehaviour:
       - fsmEvent:
           name: check fail
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: menu pause
         linkStyle: 0
         linkConstraint: 0
@@ -4457,7 +4457,7 @@ MonoBehaviour:
       - fsmEvent:
           name: check pass
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: check if show a menu
         linkStyle: 0
         linkConstraint: 0
@@ -4596,8 +4596,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 418
-        y: 574
+        x: 381.625
+        y: 587.625
         width: 100
         height: 32
       isBreakpoint: 0
@@ -4749,8 +4749,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 559.5703
-        y: 599.91406
+        x: 674.33594
+        y: 620.3594
         width: 150
         height: 32
       isBreakpoint: 0
@@ -5982,7 +5982,7 @@ MonoBehaviour:
       - fsmEvent:
           name: check pass
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: dispear
         linkStyle: 0
         linkConstraint: 0
@@ -6831,7 +6831,7 @@ MonoBehaviour:
       - fsmEvent:
           name: check pass
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: check player state
         linkStyle: 0
         linkConstraint: 0
@@ -7042,7 +7042,7 @@ MonoBehaviour:
           useVariable: 1
           type: 1
           floatValue: 0
-          intValue: 10
+          intValue: 20
           boolValue: 0
           stringValue: 
           vector4Value: {x: 0, y: 0, z: 0, w: 0}
@@ -7905,7 +7905,7 @@ MonoBehaviour:
       - fsmEvent:
           name: check pass
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: hurt player
         linkStyle: 0
         linkConstraint: 0
@@ -8102,7 +8102,7 @@ MonoBehaviour:
     watermark: 
     password: 
     locked: 0
-    preprocessed: 0
+    preprocessed: 1
     ExposedEvents: []
     RestartOnEnable: 1
     EnableDebugFlow: 0
