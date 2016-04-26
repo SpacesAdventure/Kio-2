@@ -20,6 +20,8 @@ namespace FMODUnity
             var param = serializedObject.FindProperty("Params");
             var fadeout = serializedObject.FindProperty("AllowFadeout");
             var once = serializedObject.FindProperty("TriggerOnce");
+			var min=serializedObject.FindProperty("minDistance");
+			var max=serializedObject.FindProperty("maxDistance");
             
             EditorGUILayout.PropertyField(begin, new GUIContent("Play Event"));
             EditorGUILayout.PropertyField(end, new GUIContent("Stop Event"));
@@ -111,6 +113,8 @@ namespace FMODUnity
             {
                 EditorGUILayout.PropertyField(fadeout, new GUIContent("Allow Fadeout When Stopping"));
                 EditorGUILayout.PropertyField(once, new GUIContent("Trigger Once"));
+				EditorGUILayout.PropertyField(min,new GUIContent("Min Distance"));
+				EditorGUILayout.PropertyField(max,new GUIContent("Max Distance"));
             }
 
             serializedObject.ApplyModifiedProperties();

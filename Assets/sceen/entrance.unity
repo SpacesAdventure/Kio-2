@@ -892,7 +892,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'A14
+  m_Text: 'Astair
+
 
 '
 --- !u!222 &178221469
@@ -1881,7 +1882,7 @@ MonoBehaviour:
     watermark: 
     password: 
     locked: 0
-    preprocessed: 0
+    preprocessed: 1
     ExposedEvents: []
     RestartOnEnable: 1
     EnableDebugFlow: 0
@@ -2928,7 +2929,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1142723072
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3151,7 +3152,7 @@ MonoBehaviour:
     watermark: 
     password: 
     locked: 0
-    preprocessed: 0
+    preprocessed: 1
     ExposedEvents: []
     RestartOnEnable: 1
     EnableDebugFlow: 0
@@ -3261,7 +3262,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1259006204
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3484,7 +3485,7 @@ MonoBehaviour:
     watermark: 
     password: 
     locked: 0
-    preprocessed: 0
+    preprocessed: 1
     ExposedEvents: []
     RestartOnEnable: 1
     EnableDebugFlow: 0
@@ -3834,7 +3835,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: A14
+          value: stair01
         fsmObjectParams: []
         fsmVarParams: []
         fsmArrayParams: []
@@ -3903,7 +3904,7 @@ MonoBehaviour:
     watermark: 
     password: 
     locked: 0
-    preprocessed: 1
+    preprocessed: 0
     ExposedEvents: []
     RestartOnEnable: 1
     EnableDebugFlow: 0
@@ -4135,7 +4136,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1731979545
 RectTransform:
   m_ObjectHideFlags: 0

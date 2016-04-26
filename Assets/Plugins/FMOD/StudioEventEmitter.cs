@@ -14,6 +14,8 @@ namespace FMODUnity
         public String CollisionTag;
         public bool AllowFadeout = true;
         public bool TriggerOnce = false;
+		public float minDistance=1.0f;
+		public float maxDistance=1.2f;
 
         public ParamRef[] Params;
         
@@ -21,6 +23,7 @@ namespace FMODUnity
         private FMOD.Studio.EventInstance instance;
         private bool hasTriggered;
         private bool isQuitting;
+
 
         void Start() 
         {
@@ -134,9 +137,13 @@ namespace FMODUnity
                 {
                     var rigidBody = GetComponent<Rigidbody>();
                     var transform = GetComponent<Transform>();
+
                     instance.set3DAttributes(RuntimeUtils.To3DAttributes(gameObject, rigidBody));
+					instance.setProperty(FMOD.Studio.EVENT_PROPERTY.MINIMUM_DISTANCE,minDistance);
+					instance.setProperty(FMOD.Studio.EVENT_PROPERTY.MAXIMUM_DISTANCE,maxDistance);
                     RuntimeManager.AttachInstanceToGameObject(instance, transform, rigidBody);
                 }
+
             }
 
             foreach(var param in Params)

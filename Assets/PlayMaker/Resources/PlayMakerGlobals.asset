@@ -14,6 +14,12 @@ MonoBehaviour:
   variables:
     floatVariables:
     - useVariable: 1
+      name: mask fade time
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0.8
+    - useVariable: 1
       name: "\u4E00\u822C\u73A9\u5BB6\u884C\u8D70\u901F\u5EA6"
       tooltip: 
       showInInspector: 0
@@ -24,16 +30,22 @@ MonoBehaviour:
       tooltip: 
       showInInspector: 0
       networkSync: 0
-      value: 0.3
+      value: 0.35
     - useVariable: 1
       name: "\u9ED8\u8BA4\u73A9\u5BB6\u884C\u8D70\u901F\u5EA6"
       tooltip: 
       showInInspector: 0
       networkSync: 0
-      value: 0.6
+      value: 0.7
     intVariables:
     - useVariable: 1
       name: menu selected id
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: player deads
       tooltip: 
       showInInspector: 0
       networkSync: 0
@@ -56,6 +68,18 @@ MonoBehaviour:
       showInInspector: 0
       networkSync: 0
       value: 9
+    - useVariable: 1
+      name: "\u5C11\u5973\u7684\u5934id"
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 10
+    - useVariable: 1
+      name: "\u5C11\u5973\u7684\u5FC3\u810Fid"
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 11
     - useVariable: 1
       name: "\u6025\u6551\u5305id"
       tooltip: 
@@ -105,6 +129,12 @@ MonoBehaviour:
       networkSync: 0
       value: 7
     boolVariables:
+    - useVariable: 1
+      name: 80
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
     - useVariable: 1
       name: can call menus
       tooltip: 
@@ -257,6 +287,12 @@ MonoBehaviour:
       networkSync: 0
       value: {fileID: 0}
     - useVariable: 1
+      name: enemies counter
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: {fileID: 0}
+    - useVariable: 1
       name: first combine object
       tooltip: 
       showInInspector: 0
@@ -361,10 +397,12 @@ MonoBehaviour:
       - {fileID: 136746, guid: 7a59ffe6be37c81498775a1aea5abc3c, type: 2}
       - {fileID: 136746, guid: 116ed28f6730d3d4d96fb9e6a0b3ec2e, type: 2}
       - {fileID: 136746, guid: 0c08767b4c3949e4a817870e9d5cb2b2, type: 2}
+      - {fileID: 136746, guid: 3b2de9306d0ccae4b8170d52547f3190, type: 2}
+      - {fileID: 136746, guid: 2e611dafa9d53924897696dce4f0b3e9, type: 2}
     enumVariables: []
     categories:
     - 
-    variableCategoryIDs: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    variableCategoryIDs: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   events:
   - down
   - left

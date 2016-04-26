@@ -4485,15 +4485,19 @@ MonoBehaviour:
         colorIndex: 0
       actionData:
         actionNames:
+        - HutongGames.PlayMaker.Actions.IntAdd
+        - HutongGames.PlayMaker.Actions.SetIntValue
         - HutongGames.PlayMaker.Actions.GetFsmString
         - HutongGames.PlayMaker.Actions.GetFsmString
         customNames:
         - 
         - 
-        actionEnabled: 0101
-        actionIsOpen: 0101
-        actionStartIndex: 0000000005000000
-        actionHashCodes: 52221a0252221a02
+        - 
+        - 
+        actionEnabled: 01010101
+        actionIsOpen: 01010101
+        actionStartIndex: 0000000003000000060000000b000000
+        actionHashCodes: 603dd905603dd90552221a0252221a02
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -4561,7 +4565,31 @@ MonoBehaviour:
         fsmArrayParams: []
         fsmEnumParams: []
         fsmFloatParams: []
-        fsmIntParams: []
+        fsmIntParams:
+        - useVariable: 1
+          name: saves
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 1
+        - useVariable: 1
+          name: deads
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 1
+          name: player deads
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
         fsmBoolParams: []
         fsmVector2Params: []
         fsmVector3Params: []
@@ -4569,25 +4597,31 @@ MonoBehaviour:
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams: []
-        byteData: 0000
+        byteData: 00000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 14000000120000001200000012000000010000001400000012000000120000001200000001000000
+        paramDataType: 10000000100000000100000010000000100000000100000014000000120000001200000012000000010000001400000012000000120000001200000001000000
         paramName:
-        - gameObject
-        - fsmName
-        - variableName
-        - storeValue
+        - intVariable
+        - add
+        - everyFrame
+        - intVariable
+        - intValue
         - everyFrame
         - gameObject
         - fsmName
         - variableName
         - storeValue
         - everyFrame
-        paramDataPos: 00000000000000000100000002000000000000000100000003000000040000000500000001000000
-        paramByteDataSize: 00000000000000000000000000000000010000000000000000000000000000000000000001000000
+        - gameObject
+        - fsmName
+        - variableName
+        - storeValue
+        - everyFrame
+        paramDataPos: 00000000010000000000000002000000030000000100000000000000000000000100000002000000020000000100000003000000040000000500000003000000
+        paramByteDataSize: 00000000000000000100000000000000000000000100000000000000000000000000000000000000010000000000000000000000000000000000000001000000
     - name: save file
       description: 
       colorIndex: 0
@@ -4861,13 +4895,15 @@ MonoBehaviour:
         colorIndex: 0
       actionData:
         actionNames:
+        - HutongGames.PlayMaker.Actions.SetIntValue
         - HutongGames.PlayMaker.Actions.LoadLevel
         customNames:
         - 
-        actionEnabled: 01
-        actionIsOpen: 01
-        actionStartIndex: 00000000
-        actionHashCodes: 7dd6b201
+        - 
+        actionEnabled: 0101
+        actionIsOpen: 0101
+        actionStartIndex: 0000000003000000
+        actionHashCodes: 603dd9057dd6b201
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams: []
@@ -4889,7 +4925,19 @@ MonoBehaviour:
         fsmArrayParams: []
         fsmEnumParams: []
         fsmFloatParams: []
-        fsmIntParams: []
+        fsmIntParams:
+        - useVariable: 1
+          name: player deads
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 1
+          name: deads
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
         fsmBoolParams:
         - useVariable: 0
           name: 
@@ -4904,20 +4952,23 @@ MonoBehaviour:
         fsmQuaternionParams: []
         stringParams:
         - 
-        byteData: 0000
+        byteData: 000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 1200000001000000010000001700000011000000
+        paramDataType: 1000000010000000010000001200000001000000010000001700000011000000
         paramName:
+        - intVariable
+        - intValue
+        - everyFrame
         - levelName
         - additive
         - async
         - loadedEvent
         - dontDestroyOnLoad
-        paramDataPos: 0000000000000000010000000000000000000000
-        paramByteDataSize: 0000000001000000010000000000000000000000
+        paramDataPos: 0000000001000000000000000000000001000000020000000000000000000000
+        paramByteDataSize: 0000000000000000010000000000000001000000010000000000000000000000
     - name: put the item in
       description: 
       colorIndex: 0
@@ -5763,7 +5814,7 @@ MonoBehaviour:
         - useVariable: 1
           name: d05
           tooltip: "\u88AB\u80A5\u5B85\u6293\u4F4F\u4E4B\u540E\u5267\u60C5\u90FD\u5728\u8FD9\uFF0C\u7B2C\u4E00\u4E2A\u4EE3\u8868\u5267\u60C5\u521D\u59CB\u5316\uFF0C0\u662F\u521A\u5F00\u59CB\u3002\u7B2C\u4E8C\u4E2A\u8868\u793A\u5F00\u7BB1\u4E86\u6CA1\u6709\uFF0C0\u662F\u4E0A\u9501\u3002\u7B2C\u4E09\u4E2A\u8868\u793A\u6709\u65E0\u7ED1\u624B\uFF0C0\u662F\u7ED1\u624B"
-          showInInspector: 1
+          showInInspector: 0
           networkSync: 0
           type: 1
           objectTypeName: UnityEngine.Object
@@ -7502,6 +7553,58 @@ MonoBehaviour:
       textureVariables: []
       arrayVariables:
       - useVariable: 1
+        name: a01
+        tooltip: "\u95E8\u662F\u5426\u9501\u7740"
+        showInInspector: 0
+        networkSync: 0
+        type: 1
+        objectTypeName: UnityEngine.Object
+        floatValues: []
+        intValues: 00000000
+        boolValues: 
+        stringValues: []
+        vector4Values: []
+        objectReferences: []
+      - useVariable: 1
+        name: a04
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        type: 1
+        objectTypeName: UnityEngine.Object
+        floatValues: []
+        intValues: 00000000
+        boolValues: 
+        stringValues: []
+        vector4Values: []
+        objectReferences: []
+      - useVariable: 1
+        name: a05
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        type: 1
+        objectTypeName: UnityEngine.Object
+        floatValues: []
+        intValues: 00000000
+        boolValues: 
+        stringValues: []
+        vector4Values: []
+        objectReferences: []
+      - useVariable: 1
+        name: a06
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        type: 1
+        objectTypeName: UnityEngine.Object
+        floatValues: []
+        intValues: 00000000
+        boolValues: 
+        stringValues: []
+        vector4Values: []
+        objectReferences: []
+      - useVariable: 1
         name: a093
         tooltip: "a093\u7684\u5B58\u6863\uFF0C\u5C31\u4E09\u4E2A\u7269\u54C1\uFF0C0\u7CFB\u67AA\uFF0C1\u7CFB\u836F\u5305\uFF0C2\u7CFB\u5B50\u5F39"
         showInInspector: 0
@@ -7515,8 +7618,86 @@ MonoBehaviour:
         vector4Values: []
         objectReferences: []
       - useVariable: 1
+        name: a11
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        type: 1
+        objectTypeName: UnityEngine.Object
+        floatValues: []
+        intValues: 00000000
+        boolValues: 
+        stringValues: []
+        vector4Values: []
+        objectReferences: []
+      - useVariable: 1
+        name: a12
+        tooltip: "0\u4EE3\u8868\u6709\u7F29\u5C0F\u67AA\uFF0C1\u4EE3\u8868\u6CA1\u6709"
+        showInInspector: 0
+        networkSync: 0
+        type: 1
+        objectTypeName: UnityEngine.Object
+        floatValues: []
+        intValues: 00000000
+        boolValues: 
+        stringValues: []
+        vector4Values: []
+        objectReferences: []
+      - useVariable: 1
+        name: a13
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        type: 1
+        objectTypeName: UnityEngine.Object
+        floatValues: []
+        intValues: 00000000
+        boolValues: 
+        stringValues: []
+        vector4Values: []
+        objectReferences: []
+      - useVariable: 1
         name: a15
         tooltip: "a15\u7684\u5B58\u6863\uFF0C\u6709\u4E00\u4E2A\u7269\u54C1\uFF0C\u5927\u94A5\u5319\uFF0C0\u662F\u5927\uFF0C1\u662F\u5C0F\uFF0C-1\u662F\u6CA1\u6709\u4E86"
+        showInInspector: 0
+        networkSync: 0
+        type: 1
+        objectTypeName: UnityEngine.Object
+        floatValues: []
+        intValues: 00000000
+        boolValues: 
+        stringValues: []
+        vector4Values: []
+        objectReferences: []
+      - useVariable: 1
+        name: ac01
+        tooltip: "\u7B2C\u4E00\u4E2A\u662F\u5C11\u5973\u7684\u5934\u7684\u72B6\u6001\uFF0C\u7B2C\u4E8C\u4E2A\u662F\u5C11\u5973\u7684\u5FC3\u7684\u72B6\u6001\uFF0C\u7B2C\u4E09\u4E2A\u662F\u53F3\u8FB9\u95E8\u7684\u72B6\u6001"
+        showInInspector: 0
+        networkSync: 0
+        type: 1
+        objectTypeName: UnityEngine.Object
+        floatValues: []
+        intValues: 000000000000000000000000
+        boolValues: 
+        stringValues: []
+        vector4Values: []
+        objectReferences: []
+      - useVariable: 1
+        name: ac03
+        tooltip: "\u7B2C\u4E00\u4E2A\u662F\u5F00\u95E8\u65E0\uFF0C\u7B2C\u4E8C\u4E2A\u662F\u5783\u573E\u5267\u60C5"
+        showInInspector: 0
+        networkSync: 0
+        type: 1
+        objectTypeName: UnityEngine.Object
+        floatValues: []
+        intValues: 0000000000000000
+        boolValues: 
+        stringValues: []
+        vector4Values: []
+        objectReferences: []
+      - useVariable: 1
+        name: ac05
+        tooltip: 
         showInInspector: 0
         networkSync: 0
         type: 1
@@ -7569,7 +7750,7 @@ MonoBehaviour:
       - useVariable: 1
         name: d05
         tooltip: "\u88AB\u80A5\u5B85\u6293\u4F4F\u4E4B\u540E\u5267\u60C5\u90FD\u5728\u8FD9\uFF0C\u7B2C\u4E00\u4E2A\u4EE3\u8868\u5267\u60C5\u521D\u59CB\u5316\uFF0C0\u662F\u521A\u5F00\u59CB\u3002\u7B2C\u4E8C\u4E2A\u8868\u793A\u5F00\u7BB1\u4E86\u6CA1\u6709\uFF0C0\u662F\u4E0A\u9501\u3002\u7B2C\u4E09\u4E2A\u8868\u793A\u6709\u65E0\u7ED1\u624B\uFF0C0\u662F\u7ED1\u624B"
-        showInInspector: 1
+        showInInspector: 0
         networkSync: 0
         type: 1
         objectTypeName: UnityEngine.Object
@@ -7647,7 +7828,7 @@ MonoBehaviour:
       enumVariables: []
       categories:
       - 
-      variableCategoryIDs: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+      variableCategoryIDs: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
     description: 
     docUrl: 
     showStateLabel: 0
