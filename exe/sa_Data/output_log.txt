@@ -36,20 +36,20 @@ Platform assembly: E:\Documents\Unity\Kio-2\exe\sa_Data\Managed\MoodkieSecurity.
 Loading E:\Documents\Unity\Kio-2\exe\sa_Data\Managed\MoodkieSecurity.dll into Unity Child Domain
 Platform assembly: E:\Documents\Unity\Kio-2\exe\sa_Data\Managed\PlayMaker.dll (this message is harmless)
 Loading E:\Documents\Unity\Kio-2\exe\sa_Data\Managed\PlayMaker.dll into Unity Child Domain
-- Completed reload, in  0.109 seconds
+- Completed reload, in  0.066 seconds
 Platform assembly: E:\Documents\Unity\Kio-2\exe\sa_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: E:\Documents\Unity\Kio-2\exe\sa_Data\Managed\System.dll (this message is harmless)
 <RI> Initializing input.
 <RI> Input initialized.
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initialized touch support.
-UnloadTime: 2.603600 ms
-LoadLevel: stair01
+UnloadTime: 1.394891 ms
+LoadLevel: B02
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
 
-Unloading 7 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 9.218145 ms
+Unloading 11 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 7.438902 ms
 FSM not Preprocessed: player : action
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
@@ -71,63 +71,11 @@ FMOD Studio: Creating runtime system instance
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
 
 
-Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 2718.
-Total: 39.810688 ms (FindLiveObjects: 0.188391 ms CreateObjectMapping: 0.086424 ms MarkObjects: 39.501675 ms  DeleteObjects: 0.026424 ms)
-
-LoadLevel: AC03
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
-
-Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 1.623714 ms
-FSM not Preprocessed: player : action
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
-
-AddEventHandlerComponent: PlayMakerFixedUpdate
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
-
-FSM not Preprocessed: player : hurt controler
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
-
-FSM not Preprocessed: player : move controler
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
-
-
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2849.
-Total: 39.211315 ms (FindLiveObjects: 0.191189 ms CreateObjectMapping: 0.085491 ms MarkObjects: 38.736294 ms  DeleteObjects: 0.196474 ms)
-
-LoadLevel: A093
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
-
-Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 1.998011 ms
-FSM not Preprocessed: player : action
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
-
-AddEventHandlerComponent: PlayMakerFixedUpdate
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
-
-FSM not Preprocessed: player : hurt controler
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
-
-FSM not Preprocessed: player : move controler
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
-
-
-Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 2808.
-Total: 33.625156 ms (FindLiveObjects: 0.297199 ms CreateObjectMapping: 0.112537 ms MarkObjects: 33.036350 ms  DeleteObjects: 0.176889 ms)
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 3508.
+Total: 33.582153 ms (FindLiveObjects: 0.208285 ms CreateObjectMapping: 0.069635 ms MarkObjects: 33.272526 ms  DeleteObjects: 0.024869 ms)
 
 Setting up 1 worker threads for Enlighten.
-  Thread -> id: bbc -> priority: 1 
+  Thread -> id: 15a0 -> priority: 1 
 FMOD Studio: Destroying runtime system instance
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)

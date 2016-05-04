@@ -37,7 +37,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &402654
 Transform:
   m_ObjectHideFlags: 1
@@ -867,7 +867,7 @@ MonoBehaviour:
       isGlobal: 0
     - name: check pass
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     globalTransitions: []
     variables:
       floatVariables: []
@@ -949,7 +949,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sortLayer: effect
-  sortOrder: 1
+  sortOrder: -1
 --- !u!114 &11453442
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -962,6 +962,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sortObjects: []
+  layers: []
 --- !u!198 &19819080
 ParticleSystem:
   m_ObjectHideFlags: 1

@@ -7619,26 +7619,26 @@ MonoBehaviour:
         objectReferences: []
       - useVariable: 1
         name: a11
-        tooltip: 
+        tooltip: "\u7B2C\u4E00\u4E2A\u662F\u6709\u65E0\u602A\uFF0C\u7B2C\u4E8C\u4E2A\u662F\u5783\u573E\u5267\u60C5"
         showInInspector: 0
         networkSync: 0
         type: 1
         objectTypeName: UnityEngine.Object
         floatValues: []
-        intValues: 00000000
+        intValues: 0000000000000000
         boolValues: 
         stringValues: []
         vector4Values: []
         objectReferences: []
       - useVariable: 1
         name: a12
-        tooltip: "0\u4EE3\u8868\u6709\u7F29\u5C0F\u67AA\uFF0C1\u4EE3\u8868\u6CA1\u6709"
+        tooltip: "0\u4EE3\u8868\u6709\u7F29\u5C0F\u67AA\uFF0C1\u4EE3\u8868\u6CA1\u6709\uFF0C\u7B2C\u4E8C\u4E2A\u662F\u5783\u573E\u5267\u60C5"
         showInInspector: 0
         networkSync: 0
         type: 1
         objectTypeName: UnityEngine.Object
         floatValues: []
-        intValues: 00000000
+        intValues: 0000000000000000
         boolValues: 
         stringValues: []
         vector4Values: []
@@ -7704,6 +7704,19 @@ MonoBehaviour:
         objectTypeName: UnityEngine.Object
         floatValues: []
         intValues: 00000000
+        boolValues: 
+        stringValues: []
+        vector4Values: []
+        objectReferences: []
+      - useVariable: 1
+        name: b02
+        tooltip: "\u7B2C\u4E00\u4E2A\u7CFB\u5267\u60C5\uFF0C\u5305\u62EC\u95E8\u9501\u4E0E\u5426\u3002\u7B2C\u4E8C\u4E2A\u7CFB\u6B7B\u4EBA\u5BF9\u8BDD"
+        showInInspector: 1
+        networkSync: 0
+        type: 1
+        objectTypeName: UnityEngine.Object
+        floatValues: []
+        intValues: 0000000000000000
         boolValues: 
         stringValues: []
         vector4Values: []
@@ -7828,7 +7841,7 @@ MonoBehaviour:
       enumVariables: []
       categories:
       - 
-      variableCategoryIDs: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+      variableCategoryIDs: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
     description: 
     docUrl: 
     showStateLabel: 0
