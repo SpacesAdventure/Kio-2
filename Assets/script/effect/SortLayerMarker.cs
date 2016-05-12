@@ -5,9 +5,11 @@ using System.Collections.Generic;
 public class SortLayerMarker : MonoBehaviour {
 	public GameObject[] sortObjects;
 	public string[] layers;
+	bool added=false;
 	// Use this for initialization
 	void Start () {
 		getSprites();
+//		addSelf(true);
 	}
 	public void getSprites(){
 		List<GameObject> list=loopAllChildrenByTag(transform,"layer");
@@ -36,10 +38,13 @@ public class SortLayerMarker : MonoBehaviour {
 		return list;
 	}
 	void Update(){
-		Vector3 pos = Camera.main.WorldToViewportPoint(transform.position);
-		bool isVisible = (Camera.main.orthographic || pos.z > 0f) && (pos.x > 0f && pos.x < 1f && pos.y > -0.12f && pos.y < 1.12f);
+//		Vector3 pos = Camera.main.WorldToViewportPoint(transform.position);
+//		bool isVisible = (Camera.main.orthographic || pos.z > 0f) && (pos.x > 0f && pos.x < 1f && pos.y > -0.12f && pos.y < 1.12f);
 //		print(isVisible+" "+pos);
-		addSelf(isVisible);
+//		addSelf(isVisible);
+		if(added)return;
+		addSelf(true);
+		
 	}
 	void OnBecameVisible(){
 
@@ -57,6 +62,7 @@ public class SortLayerMarker : MonoBehaviour {
 			return;
 		if(add){
 			GameObjectSortLayerArrangement.instance.add(gameObject);
+			added=true;
 		}else{
 			GameObjectSortLayerArrangement.instance.remove(gameObject);
 		}
