@@ -28,14 +28,14 @@ AnimationClip:
         outSlope: {x: Infinity, y: Infinity, z: Infinity}
         tangentMode: 0
       - time: 0.16666667
-        value: {x: 0, y: 0.005, z: 0}
+        value: {x: 0, y: 0.01, z: 0}
         inSlope: {x: Infinity, y: Infinity, z: Infinity}
         outSlope: {x: Infinity, y: Infinity, z: Infinity}
         tangentMode: 0
       - time: 0.25
         value: {x: 0, y: 0, z: 0}
-        inSlope: {x: 0, y: 0.02999999, z: 0}
-        outSlope: {x: 0, y: 0.02999999, z: 0}
+        inSlope: {x: 0, y: -0.000000011175871, z: 0}
+        outSlope: {x: 0, y: -0.000000011175871, z: 0}
         tangentMode: 0
       - time: 0.33333334
         value: {x: 0, y: 0.01, z: 0}
@@ -159,14 +159,14 @@ AnimationClip:
         outSlope: Infinity
         tangentMode: 31
       - time: 0.16666667
-        value: 0.005
+        value: 0.01
         inSlope: Infinity
         outSlope: Infinity
         tangentMode: 31
       - time: 0.25
         value: 0
-        inSlope: 0.02999999
-        outSlope: 0.02999999
+        inSlope: -0.000000011175871
+        outSlope: -0.000000011175871
         tangentMode: 10
       - time: 0.33333334
         value: 0.01

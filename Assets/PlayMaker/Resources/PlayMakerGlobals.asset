@@ -39,6 +39,12 @@ MonoBehaviour:
       value: 0.7
     intVariables:
     - useVariable: 1
+      name: counting time
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 80
+    - useVariable: 1
       name: menu selected id
       tooltip: 
       showInInspector: 0
@@ -68,6 +74,12 @@ MonoBehaviour:
       showInInspector: 0
       networkSync: 0
       value: 9
+    - useVariable: 1
+      name: "\u56FE\u4E66\u9986\u5927\u95E8\u94A5\u5319id"
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 17
     - useVariable: 1
       name: "\u5C11\u5973\u7684\u5934id"
       tooltip: 
@@ -111,11 +123,23 @@ MonoBehaviour:
       networkSync: 0
       value: 3
     - useVariable: 1
+      name: "\u6C27\u6C14\u7B52id"
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 14
+    - useVariable: 1
       name: "\u8840\u67D3\u7684\u94A5\u5319id"
       tooltip: 
       showInInspector: 0
       networkSync: 0
       value: 8
+    - useVariable: 1
+      name: "\u94A5\u5319b03 id"
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 13
     - useVariable: 1
       name: "\u94A5\u5319\u7F29\u5C0F\u67AAid"
       tooltip: 
@@ -128,6 +152,18 @@ MonoBehaviour:
       showInInspector: 0
       networkSync: 0
       value: 7
+    - useVariable: 1
+      name: "\u9632\u6BD2\u5957\u88C5id"
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 16
+    - useVariable: 1
+      name: "\u9632\u6BD2\u9762\u5177id"
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 15
     - useVariable: 1
       name: "\u9F7F\u8F6Eid"
       tooltip: 
@@ -155,6 +191,12 @@ MonoBehaviour:
       value: 1
     - useVariable: 1
       name: load the scene
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: stop time counting
       tooltip: 
       showInInspector: 0
       networkSync: 0
@@ -376,6 +418,12 @@ MonoBehaviour:
       showInInspector: 0
       networkSync: 0
       value: {fileID: 0}
+    - useVariable: 1
+      name: time counter
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: {fileID: 0}
     objectVariables: []
     materialVariables: []
     textureVariables: []
@@ -406,10 +454,15 @@ MonoBehaviour:
       - {fileID: 136746, guid: 3b2de9306d0ccae4b8170d52547f3190, type: 2}
       - {fileID: 136746, guid: 2e611dafa9d53924897696dce4f0b3e9, type: 2}
       - {fileID: 136746, guid: 4b5e9ad2f7cd9d648ad2b42fb868a32c, type: 2}
+      - {fileID: 136746, guid: f5c6d5d7995e0ce40b384b33ee4d846a, type: 2}
+      - {fileID: 136746, guid: e676b990c50841d41b3399456d39f87d, type: 2}
+      - {fileID: 136746, guid: fdd1e2c907fe3f9478498c121f603f3a, type: 2}
+      - {fileID: 136746, guid: 4ced576db262dde4081af5c43ed781d5, type: 2}
+      - {fileID: 136746, guid: 780fa6b6242ffdf4e8dc9a574441ca9d, type: 2}
     enumVariables: []
     categories:
     - 
-    variableCategoryIDs: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    variableCategoryIDs: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   events:
   - down
   - left
@@ -458,3 +511,6 @@ MonoBehaviour:
   - put box
   - take box
   - force stand
+  - delete
+  - start
+  - stop

@@ -36,6 +36,7 @@ using System;
 using System.Collections;
 using System.Reflection;
 using UnityEngine;
+using UnityEngine.UI;
 #endregion
 
 /// <summary>
@@ -3343,7 +3344,13 @@ public class iTween : MonoBehaviour{
 			}
 			}
 			//colors[0] = colors[1] = renderer.material.color;	
-		}else if(GetComponent<Light>()){
+		}else if(GetComponent<Image>()){
+			Image im=GetComponent<Image>();
+			colors=new Color[1,3];
+			colors[0,0]=im.color;
+			colors[0,1]=im.color;
+		}
+		else if(GetComponent<Light>()){
 			colors = new Color[1,3];
 			colors[0,0] = colors[0,1] = GetComponent<Light>().color;	
 		}else{
@@ -4123,7 +4130,14 @@ public class iTween : MonoBehaviour{
 				GetComponent<Renderer>().materials[i].SetColor(namedcolorvalue.ToString(),colors[i,2]);
 				}
 			}
-		}else if(GetComponent<Light>()){
+		}else if(GetComponent<Image>()){
+			Image im=GetComponent<Image>();
+			for (int i = 0; i < colors.GetLength(0); i++) {
+			var c=colors[i,2];
+				im.color=c;
+			}
+		}
+		else if(GetComponent<Light>()){
 			//light.color=colors[2];	
 			GetComponent<Light>().color=colors[0,2];
 		}
@@ -4147,7 +4161,14 @@ public class iTween : MonoBehaviour{
 					GetComponent<Renderer>().materials[i].SetColor(namedcolorvalue.ToString(),colors[i,1]);
 					}
 				}
-			}else if(GetComponent<Light>()){
+			}else if(GetComponent<Image>()){
+				Image im=GetComponent<Image>();
+				for (int i = 0; i < colors.GetLength(0); i++) {
+					var c=colors[i,2];
+					im.color=c;
+				}
+			}
+			else if(GetComponent<Light>()){
 				//light.color=colors[1];	
 				GetComponent<Light>().color=colors[0,1];
 			}			
