@@ -10392,7 +10392,7 @@ MonoBehaviour:
           name: FINISHED
           isSystemEvent: 1
           isGlobal: 0
-        toState: ready talk
+        toState: talk done
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
@@ -10710,7 +10710,7 @@ MonoBehaviour:
           floatValue: 0
           intValue: 0
           boolValue: 0
-          stringValue: " Kio\\n\u3010\u592A\u597D\u4E86\uFF0C\u53EF\u4EE5\u79BB\u5F00\u56FE\u4E66\u9986\u4E86\uFF01\u3011"
+          stringValue: " Kio\\n\u3010\u73B0\u5728\u53D6\u5F97\u4E86\u5927\u95E8\u94A5\u5319\uFF0C\u5E94\u8BE5\u53EF\u4EE5\u79BB\u5F00\u56FE\u4E66\u9986\u4E86\u3002\u3011"
           vector4Value: {x: 0, y: 0, z: 0, w: 0}
           objectReference: {fileID: 0}
           arrayValue:
