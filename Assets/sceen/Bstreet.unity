@@ -1120,7 +1120,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 306661266}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.214, y: 0.39, z: 0}
+  m_LocalPosition: {x: -5.22, y: 1.117, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1815822601}
@@ -1219,11 +1219,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 438858, guid: 0c57543706b9bc44b9805e68e89804aa, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 9.2
+      value: 4.65
       objectReference: {fileID: 0}
     - target: {fileID: 438858, guid: 0c57543706b9bc44b9805e68e89804aa, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -3.01
+      value: 2.98
       objectReference: {fileID: 0}
     - target: {fileID: 438858, guid: 0c57543706b9bc44b9805e68e89804aa, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1253,9 +1253,37 @@ Prefab:
       propertyPath: orthographic size
       value: 1.3
       objectReference: {fileID: 0}
+    - target: {fileID: 11434862, guid: 0c57543706b9bc44b9805e68e89804aa, type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 128222, guid: 0c57543706b9bc44b9805e68e89804aa, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0c57543706b9bc44b9805e68e89804aa, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &335627047 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 165714, guid: 0c57543706b9bc44b9805e68e89804aa, type: 2}
+  m_PrefabInternal: {fileID: 335627046}
+--- !u!114 &335627048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 335627047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b4de9498f847404a98199cff73de8f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  maxX: 4.64
+  minX: -4.64
+  maxY: 2.97
+  minY: -2.97
 --- !u!1001 &352401093
 Prefab:
   m_ObjectHideFlags: 0

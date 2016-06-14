@@ -8659,6 +8659,22 @@ Prefab:
       propertyPath: fsm.states.Array.data[0].actionData.actionEnabled.Array.data[1]
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 412646, guid: e85da26c4f5430d4286c6b5c4baefc29, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -0.014
+      objectReference: {fileID: 0}
+    - target: {fileID: 11446500, guid: e85da26c4f5430d4286c6b5c4baefc29, type: 2}
+      propertyPath: fsm.states.Array.data[2].actionData.fsmIntParams.Array.data[2].value
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11446500, guid: e85da26c4f5430d4286c6b5c4baefc29, type: 2}
+      propertyPath: fsm.states.Array.data[1].actionData.fsmIntParams.Array.data[1].value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11446500, guid: e85da26c4f5430d4286c6b5c4baefc29, type: 2}
+      propertyPath: fsm.states.Array.data[1].actionData.fsmVarParams.Array.data[0].stringValue
+      value: D03
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e85da26c4f5430d4286c6b5c4baefc29, type: 2}
   m_IsPrefabParent: 0
