@@ -196,6 +196,12 @@ MonoBehaviour:
       networkSync: 0
       value: 0
     - useVariable: 1
+      name: player die
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
       name: stop time counting
       tooltip: 
       showInInspector: 0
@@ -335,6 +341,12 @@ MonoBehaviour:
       networkSync: 0
       value: {fileID: 0}
     - useVariable: 1
+      name: die mask
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: {fileID: 0}
+    - useVariable: 1
       name: enemies counter
       tooltip: 
       showInInspector: 0
@@ -429,6 +441,60 @@ MonoBehaviour:
     textureVariables: []
     arrayVariables:
     - useVariable: 1
+      name: dead names
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      type: 4
+      objectTypeName: UnityEngine.Object
+      floatValues: []
+      intValues: 
+      boolValues: 
+      stringValues:
+      - "\u50F5\u5C38\u54AC\u6B7B"
+      - "\u5DE8\u5A74\u73A9\u6B7B"
+      - "\u8089\u866B\u5438\u6B7B"
+      - "\u5E7D\u7075\u540A\u6B7B"
+      - "\u9489\u5899\u9677\u9631"
+      - "\u7A7F\u523A\u9677\u9631"
+      - "\u6BD2\u6C14\u6BD2\u6B7B"
+      - "\u7535\u952F\u5206\u5C38"
+      - "\u6CE2\u6CE2\u8650\u6B7B"
+      - "\u5DE8\u866B\u6740\u6B7B"
+      - 
+      - 
+      - 
+      - 
+      vector4Values: []
+      objectReferences: []
+    - useVariable: 1
+      name: death pictures
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      type: 12
+      objectTypeName: UnityEngine.Sprite
+      floatValues: []
+      intValues: 
+      boolValues: 
+      stringValues: []
+      vector4Values: []
+      objectReferences:
+      - {fileID: 21300000, guid: 53272954bc256ad4e8f942fc3ff53ce8, type: 3}
+      - {fileID: 21300000, guid: c96ecd7b9ab13b94c86545420cdeaf01, type: 3}
+      - {fileID: 21300000, guid: cb9dc4ba4a93537439260e58988a7fe0, type: 3}
+      - {fileID: 21300000, guid: c2c426fa7ab8d82458f6831fdccb32ce, type: 3}
+      - {fileID: 21300000, guid: d32b2281ee3d748429374ff37fcd2103, type: 3}
+      - {fileID: 21300000, guid: 57669cc53f1c14e49ba86a313cf5e2df, type: 3}
+      - {fileID: 21300000, guid: 153da2eb1130d204c8d15ffe19b48267, type: 3}
+      - {fileID: 21300000, guid: 065a4701fee147f468452d22c51f971f, type: 3}
+      - {fileID: 21300000, guid: 938525064dde0324da3ffe434fb8bd74, type: 3}
+      - {fileID: 21300000, guid: 9e5740ab3cb738d4faab4ec1caf25275, type: 3}
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+    - useVariable: 1
       name: item prefab
       tooltip: 
       showInInspector: 0
@@ -462,7 +528,7 @@ MonoBehaviour:
     enumVariables: []
     categories:
     - 
-    variableCategoryIDs: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    variableCategoryIDs: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   events:
   - down
   - left

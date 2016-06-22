@@ -3,7 +3,7 @@ using System.Collections;
 using System.Text.RegularExpressions;
 using HutongGames.PlayMaker.Actions;
 using UnityEngine.UI;
-
+using FMODUnity;
 	
 public class TypeWriter : MonoBehaviour
 	{
@@ -12,8 +12,10 @@ public class TypeWriter : MonoBehaviour
 	Text label;
 	public PlayMakerFSM fsm;
 	float defaultDelay=0.04f;
+	StudioEventEmitter fmod;
 	void Awake(){
 		label=GetComponent<Text>();
+		fmod=fsm.GetComponent<StudioEventEmitter>();
 	}
 	void Start(){
 		
@@ -44,6 +46,9 @@ public class TypeWriter : MonoBehaviour
 				continue;
 			foreach(char c in chars){
 				label.text+=c;
+
+//				fsm.Fsm.Event("typing");
+				fmod.Play();
 				yield return new WaitForSeconds(defaultDelay);
 			}
 			if(i>=mc.Count)

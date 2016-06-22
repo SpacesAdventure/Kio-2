@@ -54,22 +54,41 @@ namespace HutongGames.PlayMaker.Actions
 			
 //			FsmArray array=new FsmArray();
 			VariableType t=array.ElementType;
+			
 			switch(t){
 			case VariableType.Bool:{
-					array.boolValues=ES2.LoadArray<bool>(filename, setting);
+					bool[] bs=ES2.LoadArray<bool>(filename, setting);
+//					array.Values=(object[])bs;
+//					array.Values=bs;
+					array.Resize(bs.Length);
+					for(int i=0;i<bs.Length;i++){
+						array.Set(i,(object)bs[i]);
+					}
 					break;
 				}
 			case VariableType.Int:{
-					int[] ints=ES2.LoadArray<int>(filename, setting);
-					array.intValues=ints;
+					int[] bs=ES2.LoadArray<int>(filename, setting);
+//					array.intValues=ints;
+					array.Resize(bs.Length);
+					for(int i=0;i<bs.Length;i++){
+						array.Set(i,(object)bs[i]);
+					}
 					break;
 				}
 			case VariableType.Float:{
-					array.floatValues=ES2.LoadArray<float>(filename, setting);
+					float[]bs=ES2.LoadArray<float>(filename, setting);
+					array.Resize(bs.Length);
+					for(int i=0;i<bs.Length;i++){
+						array.Set(i,(object)bs[i]);
+					}
 					break;
 				}
 			case VariableType.String:{
-					array.stringValues=ES2.LoadArray<string>(filename, setting);
+					string[]bs=ES2.LoadArray<string>(filename, setting);
+					array.Resize(bs.Length);
+					for(int i=0;i<bs.Length;i++){
+						array.Set(i,(object)bs[i]);
+					}
 					break;
 				}
 			default:{
