@@ -4,6 +4,7 @@ using System.Text.RegularExpressions;
 using HutongGames.PlayMaker.Actions;
 using UnityEngine.UI;
 using FMODUnity;
+using System;
 	
 public class TypeWriter : MonoBehaviour
 	{
@@ -48,7 +49,7 @@ public class TypeWriter : MonoBehaviour
 				label.text+=c;
 
 //				fsm.Fsm.Event("typing");
-				fmod.Play();
+//				fmod.Play();
 				yield return new WaitForSeconds(defaultDelay);
 			}
 			if(i>=mc.Count)

@@ -25,7 +25,8 @@ public class FMODPlayEventEmitter : FsmStateAction
 	public override void OnEnter()
 	{
 			if(emitter!=null){
-				emitter.Play();
+//				emitter.Play ();
+
 			}	
 			
 		Finish();

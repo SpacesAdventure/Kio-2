@@ -1813,7 +1813,7 @@ MonoBehaviour:
           floatValue: 0
           intValue: 0
           boolValue: 0
-          stringValue: " Kio:\\n\u3010\u88C2\u75D5\uFF0C\u6CA1\u4EC0\u4E48\u7279\u522B\u7684\u3002\u3011"
+          stringValue: " Kio\\n\u3010\u88C2\u75D5\uFF0C\u6CA1\u4EC0\u4E48\u7279\u522B\u7684\u3002\u3011"
           vector4Value: {x: 0, y: 0, z: 0, w: 0}
           objectReference: {fileID: 0}
           arrayValue:
@@ -2129,7 +2129,7 @@ MonoBehaviour:
         tooltip: ' '
         showInInspector: 0
         networkSync: 0
-        value: " Kio:\\n\u3010\u88C2\u75D5\uFF0C\u6CA1\u4EC0\u4E48\u7279\u522B\u7684\u3002\u3011"
+        value: " Kio\\n\u3010\u88C2\u75D5\uFF0C\u6CA1\u4EC0\u4E48\u7279\u522B\u7684\u3002\u3011"
       vector2Variables: []
       vector3Variables: []
       colorVariables: []
@@ -4011,19 +4011,19 @@ MonoBehaviour:
         tooltip: 
         showInInspector: 0
         networkSync: 0
-        value: " Kio:\\n\u3010\u8FD9\u91CC\u662F\u5730\u7262\uFF1F\u3011"
+        value: " Kio\\n\u3010\u8FD9\u91CC\u662F\u5730\u7262\uFF1F\u3011"
       - useVariable: 1
         name: text2
         tooltip: 
         showInInspector: 0
         networkSync: 0
-        value: " Kio:\\n\u3010\u6211\u660E\u660E\u5728\u9EA6\u5F53\u52B3\u554A\u3002\u3011"
+        value: " Kio\\n\u3010\u6211\u660E\u660E\u5728\u9EA6\u5F53\u52B3\u554A\u3002\u3011"
       - useVariable: 1
         name: text3
         tooltip: 
         showInInspector: 0
         networkSync: 0
-        value: " Kio:\\n\u3010\u4E0D\u8FC7\u8FD9\u91CC\u7684\u786E\u5F88\u50CF\u5730\u7262\u3002\u3011"
+        value: " Kio\\n\u3010\u4E0D\u8FC7\u8FD9\u91CC\u7684\u786E\u5F88\u50CF\u5730\u7262\u3002\u3011"
       vector2Variables: []
       vector3Variables: []
       colorVariables: []
@@ -7435,7 +7435,7 @@ MonoBehaviour:
         tooltip: ' '
         showInInspector: 0
         networkSync: 0
-        value: " Kio:\\n\u3010\u88C2\u75D5\uFF0C\u6CA1\u4EC0\u4E48\u7279\u522B\u7684\u3002\u3011"
+        value: " Kio\\n\u3010\u88C2\u75D5\uFF0C\u6CA1\u4EC0\u4E48\u7279\u522B\u7684\u3002\u3011"
       vector2Variables: []
       vector3Variables: []
       colorVariables: []
@@ -12087,13 +12087,13 @@ MonoBehaviour:
         tooltip: 
         showInInspector: 0
         networkSync: 0
-        value: " Kio:\\n\u3010\u4EC0\u4E48\u6076\u4F5C\u5267\uFF1F\u3011"
+        value: " Kio\\n\u3010\u4EC0\u4E48\u6076\u4F5C\u5267\uFF1F\u3011"
       - useVariable: 1
         name: text2
         tooltip: 
         showInInspector: 0
         networkSync: 0
-        value: " Kio:\\n\u3010\u8C01\u8FD9\u4E48\u65E0\u804A\u5199\u8FD9\u4E9B\u5B57\u6761\u3002\u3011"
+        value: " Kio\\n\u3010\u8C01\u8FD9\u4E48\u65E0\u804A\u5199\u8FD9\u4E9B\u5B57\u6761\u3002\u3011"
       vector2Variables: []
       vector3Variables: []
       colorVariables: []
@@ -13896,13 +13896,13 @@ MonoBehaviour:
         tooltip: 
         showInInspector: 0
         networkSync: 0
-        value: " Kio:\\n\u3010\u8FD9\u662F\u4EC0\u4E48\u9B3C\uFF1F\u3011"
+        value: " Kio\\n\u3010\u8FD9\u662F\u4EC0\u4E48\u9B3C\uFF1F\u3011"
       - useVariable: 1
         name: text2
         tooltip: 
         showInInspector: 0
         networkSync: 0
-        value: " Kio:\\n\u3010\u53EA\u628A\u8089\u7559\u4E0B\u6765\uFF1F\u3011"
+        value: " Kio\\n\u3010\u53EA\u628A\u8089\u7559\u4E0B\u6765\uFF1F\u3011"
       vector2Variables: []
       vector3Variables: []
       colorVariables: []
@@ -14821,7 +14821,7 @@ MonoBehaviour:
         tooltip: ' '
         showInInspector: 0
         networkSync: 0
-        value: " Kio:\\n\u3010\u88C2\u75D5\uFF0C\u6CA1\u4EC0\u4E48\u7279\u522B\u7684\u3002\u3011"
+        value: " Kio\\n\u3010\u88C2\u75D5\uFF0C\u6CA1\u4EC0\u4E48\u7279\u522B\u7684\u3002\u3011"
       vector2Variables: []
       vector3Variables: []
       colorVariables: []
@@ -15935,7 +15935,7 @@ MonoBehaviour:
           floatValue: 0
           intValue: 0
           boolValue: 0
-          stringValue: " Kio:\\n\u3010\u4E00\u5F20\u8BE1\u5F02\u7684\u7167\u7247\u3002\u3011"
+          stringValue: " Kio\\n\u3010\u4E00\u5F20\u8BE1\u5F02\u7684\u7167\u7247\u3002\u3011"
           vector4Value: {x: 0, y: 0, z: 0, w: 0}
           objectReference: {fileID: 0}
           arrayValue:
@@ -16636,7 +16636,7 @@ MonoBehaviour:
           floatValue: 0
           intValue: 0
           boolValue: 0
-          stringValue: " Kio:\\n\u3010\u4E0D\u77E5\u9053\u662F\u8C01\u7684\u3002\u3011"
+          stringValue: " Kio\\n\u3010\u4E0D\u77E5\u9053\u662F\u8C01\u7684\u3002\u3011"
           vector4Value: {x: 0, y: 0, z: 0, w: 0}
           objectReference: {fileID: 0}
           arrayValue:
@@ -25178,7 +25178,7 @@ MonoBehaviour:
         tooltip: 
         showInInspector: 0
         networkSync: 0
-        value: " Kio:\\n\u3010\u6CA1\u6709\u518D\u8FDB\u53BB\u7684\u5FC5\u8981\u4E86\u3002\u3011 "
+        value: " Kio\\n\u3010\u6CA1\u6709\u518D\u8FDB\u53BB\u7684\u5FC5\u8981\u4E86\u3002\u3011 "
       vector2Variables: []
       vector3Variables: []
       colorVariables: []
@@ -25232,7 +25232,7 @@ MonoBehaviour:
     watermark: 
     password: 
     locked: 0
-    preprocessed: 1
+    preprocessed: 0
     ExposedEvents: []
     RestartOnEnable: 1
     EnableDebugFlow: 0

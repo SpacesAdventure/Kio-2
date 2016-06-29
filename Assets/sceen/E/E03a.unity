@@ -130,7 +130,7 @@ GameObject:
   - 114: {fileID: 20581097}
   - 61: {fileID: 20581096}
   m_Layer: 15
-  m_Name: "\u684C\u5B50f"
+  m_Name: "\u684C\u5B50f paper a"
   m_TagString: layer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -273,7 +273,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 334
-        y: 320
+        y: 336
         width: 100
         height: 32
       isBreakpoint: 0
@@ -415,7 +415,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 565
-        y: 302
+        y: 318
         width: 101
         height: 32
       isBreakpoint: 0
@@ -506,7 +506,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 661
-        y: 389
+        y: 405
         width: 121
         height: 48
       isBreakpoint: 0
@@ -689,7 +689,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 843
-        y: 398
+        y: 414
         width: 100
         height: 32
       isBreakpoint: 0
@@ -912,8 +912,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 1126
-        y: 306
+        x: 989.5078
+        y: 105.50781
         width: 149
         height: 16
       isBreakpoint: 0
@@ -1039,7 +1039,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 450
-        y: 238.92188
+        y: 254.92188
         width: 116
         height: 48
       isBreakpoint: 0
@@ -1121,7 +1121,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 150
-        y: 213
+        y: 229
         width: 100
         height: 48
       isBreakpoint: 0
@@ -1132,7 +1132,7 @@ MonoBehaviour:
           name: check pass
           isSystemEvent: 0
           isGlobal: 1
-        toState: change room status
+        toState: set table
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
@@ -1330,7 +1330,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 61.148438
-        y: 107.640625
+        y: 123.640625
         width: 105
         height: 32
       isBreakpoint: 0
@@ -1411,7 +1411,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 1013.5
-        y: 369
+        y: 385
         width: 116
         height: 32
       isBreakpoint: 0
@@ -1422,7 +1422,7 @@ MonoBehaviour:
           name: interact return
           isSystemEvent: 0
           isGlobal: 1
-        toState: change room status
+        toState: set table
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
@@ -1580,6 +1580,92 @@ MonoBehaviour:
         - everyFrame
         paramDataPos: 00000000000000000100000001000000000000000100000000000000000000000000000000000000
         paramByteDataSize: 00000000000000000000000000000000000000000000000000000000000000000000000001000000
+    - name: set table
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 725.2578
+        y: 100.546875
+        width: 100
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: change room status
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.SwapSprite
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: c4b05004
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams:
+        - ownerOption: 1
+          gameObject:
+            useVariable: 1
+            name: table
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 20581094}
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams:
+        - useVariable: 1
+          name: "\u684C\u5B50f-2"
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          typeName: UnityEngine.Sprite
+          value: {fileID: 21300000, guid: 893d19b89e478154697b152fca89046d, type: 3}
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams: []
+        byteData: 
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 140000001800000011000000
+        paramName:
+        - gameObject
+        - spriteToSwap
+        - resetOnExit
+        paramDataPos: 000000000000000000000000
+        paramByteDataSize: 000000000000000000000000
     events:
     - name: FINISHED
       isSystemEvent: 1
@@ -1683,7 +1769,20 @@ MonoBehaviour:
         showInInspector: 0
         networkSync: 0
         value: {fileID: 0}
-      objectVariables: []
+      - useVariable: 1
+        name: table
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: {fileID: 20581094}
+      objectVariables:
+      - useVariable: 1
+        name: "\u684C\u5B50f-2"
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        typeName: UnityEngine.Sprite
+        value: {fileID: 21300000, guid: 893d19b89e478154697b152fca89046d, type: 3}
       materialVariables: []
       textureVariables: []
       arrayVariables:
@@ -1703,7 +1802,7 @@ MonoBehaviour:
       enumVariables: []
       categories:
       - 
-      variableCategoryIDs: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+      variableCategoryIDs: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
     description: 
     docUrl: 
     showStateLabel: 1

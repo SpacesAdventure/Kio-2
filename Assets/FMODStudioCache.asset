@@ -11,51 +11,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
-  EditorBanks:
-  - {fileID: 11448804}
-  EditorEvents:
-  - {fileID: 11401430}
-  - {fileID: 11475426}
-  - {fileID: 11477054}
-  - {fileID: 11414236}
-  - {fileID: 11416510}
-  - {fileID: 11460210}
-  - {fileID: 11449400}
-  - {fileID: 11453722}
-  - {fileID: 11476186}
-  - {fileID: 11402348}
-  - {fileID: 11468894}
-  - {fileID: 11468376}
-  - {fileID: 11440152}
-  - {fileID: 11468154}
-  - {fileID: 11404464}
-  - {fileID: 11475026}
-  - {fileID: 11496668}
-  - {fileID: 11425266}
-  - {fileID: 11402394}
-  - {fileID: 11437250}
-  - {fileID: 11422346}
-  - {fileID: 11426980}
-  - {fileID: 11482404}
-  - {fileID: 11476036}
-  - {fileID: 11439618}
-  - {fileID: 11445602}
-  - {fileID: 11401186}
-  - {fileID: 11431150}
-  - {fileID: 11490270}
-  - {fileID: 11415078}
-  - {fileID: 11442872}
-  - {fileID: 11442444}
-  - {fileID: 11435082}
-  - {fileID: 11416774}
-  - {fileID: 11489606}
-  - {fileID: 11453988}
-  - {fileID: 11414654}
-  - {fileID: 11492330}
-  - {fileID: 11480308}
-  - {fileID: 11439850}
+  EditorBanks: []
+  EditorEvents: []
   MasterBankRef: {fileID: 11448804}
-  stringsBankWriteTime: 636016319780000000
+  stringsBankWriteTime: 0
   cacheVersion: 1
 --- !u!114 &11400346
 MonoBehaviour:
@@ -4409,7 +4368,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
+  m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   Path: event:/UI/UI-OK
   guid: 24ae8d65a83e7f428792fbe70af6431d
@@ -5662,7 +5621,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
+  m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   Path: event:/Zombie/zombie2/zombie2-attacked
   guid: 541d1707dc505a4ca5d5d1364c1d63c5
@@ -5683,7 +5642,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
+  m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   Path: event:/Gun/Gun_handgun_give out
   guid: 9dee94836bba854a952cd96bbe09b338
@@ -5705,7 +5664,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
+  m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   Path: event:/Zombie/zombie2/zombie2-attack
   guid: 7af9749a778b154fbe8b51e61b07c820
@@ -5726,7 +5685,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
+  m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   Path: event:/Ambiance/E18/computer room
   guid: 77a79339ba9622439fc4cc1940c01656
@@ -5747,7 +5706,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
+  m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   Path: event:/Event/event-guilotine
   guid: f908d5da87736b4c8861f1b18f869a79
@@ -5768,7 +5727,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
+  m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   Path: event:/Zombie/zombie3/zombie3-attack
   guid: 25c3a0acfdc70740b1d545d67bd7742f
@@ -5789,7 +5748,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
+  m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   Path: event:/UI/UI-choice
   guid: 1d73f7c7164a0a46ae0ca187749aae70
@@ -5810,7 +5769,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
+  m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   Path: event:/Zombie/zombie3/zombie3-death
   guid: 72fa0a15332b2f40b857594a53c2541e
@@ -5831,7 +5790,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
+  m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   Path: event:/Gun/Gun-shotgun shell case2
   guid: 6bc2b7a75c5dc84b823b89c91d405dd8
@@ -5852,7 +5811,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
+  m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   Path: event:/Music/music box
   guid: 0b4b2ea844947a448f682363c6548863
@@ -5873,7 +5832,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
+  m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   Path: event:/Gun/handgun
   guid: 01ae2065991dbd4fa42624dff077996d
@@ -5895,7 +5854,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
+  m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   Path: event:/UI/UI-choice
   guid: 1d73f7c7164a0a46ae0ca187749aae70
@@ -5916,7 +5875,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
+  m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   Path: event:/Ambiance/E18/computer room
   guid: 77a79339ba9622439fc4cc1940c01656
@@ -5937,7 +5896,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
+  m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   Path: event:/UI/UI-invalid
   guid: 465d97a17cbb914f82ed055c5b1a0d33
@@ -5958,7 +5917,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
+  m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   Path: event:/Role/role-text3
   guid: 32a564b1032fd74aa8ca243db77c1a5d
@@ -5979,7 +5938,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
+  m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   Path: event:/Role/role-text2
   guid: d3a71c2a9565044ea2a2567b096484d1
@@ -6000,7 +5959,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
+  m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   Path: event:/Event/event-electric saw
   guid: 575512ec6a979b49aab4a158be44ef83
@@ -6021,7 +5980,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
+  m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   Name: Parameter 1
   Min: 0
@@ -6036,7 +5995,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
+  m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   Path: event:/Zombie/zombie1/zombie1-attacked
   guid: d31ed8f3e4b7b54fa599c2b763202a30
@@ -6057,7 +6016,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
+  m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   Path: event:/Ambiance/street/street
   guid: 9f63c90f9450dd499c5b3c1a5bee403e
@@ -6078,7 +6037,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
+  m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   Path: event:/Gun/Gun_shotgun_take up
   guid: 0544a9dafe378544b6a6f829dcc5bc06
@@ -6099,7 +6058,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
+  m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   Name: Distance
   Min: 0
@@ -6114,7 +6073,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
+  m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   Path: event:/Gun/Gun-shotgun shell case1
   guid: 55dfe11cc1b22d41a2de28300a9bd5f0
@@ -6135,7 +6094,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
+  m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   Path: event:/Ambiance/darkroom/candle
   guid: 59f5672ba7180b4b8c4377ad3f35b6ed
@@ -6157,7 +6116,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
+  m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   Path: event:/Gun/Gun_handgun_give out
   guid: 9dee94836bba854a952cd96bbe09b338
@@ -6179,7 +6138,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
+  m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   Path: event:/Gun/Gun_handgun_give out
   guid: 9dee94836bba854a952cd96bbe09b338
@@ -6222,7 +6181,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
+  m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   Path: event:/Gun/Gun-shotgun shell case1
   guid: 55dfe11cc1b22d41a2de28300a9bd5f0
@@ -6264,7 +6223,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
+  m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   Path: event:/Gun/Gun_shotgun_give out
   guid: f1709285be08b442af22799db77546e7
@@ -6285,7 +6244,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
+  m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   Path: event:/Zombie/zombie2/zombie2-attacked
   guid: 541d1707dc505a4ca5d5d1364c1d63c5
@@ -6306,7 +6265,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
+  m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   Path: event:/Zombie/zombie2/zombie2-death
   guid: d2716bdc43d4094c9856c08a020b1ec5
@@ -6327,7 +6286,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
+  m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   Path: event:/Zombie/zombie3/zombie3-attack
   guid: 25c3a0acfdc70740b1d545d67bd7742f
@@ -6348,7 +6307,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
+  m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   Path: event:/Zombie/zombie2/zombie2-death
   guid: d2716bdc43d4094c9856c08a020b1ec5
@@ -6369,7 +6328,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
+  m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   Path: event:/Zombie/zombie3/zombie3-death
   guid: 72fa0a15332b2f40b857594a53c2541e
@@ -6390,7 +6349,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
+  m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   Path: event:/Gun/Gun_handgun_take up
   guid: b49580ddf16aca4c81e668c85c41c9b8
@@ -6433,7 +6392,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
+  m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   Path: event:/Zombie/zombie1/zombie1-death
   guid: 63dacff0d364e84cbd6638ec685f10e8
@@ -6454,7 +6413,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
+  m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   Path: event:/Music/music box
   guid: 0b4b2ea844947a448f682363c6548863
@@ -6475,7 +6434,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
+  m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   Path: event:/Music/music box
   guid: 0b4b2ea844947a448f682363c6548863
@@ -6539,7 +6498,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
+  m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   Name: H_give out
   Min: 0
@@ -6554,7 +6513,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
+  m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   Path: event:/Gun/Gun_shotgun_take up
   guid: 0544a9dafe378544b6a6f829dcc5bc06
@@ -6575,7 +6534,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
+  m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   Path: event:/Ambiance/classroom/classroom
   guid: 47922fefe9ff234f984fa9db30ae9a00
@@ -6928,7 +6887,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
+  m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   Name: Parameter 1
   Min: 0
