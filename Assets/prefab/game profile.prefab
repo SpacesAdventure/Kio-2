@@ -8231,13 +8231,13 @@ MonoBehaviour:
         objectReferences: []
       - useVariable: 1
         name: astreet
-        tooltip: "1\u662F\u521D\u59CB\u5267\u60C5\uFF0C2\u662F\u50F5\u5C38\u5267\u60C5"
+        tooltip: "1\u662F\u521D\u59CB\u5267\u60C5\uFF0C2\u662F\u50F5\u5C38\u5267\u60C5,\u5C06\u58EB\u4EEC"
         showInInspector: 0
         networkSync: 0
         type: 1
         objectTypeName: UnityEngine.Object
         floatValues: []
-        intValues: 0000000000000000
+        intValues: 000000000000000000000000
         boolValues: 
         stringValues: []
         vector4Values: []
@@ -8425,6 +8425,32 @@ MonoBehaviour:
         vector4Values: []
         objectReferences: []
       - useVariable: 1
+        name: bstreet
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        type: 1
+        objectTypeName: UnityEngine.Object
+        floatValues: []
+        intValues: 00000000
+        boolValues: 
+        stringValues: []
+        vector4Values: []
+        objectReferences: []
+      - useVariable: 1
+        name: cstreet
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        type: 1
+        objectTypeName: UnityEngine.Object
+        floatValues: []
+        intValues: 00000000
+        boolValues: 
+        stringValues: []
+        vector4Values: []
+        objectReferences: []
+      - useVariable: 1
         name: d03
         tooltip: "\u4EE3\u8868\u53F3\u4E0B\u89D2\u5F00\u95E8\uFF0C0\u8868\u793A\u9501\u7740\uFF0C1\u8868\u793A\u5F00\u9501"
         showInInspector: 0
@@ -8530,13 +8556,13 @@ MonoBehaviour:
         objectReferences: []
       - useVariable: 1
         name: e02
-        tooltip: 
+        tooltip: "\u6709\u65E0\u654C\u4EBA\uFF0C\u6709\u65E0\u5F00\u9501"
         showInInspector: 0
         networkSync: 0
         type: 1
         objectTypeName: UnityEngine.Object
         floatValues: []
-        intValues: 00000000
+        intValues: 0000000000000000
         boolValues: 
         stringValues: []
         vector4Values: []
@@ -8544,7 +8570,7 @@ MonoBehaviour:
       - useVariable: 1
         name: e03a
         tooltip: "\u5B50\u5F39\uFF0C\u7EB8\u6761"
-        showInInspector: 1
+        showInInspector: 0
         networkSync: 0
         type: 1
         objectTypeName: UnityEngine.Object
@@ -8589,6 +8615,19 @@ MonoBehaviour:
         objectTypeName: UnityEngine.Object
         floatValues: []
         intValues: 0000000001000000
+        boolValues: 
+        stringValues: []
+        vector4Values: []
+        objectReferences: []
+      - useVariable: 1
+        name: e03e
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        type: 1
+        objectTypeName: UnityEngine.Object
+        floatValues: []
+        intValues: 00000000
         boolValues: 
         stringValues: []
         vector4Values: []
@@ -8667,6 +8706,19 @@ MonoBehaviour:
         objectTypeName: UnityEngine.Object
         floatValues: []
         intValues: 01000000
+        boolValues: 
+        stringValues: []
+        vector4Values: []
+        objectReferences: []
+      - useVariable: 1
+        name: e10
+        tooltip: "\u836F\u7BB1\uFF0C4\u4E2A\u624B\u67AA\u5B50\u5F39\uFF0C3\u4E2A\u6563\u5F39\u67AA\u5B50\u5F39"
+        showInInspector: 0
+        networkSync: 0
+        type: 1
+        objectTypeName: UnityEngine.Object
+        floatValues: []
+        intValues: 0100000001000000010000000100000001000000010000000100000001000000
         boolValues: 
         stringValues: []
         vector4Values: []
@@ -8778,7 +8830,7 @@ MonoBehaviour:
       enumVariables: []
       categories:
       - 
-      variableCategoryIDs: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+      variableCategoryIDs: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
     description: 
     docUrl: 
     showStateLabel: 0
