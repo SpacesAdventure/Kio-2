@@ -1345,7 +1345,7 @@ MonoBehaviour:
         intValues: 
         boolValues: 
         stringValues:
-        - " Kio\\n\u3010chinese football\u4E50\u961F\u547D\u4EE4\u89E3\u6563\u3002\u3011"
+        - " Kio\\n\u3010chinese football\u4E50\u961F\u9762\u4E34\u89E3\u6563\u3002\u3011"
         vector4Values: []
         objectReferences: []
       enumVariables: []
@@ -13624,7 +13624,7 @@ MonoBehaviour:
     watermark: 
     password: 
     locked: 0
-    preprocessed: 0
+    preprocessed: 1
     ExposedEvents: []
     RestartOnEnable: 1
     EnableDebugFlow: 0
