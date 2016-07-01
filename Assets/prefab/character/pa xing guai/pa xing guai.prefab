@@ -8164,9 +8164,9 @@ MonoBehaviour:
       - useVariable: 1
         name: attack
         tooltip: 
-        showInInspector: 0
+        showInInspector: 1
         networkSync: 0
-        value: 10
+        value: 20
       - useVariable: 1
         name: direction
         tooltip: 
@@ -8220,7 +8220,7 @@ MonoBehaviour:
     watermark: 
     password: 
     locked: 0
-    preprocessed: 1
+    preprocessed: 0
     ExposedEvents: []
     RestartOnEnable: 1
     EnableDebugFlow: 0
@@ -8814,7 +8814,7 @@ MonoBehaviour:
         tooltip: 
         showInInspector: 1
         networkSync: 0
-        value: 30
+        value: 45
       boolVariables: []
       stringVariables: []
       vector2Variables: []
@@ -8838,7 +8838,7 @@ MonoBehaviour:
     watermark: 
     password: 
     locked: 0
-    preprocessed: 1
+    preprocessed: 0
     ExposedEvents: []
     RestartOnEnable: 1
     EnableDebugFlow: 0

@@ -8674,7 +8674,7 @@ MonoBehaviour:
       - useVariable: 1
         name: e07
         tooltip: "\u654C\u4EBA\uFF0C\u5B50\u5F39\uFF0C\u521B\u53EF\u8D34\uFF0C\u770B\u4E86\u7EB8\u6761b\u6CA1\u6709"
-        showInInspector: 1
+        showInInspector: 0
         networkSync: 0
         type: 1
         objectTypeName: UnityEngine.Object
@@ -8765,7 +8765,7 @@ MonoBehaviour:
       - useVariable: 1
         name: e17
         tooltip: "\u78C1\u5361"
-        showInInspector: 0
+        showInInspector: 1
         networkSync: 0
         type: 1
         objectTypeName: UnityEngine.Object
